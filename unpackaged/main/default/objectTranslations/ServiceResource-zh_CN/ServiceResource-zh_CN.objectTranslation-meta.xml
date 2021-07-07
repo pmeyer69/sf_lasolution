@@ -11,4 +11,38 @@
             <section>VFS</section>
         </sections>
     </layouts>
+    
+    
+    
+    
+    
+    
+    <fieldSets>
+        <label><!-- Crew Managment Resource Lightbox --></label>
+        <name>FSL__CrewManagment_Lightbox</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Emergency Fields --></label>
+        <name>FSL__Emergency_Fields</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Get Candidates Resource Details --></label>
+        <name>FSL__Get_Candidates_Resource_Details</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Resource Gantt Filter --></label>
+        <name>FSL__Resource_Gantt_Filter</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Resource Lightbox --></label>
+        <name>FSL__Resource_Lightbox</name>
+    </fieldSets>
+    <validationRules>
+        <errorMessage><!-- Capacity Resource Can&apos;t Be of Type Crew --></errorMessage>
+        <name>FSL__Capacity_Resource_of_Type_Crew</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Resource travel speed must be greater than 0. --></errorMessage>
+        <name>FSL__Resource_travel</name>
+    </validationRules>
 </CustomObjectTranslation>

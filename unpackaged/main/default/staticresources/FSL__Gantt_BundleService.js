@@ -1,0 +1,410 @@
+'use strict';
+
+(function () {
+
+    BundleService.$inject = ['$q', 'sfdcService', 'DeltaService', 'utils', '$timeout', 'TimePhasedDataService', '$rootScope', 'ServiceAppointmentLightboxService'];
+
+    angular.module('serviceExpert').factory('BundleService', BundleService);
+
+    function BundleService($q, sfdcService, DeltaService, utils, $timeout, TimePhasedDataService, $rootScope, ServiceAppointmentLightboxService) {
+
+        function isActive() {
+            if (isSchedulingBundlingEnabled === '0') return false;
+            return isSchedulingBundlingEnabled ? true : false;
+        }
+
+        function isBundleMember(obj) {
+
+            return obj.isBundleMember;
+        }
+
+        function isBundle(obj) {
+
+            return obj.isBundle;
+        }
+
+        function bundleServiceAppointments(ids, electedPolicyId, fullSa) {
+
+            var deffered = $q.defer();
+
+            var saName = false;
+
+            var idsArr = Array.isArray(ids) ? ids : [ids];
+
+            if (idsArr.length === 0) {
+
+                // will never get here ( stoped in popup )
+
+                var toastObj = {
+                    message: customLabels.BundleUnbundledNotSelected,
+                    status: 'ERROR'
+                };
+
+                $rootScope.$broadcast('showServiceExpertToast', toastObj);
+
+                deffered.reject();
+                return deffered.promise;
+            }
+
+            if (fullSa.length === 1) {
+
+                saName = fullSa[0].name;
+            }
+
+            var queryString = window.location.search;
+            var urlParams = new URLSearchParams(queryString);
+            var urlToken = urlParams.get('token');
+
+            sfdcService.callRemoteAction(RemoteActions.createBundleManually, idsArr, electedPolicyId, urlToken).then(function (res) {
+
+                //  DeltaService.getDeltaPromise().then( deltaData => { 
+                var resBundle = '';
+                var resStatus = res.bundleStatus;
+
+                if (res && res.debugMode) {
+                    console.log('--createBundleManually--');
+                    console.log(res);
+                    for (var property in res) {
+                        console.log(property + ': ' + res[property]);
+                    }
+                }
+
+                if (res.bundle) {
+                    // apex mode
+                    resBundle = res.bundle;
+                } else {
+                    var bundleId = res.bundleId;
+                    var AppointmentNumber = res.AppointmentNumber;
+                    resBundle = { 'AppointmentNumber': AppointmentNumber, 'Id': bundleId };
+                }
+
+                var resBundledMembers = res.bundledMembers;
+
+                if (resStatus == 'COMPLETE_BUNDLE') {
+
+                    var contentMsg = String.format(customLabels.BundleSuccessfullyCreated, resBundle.AppointmentNumber);
+
+                    utils.addNotification(customLabels.BundleCreatedNTitle, String.format(customLabels.BundleSuccessfullyCreated, resBundle.AppointmentNumber), function () {
+                        ServiceAppointmentLightboxService.open(resBundle.Id);
+                    });
+
+                    var _toastObj = {
+                        message: contentMsg,
+                        status: 'SUCCESS',
+                        f: function f(id) {
+                            ServiceAppointmentLightboxService.open(id);
+                        },
+                        p: resBundle.Id
+                    };
+
+                    $rootScope.$broadcast('showServiceExpertToast', _toastObj);
+
+                    deffered.resolve(resBundledMembers);
+                    return;
+                }
+
+                var msg = '';
+                if (saName) {
+
+                    msg = String.format(customLabels.BundleCreationFailedSingle, saName);
+                } else {
+
+                    msg = customLabels.BundleCreationFailedM;
+                }
+
+                var toastObj = {
+                    message: msg,
+                    status: 'ERROR'
+                };
+
+                $rootScope.$broadcast('showServiceExpertToast', toastObj);
+
+                utils.addNotification(customLabels.BundleCreatedFailedNTitle, msg, function () {});
+
+                deffered.reject(res.bundleStatus);
+
+                return;
+            }).catch(function (err) {
+
+                var msg = '';
+                if (saName) {
+
+                    msg = String.format(customLabels.BundleCreationFailedSingle, saName);
+                } else {
+
+                    msg = customLabels.BundleCreationFailedM;
+                }
+
+                var toastObj = {
+                    message: msg,
+                    status: 'ERROR'
+                };
+
+                $rootScope.$broadcast('showServiceExpertToast', toastObj);
+
+                utils.addNotification(customLabels.BundleCreatedFailedNTitle, msg, function () {});
+
+                console.warn(err);
+                deffered.reject(err);
+            });
+
+            return deffered.promise;
+        }
+
+        ////
+        function updateBundleServiceAppointments(ids, electedPolicyId, bId, bName) {
+
+            var idsArr = Array.isArray(ids) ? ids : [ids];
+
+            var deffered = $q.defer();
+
+            sfdcService.callRemoteAction(RemoteActions.updateBundleManually, idsArr, electedPolicyId, bId).then(function (res) {
+
+                if (res && res.debugMode) {
+
+                    console.log('+++');
+                    console.log(res);
+
+                    for (var property in res) {
+                        console.log(property + ': ' + res[property]);
+                    }
+                }
+
+                //  DeltaService.getDeltaPromise().then( deltaData => { 
+
+                // updatedGanttServices sould have resBundle.Id
+
+                var resStatus = res.bundleStatus;
+                var resBundle = void 0;
+
+                if (res.bundle) {
+                    // apex mode
+                    resBundle = res.bundle;
+                } else {
+                    var bundleId = res.bundleId;
+                    var AppointmentNumber = res.AppointmentNumber;
+                    resBundle = { 'AppointmentNumber': AppointmentNumber, 'Id': bundleId };
+                }
+
+                var resBundledMembers = res.bundledMembers;
+
+                if (resStatus == 'COMPLETE_BUNDLE') {
+
+                    var contentMsg = String.format(customLabels.BundleUpdateSuccessfully, bName);
+                    var headerMsg = customLabels.BundleUpdateSuccessfullyNT;
+
+                    utils.addNotification(headerMsg, contentMsg, function () {
+                        ServiceAppointmentLightboxService.open(bId);
+                    });
+
+                    var _toastObj2 = {
+                        message: contentMsg,
+                        status: 'SUCCESS',
+                        f: function f(id) {
+                            ServiceAppointmentLightboxService.open(id);
+                        },
+                        p: resBundle.Id
+                    };
+
+                    $rootScope.$broadcast('showServiceExpertToast', _toastObj2);
+
+                    deffered.resolve(resBundledMembers);
+                    return;
+                }
+
+                // not COMPLETE_BUNDLE or PARTIAL_BUNDLE ==> error
+
+                var toastObj = {
+                    message: String.format(customLabels.BundleUpdateFailed, bName),
+                    status: 'ERROR'
+                };
+
+                $rootScope.$broadcast('showServiceExpertToast', toastObj);
+
+                utils.addNotification(customLabels.BundleUpdateFailedNT, String.format(customLabels.BundleUpdateFailed, bName), function () {});
+
+                deffered.reject(res.bundleStatus);
+
+                return;
+            }).catch(function (err) {
+
+                var toastObj = {
+                    message: String.format(customLabels.BundleUpdateFailed, bName),
+                    status: 'ERROR'
+                };
+
+                $rootScope.$broadcast('showServiceExpertToast', toastObj);
+
+                utils.addNotification(customLabels.BundleUpdateFailedNT, String.format(customLabels.BundleUpdateFailed, bName), function () {});
+
+                deffered.reject(err);
+            });
+
+            return deffered.promise;
+        }
+
+        function UndbundleServiceAppointment(ids, saList, electedPolicyId) {
+
+            var deffered = $q.defer();
+
+            var idsArr = Array.isArray(ids) ? ids : [ids];
+
+            if (idsArr.length === 0) {
+
+                var toastObj = {
+                    message: customLabels.BundleUnbundledNotSelected,
+                    status: 'ERROR'
+                };
+
+                $rootScope.$broadcast('showServiceExpertToast', toastObj);
+
+                utils.addNotification(customLabels.FailedUnbundledNT, customLabels.BundleUnbundledNotSelected, function () {});
+
+                deffered.reject();
+                return deffered.promise;
+            }
+
+            var ubName = false;
+
+            if (saList.length === 1) {
+
+                ubName = saList[0].name;
+            }
+
+            var namesArr = [];
+            var contentMsg = '';
+            var nameStr = '';
+
+            sfdcService.callRemoteAction(RemoteActions.unbundleManually, idsArr, electedPolicyId).then(function (res) {
+
+                if (res && res.debugMode) {
+                    console.log('--unbundle---');
+                    console.log(res);
+                    for (var property in res) {
+                        console.log(property + ': ' + res[property]);
+                    }
+                }
+
+                // check rules if not "on demand" mode
+                var shouldCheckRules = window.__gantt.checkRulesMode !== 'On Demand';
+                DeltaService.getDelta(shouldCheckRules);
+
+                var resStatus = res.unbundleStatus;
+                var resUnBundle = res.unbundle;
+
+                if (resStatus == 'COMPLETE_UNBUNDLE') {
+
+                    if (res.AppointmentNumber) {
+                        // falcon mode
+
+                        namesArr.push(res.AppointmentNumber);
+                    } else {
+
+                        Object.keys(resUnBundle).map(function (k) {
+                            if (resUnBundle[k] && resUnBundle[k].AppointmentNumber) {
+                                namesArr.push(resUnBundle[k].AppointmentNumber);
+                            }
+                        });
+                    }
+
+                    if (namesArr.length > 1) {
+                        contentMsg = customLabels.SuccessfullyUnbundledM;
+                    } else {
+                        nameStr = namesArr[0];
+                        contentMsg = String.format(customLabels.SuccessfullyUnbundled, nameStr);
+                    }
+
+                    var _toastObj3 = {
+                        message: contentMsg,
+                        status: 'SUCCESS'
+                    };
+                    $rootScope.$broadcast('showServiceExpertToast', _toastObj3);
+
+                    utils.addNotification(customLabels.SuccessfullyUnbundledNT, contentMsg, function () {});
+
+                    deffered.resolve(resUnBundle);
+                    return;
+                }
+
+                // FAILED
+                // getting the names from the the request
+
+                Object.keys(saList).map(function (k) {
+                    if (saList[k] && saList[k].AppointmentNumber) {
+                        namesArr.push(saList[k].AppointmentNumber);
+                    }
+                });
+
+                if (namesArr.length > 1) {
+                    contentMsg = customLabels.FailedUnbundledM;
+                } else {
+                    nameStr = namesArr[0];
+                    contentMsg = String.format(customLabels.FailedUnbundled, nameStr);
+                }
+
+                var toastObj = {
+                    message: contentMsg,
+                    status: 'ERROR'
+                };
+
+                $rootScope.$broadcast('showServiceExpertToast', toastObj);
+
+                utils.addNotification(customLabels.FailedUnbundledNT, contentMsg, function () {});
+
+                deffered.reject(resUnBundle);
+
+                return;
+            }).catch(function (err) {
+
+                console.warn(err);
+
+                Object.keys(saList).map(function (k) {
+                    if (saList[k] && saList[k].AppointmentNumber) {
+                        namesArr.push(saList[k].AppointmentNumber);
+                    }
+                });
+
+                if (namesArr.length > 1) {
+                    contentMsg = customLabels.FailedUnbundledM, nameStr;
+                } else {
+                    nameStr = namesArr[0];
+                    contentMsg = String.format(customLabels.FailedUnbundled, nameStr);
+                }
+
+                var toastObj = {
+                    message: contentMsg,
+                    status: 'ERROR'
+                };
+
+                $rootScope.$broadcast('showServiceExpertToast', toastObj);
+
+                utils.addNotification(customLabels.FailedUnbundledNT, contentMsg, function () {});
+
+                deffered.reject(err);
+            });
+
+            return deffered.promise;
+        }
+
+        /// In case the given SA is bundel member- the method returns its parent bundle SA.
+        function verifyShowSaOnGantt(originalSa) {
+            if (!isActive() || !originalSa) return originalSa;
+            var retrievedSa = originalSa; //TimePhasedDataService.serviceAppointments()[originalId];
+            if (isActive() && isBundleMember(retrievedSa)) {
+                retrievedSa = TimePhasedDataService.serviceAppointments()[retrievedSa.RelatedBundle];
+            }
+            return retrievedSa;
+        }
+
+        // This will be our factory
+        return {
+            isBundleMember: isBundleMember,
+            isBundle: isBundle,
+            isActive: isActive,
+            bundleServiceAppointments: bundleServiceAppointments,
+            updateBundleServiceAppointments: updateBundleServiceAppointments,
+            UndbundleServiceAppointment: UndbundleServiceAppointment,
+            verifyShowSaOnGantt: verifyShowSaOnGantt
+        };
+    }
+})();

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help><!-- Date, heure des données de la Géolocation de la ressource au moment de début de l&apos;intervention. --></help>
+        <label><!-- Eff début validité de GeoData --></label>
+        <name>a_ActStartGeoTimestamp__c</name>
+    </CustomFieldTranslation>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label><!-- Type de fréquence --></label>
+        <name>a_Type_de_frequence__c</name>
+        <picklistValues>
+            <masterLabel>Jours</masterLabel>
+            <translation><!-- Jours --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Mois</masterLabel>
+            <translation><!-- Mois --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Semaines</masterLabel>
+            <translation><!-- Semaines --></translation>
+        </picklistValues>
+    </CustomFieldTranslation>

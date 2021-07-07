@@ -62,6 +62,10 @@
                 <behavior>Edit</behavior>
                 <field>ServiceContractId</field>
             </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>a_Slot__c</field>
+            </layoutItems>
         </layoutColumns>
         <layoutColumns>
             <layoutItems>

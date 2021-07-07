@@ -44,4 +44,11 @@
         <label>Canceled</label>
         <groupingString>Canceled</groupingString>
     </standardValue>
+    <standardValue>
+        <fullName>TestRichard</fullName>
+        <color>#663333</color>
+        <default>false</default>
+        <label>TestRichard</label>
+        <groupingString>Scheduled</groupingString>
+    </standardValue>
 </StandardValueSet>

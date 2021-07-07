@@ -2,49 +2,44 @@
 <StandardValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
     <sorted>false</sorted>
     <standardValue>
-        <fullName>Analyst</fullName>
+        <fullName>Patient</fullName>
         <default>false</default>
-        <label>Analyste</label>
+        <label>Patient</label>
     </standardValue>
     <standardValue>
-        <fullName>Competitor</fullName>
+        <fullName>Patient potentiel</fullName>
         <default>false</default>
-        <label>Concurrent</label>
+        <label>Patient potentiel</label>
     </standardValue>
     <standardValue>
-        <fullName>Customer</fullName>
+        <fullName>Proche du patient</fullName>
         <default>false</default>
-        <label>Client</label>
+        <label>Proche du patient</label>
     </standardValue>
     <standardValue>
-        <fullName>Integrator</fullName>
+        <fullName>Medecin</fullName>
         <default>false</default>
-        <label>Intégrateur</label>
+        <label>Médecin</label>
     </standardValue>
     <standardValue>
-        <fullName>Investor</fullName>
+        <fullName>Assurance</fullName>
         <default>false</default>
-        <label>Investisseur</label>
+        <label>Assurance</label>
     </standardValue>
     <standardValue>
-        <fullName>Partner</fullName>
+        <fullName>Pharmacie</fullName>
         <default>false</default>
-        <label>Partenaire</label>
+        <label>Pharmacie</label>
     </standardValue>
     <standardValue>
-        <fullName>Press</fullName>
+        <fullName>Etablissement de soins</fullName>
         <default>false</default>
-        <label>Presse</label>
+        <label>Etablissement de soins</label>
     </standardValue>
     <standardValue>
-        <fullName>Prospect</fullName>
+        <fullName>Service social / Curatelle</fullName>
         <default>false</default>
-        <label>Prospect</label>
-    </standardValue>
-    <standardValue>
-        <fullName>Reseller</fullName>
-        <default>false</default>
-        <label>Revendeur</label>
+        <label>Service social / Curatelle</label>
     </standardValue>
     <standardValue>
         <fullName>Other</fullName>

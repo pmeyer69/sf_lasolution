@@ -50,6 +50,14 @@
         <notificationType>event_reminder</notificationType>
     </notificationTypeSettings>
     <notificationTypeSettings>
+        <appSettings>
+            <connectedAppName>sf_fieldservice__Salesforce_Field_Service_for_Android</connectedAppName>
+            <enabled>true</enabled>
+        </appSettings>
+        <appSettings>
+            <connectedAppName>sf_fieldservice__Salesforce_Field_Service_for_iOS</connectedAppName>
+            <enabled>true</enabled>
+        </appSettings>
         <notificationChannels>
             <desktopEnabled>true</desktopEnabled>
             <mobileEnabled>true</mobileEnabled>

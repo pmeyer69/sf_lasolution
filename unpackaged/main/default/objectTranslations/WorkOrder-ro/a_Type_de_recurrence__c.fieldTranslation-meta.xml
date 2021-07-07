@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label><!-- Type de récurrence --></label>
+        <name>a_Type_de_recurrence__c</name>
+        <picklistValues>
+            <masterLabel>Fréquence et type de fréquence</masterLabel>
+            <translation><!-- Fréquence et type de fréquence --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Jours de la semaine</masterLabel>
+            <translation><!-- Jours de la semaine --></translation>
+        </picklistValues>
+    </CustomFieldTranslation>

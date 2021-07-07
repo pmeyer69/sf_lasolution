@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label><!-- Segmentation patient (patologie) --></label>
+        <name>Segmentation_patient_patologie__c</name>
+        <picklistValues>
+            <masterLabel>Démence</masterLabel>
+            <translation><!-- Démence --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Faiblesse âge</masterLabel>
+            <translation><!-- Faiblesse âge --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Oncologie</masterLabel>
+            <translation><!-- Oncologie --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Paralysie motrice</masterLabel>
+            <translation><!-- Paralysie motrice --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pathologie dégénérative</masterLabel>
+            <translation><!-- Pathologie dégénérative --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Post opératoire</masterLabel>
+            <translation><!-- Post opératoire --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Psychiatrie</masterLabel>
+            <translation><!-- Psychiatrie --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Soins palliatifs</masterLabel>
+            <translation><!-- Soins palliatifs --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Traitement IV</masterLabel>
+            <translation><!-- Traitement IV --></translation>
+        </picklistValues>
+    </CustomFieldTranslation>

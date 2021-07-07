@@ -9,6 +9,14 @@
         <name>FieldService_Admin</name>
     </customApplications>
     <customApplications>
+        <label><!-- La Solution.ch --></label>
+        <name>La_Solutionch</name>
+    </customApplications>
+    <customApplications>
+        <label><!-- La Solution.ch (console) --></label>
+        <name>La_Solutionch_console</name>
+    </customApplications>
+    <customApplications>
         <label><!-- Sales --></label>
         <name>Sales</name>
     </customApplications>
@@ -92,6 +100,23 @@
         <label><!-- NewTask --></label>
         <name>NewTask</name>
     </quickActions>
+    <quickActions>
+        <label><!-- New Person Account --></label>
+        <name>New_Person_Account</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Nouvelle demande --></label>
+        <name>Nouvelle_demande</name>
+    </quickActions>
+    <reportTypes>
+        <description><!-- Rendez-vous de service (Service appointments) --></description>
+        <label><!-- Rendez-vous de service (Service appointments) --></label>
+        <name>Rendez_vous_de_service_Service_appointments</name>
+        <sections>
+            <label><!-- Rendez-vous de service --></label>
+            <name>Rendez-vous de service</name>
+        </sections>
+    </reportTypes>
     <reportTypes>
         <description><!-- Screen Flows --></description>
         <label><!-- Screen Flows --></label>
@@ -105,4 +130,245 @@
             <name>Flow Interview Logs</name>
         </sections>
     </reportTypes>
+    <flowDefinitions>
+        <flows>
+            <choices>
+                <name>Started</name>
+            </choices>
+            <choices>
+                <name>Completed</name>
+            </choices>
+            <screens>
+                <fields>
+                    <name>StatusNotUpdated</name>
+                </fields>
+                <name>Falure</name>
+            </screens>
+            <screens>
+                <fields>
+                    <name>Nouveau_statut_2</name>
+                </fields>
+                <name>SetCompleted</name>
+            </screens>
+            <screens>
+                <fields>
+                    <name>Nouveau_statut</name>
+                </fields>
+                <name>upd_stat_start</name>
+            </screens>
+        </flows>
+        <fullName>AppStatChange</fullName>
+    </flowDefinitions>
+    <flowDefinitions>
+        <flows>
+            <screens>
+                <fields>
+                    <name>DossierCreated</name>
+                </fields>
+                <name>Dossier_cr</name>
+            </screens>
+            <screens>
+                <fields>
+                    <name>WarningDossierExist</name>
+                </fields>
+                <name>Dossier_existant</name>
+            </screens>
+            <screens>
+                <fields>
+                    <name>Information_1</name>
+                </fields>
+                <name>Information</name>
+            </screens>
+            <screens>
+                <fields>
+                    <name>ErrorRecordType</name>
+                </fields>
+                <name>Message_d_erreur1</name>
+            </screens>
+        </flows>
+        <fullName>CaseSetStatusDefPrestations</fullName>
+    </flowDefinitions>
+    <flowDefinitions>
+        <flows>
+            <screens>
+                <fields>
+                    <name>Case_Created_Script</name>
+                </fields>
+                <fields>
+                    <name>Case_Created_Title</name>
+                </fields>
+                <name>Case_Created_Screen</name>
+            </screens>
+            <screens>
+                <fields>
+                    <name>Case_Details_Input</name>
+                </fields>
+                <fields>
+                    <name>Case_Details_Script</name>
+                </fields>
+                <fields>
+                    <name>Case_Details_Title</name>
+                </fields>
+                <fields>
+                    <name>Case_Origin_Input</name>
+                </fields>
+                <fields>
+                    <name>Case_Subject_Input</name>
+                </fields>
+                <fields>
+                    <name>Case_Type_Input</name>
+                </fields>
+                <name>Case_Details_Screen</name>
+            </screens>
+            <screens>
+                <fields>
+                    <name>Confirm_Identity_Title</name>
+                </fields>
+                <fields>
+                    <name>Customer_Name_Script</name>
+                </fields>
+                <fields>
+                    <name>First_Name_Input</name>
+                </fields>
+                <fields>
+                    <name>Last_Name_Input</name>
+                </fields>
+                <name>Confirm_Case_Title</name>
+            </screens>
+            <screens>
+                <fields>
+                    <name>Confirm_Contact_Details_Title</name>
+                </fields>
+                <fields>
+                    <name>Contact_Details_Script</name>
+                </fields>
+                <fields>
+                    <name>Email_Input</name>
+                </fields>
+                <fields>
+                    <name>Phone_Input</name>
+                </fields>
+                <name>Confirm_Contact_Details_Screen</name>
+            </screens>
+            <screens>
+                <fields>
+                    <name>Contact_Error_Desc</name>
+                </fields>
+                <fields>
+                    <name>Contact_Error_Title</name>
+                </fields>
+                <name>Contact_Error_Screen</name>
+            </screens>
+            <stages>
+                <name>Contact_Details_Stage</name>
+            </stages>
+            <stages>
+                <name>Case_Details_Stage</name>
+            </stages>
+            <textTemplates>
+                <name>Flow_Title_Text_Template</name>
+            </textTemplates>
+            <textTemplates>
+                <name>Phone_Title_Template</name>
+            </textTemplates>
+            <textTemplates>
+                <name>Email_Title_Template</name>
+            </textTemplates>
+            <textTemplates>
+                <name>Contact_Error_Title_Template</name>
+            </textTemplates>
+            <textTemplates>
+                <name>Case_Created_Script_Template</name>
+            </textTemplates>
+            <textTemplates>
+                <name>Case_Details_Script_Template</name>
+            </textTemplates>
+            <textTemplates>
+                <name>Contact_Details_Script_Template</name>
+            </textTemplates>
+            <textTemplates>
+                <name>Customer_Name_Script_Template</name>
+            </textTemplates>
+        </flows>
+        <fullName>Contact_FD</fullName>
+    </flowDefinitions>
+    <flowDefinitions>
+        <flows />
+        <fullName>ManageAppointmentDates</fullName>
+    </flowDefinitions>
+    <flowDefinitions>
+        <flows>
+            <choices>
+                <name>csSocial</name>
+            </choices>
+            <choices>
+                <name>csPriv</name>
+            </choices>
+            <choices>
+                <name>chLAMal</name>
+            </choices>
+            <screens>
+                <fields>
+                    <name>ErrorDossier</name>
+                </fields>
+                <name>Error</name>
+            </screens>
+            <screens>
+                <fields>
+                    <name>Type_de_prestation</name>
+                </fields>
+                <fields>
+                    <name>Work_Type</name>
+                </fields>
+                <name>Types</name>
+            </screens>
+        </flows>
+        <fullName>NewPrestation</fullName>
+    </flowDefinitions>
+    <flowDefinitions>
+        <flows>
+            <choices>
+                <name>currentPrestation</name>
+            </choices>
+            <choices>
+                <name>allPurge</name>
+            </choices>
+            <choices>
+                <name>allPrest</name>
+            </choices>
+            <screens>
+                <fields>
+                    <name>Que_voulez_vous_faire</name>
+                </fields>
+                <fields>
+                    <name>Warning</name>
+                </fields>
+                <name>Pour_la_phase_de_tests_uniquement</name>
+            </screens>
+            <screens>
+                <fields>
+                    <name>warningtext</name>
+                </fields>
+                <name>WARNING2</name>
+            </screens>
+        </flows>
+        <fullName>Planification_ad_hoc</fullName>
+    </flowDefinitions>
+    <flowDefinitions>
+        <flows>
+            <screens>
+                <fields>
+                    <name>ErrorRecordType</name>
+                </fields>
+                <name>Message_d_erreur1</name>
+            </screens>
+            <screens>
+                <fields>
+                    <name>CaseExists</name>
+                </fields>
+                <name>Message_requ_te_existe</name>
+            </screens>
+        </flows>
+        <fullName>Prise_en_charge</fullName>
+    </flowDefinitions>
 </Translations>

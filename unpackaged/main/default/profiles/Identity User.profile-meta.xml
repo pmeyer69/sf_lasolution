@@ -1,6 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Profile xmlns="http://soap.sforce.com/2006/04/metadata">
     <applicationVisibilities>
+        <application>FSL__FieldService</application>
+        <default>false</default>
+        <visible>false</visible>
+    </applicationVisibilities>
+    <applicationVisibilities>
+        <application>FSL__FieldService_Admin</application>
+        <default>false</default>
+        <visible>false</visible>
+    </applicationVisibilities>
+    <applicationVisibilities>
+        <application>La_Solutionch</application>
+        <default>false</default>
+        <visible>true</visible>
+    </applicationVisibilities>
+    <applicationVisibilities>
+        <application>La_Solutionch_console</application>
+        <default>false</default>
+        <visible>true</visible>
+    </applicationVisibilities>
+    <applicationVisibilities>
         <application>Sales</application>
         <default>false</default>
         <visible>false</visible>
@@ -86,6 +106,15 @@
         <visible>false</visible>
     </applicationVisibilities>
     <custom>false</custom>
+    <customMetadataTypeAccesses>
+        <enabled>true</enabled>
+        <name>CMTD__EnhancedRelatedList__mdt</name>
+    </customMetadataTypeAccesses>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Account.AVS_number__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
         <field>Account.AccountSource</field>
@@ -133,6 +162,11 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
+        <field>Account.Segmentation_patient_patologie__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
         <field>Account.ShippingAddress</field>
         <readable>true</readable>
     </fieldPermissions>
@@ -153,6 +187,121 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
+        <field>Account.a_Assurance_lamal__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Account.a_Assurance_lca__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Account.a_Autre_provenance_de_la_demande__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Account.a_Autre_type_de_logement__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Account.a_Code_dentr_dimmeuble__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Account.a_Commentaire_medecin_specialiste__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Account.a_Commentaires_medecin_traitant__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Account.a_Curatelle_par__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Account.a_Etage__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Account.a_Etat_civil__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Account.a_Infirmire_referente__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Account.a_Medecin_specialiste__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Account.a_Medecin_traitant2__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Account.a_Numero_assure_LAMal__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Account.a_Numero_assure_LCA__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Account.a_Pharmacie__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Account.a_Planning_par_courier__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Account.a_Provenance_de_la_demande__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Account.a_Service_social__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Account.a_Sexe__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Account.a_Situation_sociale__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Account.a_Type_de_logement__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Account.a_situation_du_logement__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
         <field>AccountContactRelation.EndDate</field>
         <readable>true</readable>
     </fieldPermissions>
@@ -169,6 +318,36 @@
     <fieldPermissions>
         <editable>true</editable>
         <field>AccountContactRelation.StartDate</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>AccountContactRelation.a_AccountName__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>AccountContactRelation.a_AccountType__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>AccountContactRelation.a_ContactPhone__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>AccountContactRelation.a_ContactTitle__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>AccountContactRelation.a_Type_aide__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>AccountContactRelation.a_contactname__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
@@ -574,6 +753,11 @@
     <fieldPermissions>
         <editable>true</editable>
         <field>Contact.Title</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Contact.a_PrimaryAccountType__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
@@ -1014,6 +1198,51 @@
     <fieldPermissions>
         <editable>true</editable>
         <field>DataUsePurpose.LegalBasisId</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Dossier_intervention__c.Desciption_LAMal__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Dossier_intervention__c.Description_Fond_Soc__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Dossier_intervention__c.Description_Priv__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Dossier_intervention__c.Prise_en_charge_en_priv__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Dossier_intervention__c.Prise_en_charge_par_Lamal__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Dossier_intervention__c.Prise_en_charge_par_fondation_social__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Dossier_intervention__c.Si_accident_num_ro_du_sinistre__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Dossier_intervention__c.Type_de_prise_en_charge__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Dossier_intervention__c.Valide_au__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
@@ -2193,6 +2422,61 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
+        <field>ServiceAppointment.a_ActEndGeoTimestamp__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>ServiceAppointment.a_ActEndGeo__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>ServiceAppointment.a_ActEndLat__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>ServiceAppointment.a_ActEndLong__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>ServiceAppointment.a_ActStartGeoTimestamp__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>ServiceAppointment.a_ActStartGeo__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>ServiceAppointment.a_ActStartLat__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>ServiceAppointment.a_ActStartLong__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>ServiceAppointment.a_EffEndUser__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>ServiceAppointment.a_EffStartUser__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>ServiceAppointment.a_Patient__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
         <field>ServiceContract.AccountId</field>
         <readable>true</readable>
     </fieldPermissions>
@@ -2499,6 +2783,11 @@
     <fieldPermissions>
         <editable>true</editable>
         <field>SkillRequirement.SkillLevel</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Slots_to_Visiting_hours__c.Operating_Hours__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
@@ -3003,6 +3292,11 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
+        <field>WorkOrder.Dossier_intervention__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
         <field>WorkOrder.Duration</field>
         <readable>true</readable>
     </fieldPermissions>
@@ -3084,6 +3378,11 @@
     <fieldPermissions>
         <editable>true</editable>
         <field>WorkOrder.ParentWorkOrderId</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>WorkOrder.Patient__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
@@ -3204,6 +3503,76 @@
     <fieldPermissions>
         <editable>true</editable>
         <field>WorkOrder.WorkTypeId</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>WorkOrder.ZTriggerClone__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>WorkOrder.a_Derniere_fois_planifie_le__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>WorkOrder.a_Forcer_heure_slectionnee__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>WorkOrder.a_Frequence__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>WorkOrder.a_Jour_heure_premiere_prest__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>WorkOrder.a_Jours_de_semaine__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>WorkOrder.a_Premiere_prestation_le__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>WorkOrder.a_Prestation__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>WorkOrder.a_Prochaine_planification_le__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>WorkOrder.a_Recurrence_valide_au__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>WorkOrder.a_Recurrence_valide_du__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>WorkOrder.a_Slot__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>WorkOrder.a_Type_de_frequence__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>WorkOrder.a_Type_de_recurrence__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
@@ -3403,6 +3772,16 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
+        <field>WorkType.a_Code_facturation__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>WorkType.a_Reference__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
         <field>WorkTypeGroup.IsActive</field>
         <readable>true</readable>
     </fieldPermissions>
@@ -3453,6 +3832,26 @@
         <layout>Case-Custom Case Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
+        <layout>Case-Custom Case Layout</layout>
+        <recordType>Case.Nouvelle_demande</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Case-Custom Case Layout</layout>
+        <recordType>Case.Nouvelle_prestation_LAMal</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Case-Custom Case Layout</layout>
+        <recordType>Case.Nouvelle_prestation_privee</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Case-Custom Case Layout</layout>
+        <recordType>Case.Nouvelle_prestation_sociale</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Case-Custom Case Layout</layout>
+        <recordType>Case.Prise_charge</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
         <layout>CaseClose-Close Case Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
@@ -3495,6 +3894,9 @@
         <layout>DataUsePurpose-Data Use Purpose Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
+        <layout>Dossier_intervention__c-Dossier d%27intervention Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
         <layout>DuplicateRecordSet-Duplicate Record Set Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
@@ -3517,6 +3919,172 @@
     </layoutAssignments>
     <layoutAssignments>
         <layout>ExpenseReportEntry-Expense Report Entry Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>FSL__Crew_Management_User_Settings_Territory__c-FSL__Crew Management User Settings Territory Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>FSL__Crew_Management_User_Settings__c-FSL__Crew Management User Settings Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>FSL__Criteria__c-FSL__Criteria Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>FSL__FSL_Operation__c-FSL__FSL Operation Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>FSL__GanttPalette__c-FSL__Gantt Palette Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>FSL__Gantt_Filter__c-FSL__Gantt Filter Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>FSL__Geocode_Pulling_Settings__mdt-FSL__Geocode Pulling Settings Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>FSL__O2_Authorization_Info__mdt-FSL__O2 Authorization Info Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>FSL__O2_Settings__mdt-FSL__O2 Settings Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>FSL__O2_Toggle_Settings__mdt-FSL__O2 Settings Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>FSL__Optimization_Data__c-FSL__Optimization Data Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>FSL__Optimization_Request_Queue__c-FSL__Optimization Request Queue Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>FSL__Optimization_Request__c-FSL__Optimization Request Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>FSL__Polygon__c-FSL__Polygon Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>FSL__SLR_Cache__c-FSL__SLR Cache Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>FSL__SchedulingRecipe__c-FSL__Scheduling Recipe Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>FSL__Scheduling_Policy_Goal__c-FSL__Scheduling Policy Objective Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>FSL__Scheduling_Policy_Work_Rule__c-FSL__Scheduling Policy Work Rule Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>FSL__Scheduling_Policy__c-FSL__Scheduling Policy Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>FSL__Service_Goal__c-FSL__ASAP Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>FSL__Service_Goal__c-FSL__ASAP Layout</layout>
+        <recordType>FSL__Service_Goal__c.FSL__Objective_Asap</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>FSL__Service_Goal__c-FSL__ASAP Layout</layout>
+        <recordType>FSL__Service_Goal__c.FSL__Objective_Custom_Logic</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>FSL__Service_Goal__c-FSL__Minimize Overtime</layout>
+        <recordType>FSL__Service_Goal__c.FSL__Objective_Minimize_Overtime</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>FSL__Service_Goal__c-FSL__Minimize Travel Layout</layout>
+        <recordType>FSL__Service_Goal__c.FSL__Objective_Minimize_Travel</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>FSL__Service_Goal__c-FSL__Preferred Resource</layout>
+        <recordType>FSL__Service_Goal__c.FSL__Objective_PreferredEngineer</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>FSL__Service_Goal__c-FSL__Resource Priority Layout</layout>
+        <recordType>FSL__Service_Goal__c.FSL__Objective_Resource_Priority</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>FSL__Service_Goal__c-FSL__Skill Level</layout>
+        <recordType>FSL__Service_Goal__c.FSL__Objective_Skill_Level</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>FSL__Territory_Optimization_Request__c-FSL__Territory Optimization Request Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>FSL__Time_Dependency__c-FSL__Time Dependency Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>FSL__UserSetting__c-FSL__User Setting Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>FSL__User_Setting_Territory__c-FSL__User Setting Territory Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>FSL__User_Territory__c-FSL__User Territory Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>FSL__Work_Rule__c-FSL__Match Boolean %28Service%29 Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>FSL__Work_Rule__c-FSL__CountRule</layout>
+        <recordType>FSL__Work_Rule__c.FSL__Count_Rule</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>FSL__Work_Rule__c-FSL__Extended Match</layout>
+        <recordType>FSL__Work_Rule__c.FSL__Enhanced_Match_Service</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>FSL__Work_Rule__c-FSL__Work Rules %28Service%29 Layout</layout>
+        <recordType>FSL__Work_Rule__c.FSL__Excluded_Resources_Service</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>FSL__Work_Rule__c-FSL__Working Territories</layout>
+        <recordType>FSL__Work_Rule__c.FSL__Field_Working_Locations</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>FSL__Work_Rule__c-FSL__Resource Availability Layout</layout>
+        <recordType>FSL__Work_Rule__c.FSL__Gap_Rule_Service</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>FSL__Work_Rule__c-FSL__Match Boolean %28Service%29 Layout</layout>
+        <recordType>FSL__Work_Rule__c.FSL__Match_Boolean_Service</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>FSL__Work_Rule__c-FSL__Match Boolean %28Service%29 Layout</layout>
+        <recordType>FSL__Work_Rule__c.FSL__Match_Crew_Size_Service</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>FSL__Work_Rule__c-FSL__Match Fields %28Service%29 Layout</layout>
+        <recordType>FSL__Work_Rule__c.FSL__Match_Fields_Service</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>FSL__Work_Rule__c-FSL__Work Rules %28Service%29 Layout</layout>
+        <recordType>FSL__Work_Rule__c.FSL__Match_Location_Service</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>FSL__Work_Rule__c-FSL__Match Skills</layout>
+        <recordType>FSL__Work_Rule__c.FSL__Match_Skills_Service</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>FSL__Work_Rule__c-FSL__Maximum Travel From Homebase Layout</layout>
+        <recordType>FSL__Work_Rule__c.FSL__Max_Travel_From_Home_To_Service</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>FSL__Work_Rule__c-FSL__Work Rules %28Service%29 Layout</layout>
+        <recordType>FSL__Work_Rule__c.FSL__Required_Resources_Service</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>FSL__Work_Rule__c-FSL__Work Rules %28Service%29 Layout</layout>
+        <recordType>FSL__Work_Rule__c.FSL__Service_Visiting_Hours</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>FSL__Work_Rule__c-FSL__Match Boolean %28Service%29 Layout</layout>
+        <recordType>FSL__Work_Rule__c.FSL__TimeSlot_Designated_Work</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>FSL__Work_Rule__c-FSL__Time Rule Layout</layout>
+        <recordType>FSL__Work_Rule__c.FSL__Time_Rule_Service</recordType>
     </layoutAssignments>
     <layoutAssignments>
         <layout>FeedItem-Feed Item Layout</layout>
@@ -3584,7 +4152,11 @@
         <layout>OrderItem-Order Product Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
-        <layout>PersonAccount-Personne</layout>
+        <layout>PersonAccount-Autre personne</layout>
+        <recordType>PersonAccount.Autre_personne</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>PersonAccount-Patient</layout>
         <recordType>PersonAccount.PersonAccount</recordType>
     </layoutAssignments>
     <layoutAssignments>
@@ -3654,6 +4226,14 @@
         <layout>ResourceAbsence-Resource Absence Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
+        <layout>ResourceAbsence-FSL__FSL Resource Absence Layout</layout>
+        <recordType>ResourceAbsence.FSL__Break</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>ResourceAbsence-FSL__FSL Resource Absence Layout</layout>
+        <recordType>ResourceAbsence.FSL__Non_Availability</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
         <layout>ResourcePreference-Resource Preference Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
@@ -3672,7 +4252,7 @@
         <layout>ScorecardMetric-Scorecard Metric Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
-        <layout>ServiceAppointment-Service Appointment Layout</layout>
+        <layout>ServiceAppointment-FSL__FSL Service Appointment Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
         <layout>ServiceContract-Présentation du contrat de service</layout>
@@ -3684,7 +4264,7 @@
         <layout>ServiceCrewMember-Service Crew Member Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
-        <layout>ServiceResource-Service Resource Layout</layout>
+        <layout>ServiceResource-FSL__FSL Service Resource Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
         <layout>ServiceResourceCapacity-Resource Capacity Layout</layout>
@@ -3715,6 +4295,9 @@
     </layoutAssignments>
     <layoutAssignments>
         <layout>SkillRequirement-Skill Requirement Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Slots_to_Visiting_hours__c-Slots to Visiting hours Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
         <layout>SocialPersona-Social Persona Layout</layout>
@@ -3765,7 +4348,23 @@
         <layout>WorkBadgeDefinition-Badge Layout 192</layout>
     </layoutAssignments>
     <layoutAssignments>
-        <layout>WorkOrder-Work Order Layout</layout>
+        <layout>WorkOrder-FSL__FSL Work Order Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>WorkOrder-FSL__FSL Work Order Layout</layout>
+        <recordType>WorkOrder.Intervention</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>WorkOrder-Prestation layout</layout>
+        <recordType>WorkOrder.Prestation_LAMal</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>WorkOrder-Prestation layout</layout>
+        <recordType>WorkOrder.Prestation_privee</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>WorkOrder-Prestation layout</layout>
+        <recordType>WorkOrder.Prestation_sociale</recordType>
     </layoutAssignments>
     <layoutAssignments>
         <layout>WorkOrderLineItem-Work Order Line Item Layout</layout>
@@ -3792,7 +4391,7 @@
         <layout>WorkThanks-Thanks Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
-        <layout>WorkType-Work Type Layout</layout>
+        <layout>WorkType-FSL__FSL Work Type Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
         <layout>WorkTypeGroup-Work Type Group Layout</layout>
@@ -3801,6 +4400,141 @@
         <default>true</default>
         <recordType>Account.Business_account</recordType>
         <visible>true</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>false</default>
+        <recordType>Case.Nouvelle_demande</recordType>
+        <visible>false</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>false</default>
+        <recordType>Case.Nouvelle_prestation_LAMal</recordType>
+        <visible>false</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>false</default>
+        <recordType>Case.Nouvelle_prestation_privee</recordType>
+        <visible>false</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>false</default>
+        <recordType>Case.Nouvelle_prestation_sociale</recordType>
+        <visible>false</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>false</default>
+        <recordType>Case.Prise_charge</recordType>
+        <visible>false</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>false</default>
+        <recordType>FSL__Service_Goal__c.FSL__Objective_Asap</recordType>
+        <visible>false</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>false</default>
+        <recordType>FSL__Service_Goal__c.FSL__Objective_Custom_Logic</recordType>
+        <visible>false</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>false</default>
+        <recordType>FSL__Service_Goal__c.FSL__Objective_Minimize_Overtime</recordType>
+        <visible>false</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>false</default>
+        <recordType>FSL__Service_Goal__c.FSL__Objective_Minimize_Travel</recordType>
+        <visible>false</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>false</default>
+        <recordType>FSL__Service_Goal__c.FSL__Objective_PreferredEngineer</recordType>
+        <visible>false</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>false</default>
+        <recordType>FSL__Service_Goal__c.FSL__Objective_Resource_Priority</recordType>
+        <visible>false</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>false</default>
+        <recordType>FSL__Service_Goal__c.FSL__Objective_Skill_Level</recordType>
+        <visible>false</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>false</default>
+        <recordType>FSL__Work_Rule__c.FSL__Count_Rule</recordType>
+        <visible>false</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>false</default>
+        <recordType>FSL__Work_Rule__c.FSL__Enhanced_Match_Service</recordType>
+        <visible>false</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>false</default>
+        <recordType>FSL__Work_Rule__c.FSL__Excluded_Resources_Service</recordType>
+        <visible>false</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>false</default>
+        <recordType>FSL__Work_Rule__c.FSL__Field_Working_Locations</recordType>
+        <visible>false</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>false</default>
+        <recordType>FSL__Work_Rule__c.FSL__Gap_Rule_Service</recordType>
+        <visible>false</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>false</default>
+        <recordType>FSL__Work_Rule__c.FSL__Match_Boolean_Service</recordType>
+        <visible>false</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>false</default>
+        <recordType>FSL__Work_Rule__c.FSL__Match_Crew_Size_Service</recordType>
+        <visible>false</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>false</default>
+        <recordType>FSL__Work_Rule__c.FSL__Match_Fields_Service</recordType>
+        <visible>false</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>false</default>
+        <recordType>FSL__Work_Rule__c.FSL__Match_Location_Service</recordType>
+        <visible>false</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>false</default>
+        <recordType>FSL__Work_Rule__c.FSL__Match_Skills_Service</recordType>
+        <visible>false</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>false</default>
+        <recordType>FSL__Work_Rule__c.FSL__Max_Travel_From_Home_To_Service</recordType>
+        <visible>false</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>false</default>
+        <recordType>FSL__Work_Rule__c.FSL__Required_Resources_Service</recordType>
+        <visible>false</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>false</default>
+        <recordType>FSL__Work_Rule__c.FSL__Service_Visiting_Hours</recordType>
+        <visible>false</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>false</default>
+        <recordType>FSL__Work_Rule__c.FSL__TimeSlot_Designated_Work</recordType>
+        <visible>false</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>false</default>
+        <recordType>FSL__Work_Rule__c.FSL__Time_Rule_Service</recordType>
+        <visible>false</visible>
     </recordTypeVisibilities>
     <recordTypeVisibilities>
         <default>false</default>
@@ -3819,15 +4553,90 @@
     </recordTypeVisibilities>
     <recordTypeVisibilities>
         <default>false</default>
+        <recordType>PersonAccount.Autre_personne</recordType>
+        <visible>false</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>false</default>
         <recordType>PersonAccount.PersonAccount</recordType>
         <visible>false</visible>
     </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>false</default>
+        <recordType>ResourceAbsence.FSL__Break</recordType>
+        <visible>false</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>false</default>
+        <recordType>ResourceAbsence.FSL__Non_Availability</recordType>
+        <visible>false</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>true</default>
+        <recordType>WorkOrder.Intervention</recordType>
+        <visible>true</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>false</default>
+        <recordType>WorkOrder.Prestation_LAMal</recordType>
+        <visible>true</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>false</default>
+        <recordType>WorkOrder.Prestation_privee</recordType>
+        <visible>true</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>false</default>
+        <recordType>WorkOrder.Prestation_sociale</recordType>
+        <visible>true</visible>
+    </recordTypeVisibilities>
+    <tabVisibilities>
+        <tab>Dossier_intervention__c</tab>
+        <visibility>DefaultOff</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>FSL__FieldService</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>FSL__Master_Settings</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>FSL__Scheduling_Policy__c</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>FSL__Service_Goal__c</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>FSL__User_Territory__c</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>FSL__Work_Rule__c</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities>
     <tabVisibilities>
         <tab>Knowledge__kav</tab>
         <visibility>DefaultOn</visibility>
     </tabVisibilities>
     <tabVisibilities>
         <tab>MobileLanding</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>Slots_to_Visiting_hours__c</tab>
+        <visibility>DefaultOff</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>mobileLanding__Mobile_Landing_vf</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>mobileLanding__Non_Mobile_Landing</tab>
         <visibility>Hidden</visibility>
     </tabVisibilities>
     <tabVisibilities>

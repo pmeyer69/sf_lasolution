@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>a_Situation_sociale__c</fullName>
+    <externalId>false</externalId>
+    <label>Situation sociale</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>PC</fullName>
+                <default>false</default>
+                <label>PC</label>
+            </value>
+            <value>
+                <fullName>AI</fullName>
+                <default>false</default>
+                <label>AI</label>
+            </value>
+            <value>
+                <fullName>AVS</fullName>
+                <default>false</default>
+                <label>AVS</label>
+            </value>
+            <value>
+                <fullName>API - degré faible</fullName>
+                <default>false</default>
+                <label>API - degré faible</label>
+            </value>
+            <value>
+                <fullName>API - degré moyen</fullName>
+                <default>false</default>
+                <label>API - degré moyen</label>
+            </value>
+            <value>
+                <fullName>API - degré Grave</fullName>
+                <default>false</default>
+                <label>API - degré Grave</label>
+            </value>
+            <value>
+                <fullName>API - en cours</fullName>
+                <default>false</default>
+                <label>API - en cours</label>
+            </value>
+            <value>
+                <fullName>Curatelle</fullName>
+                <default>false</default>
+                <label>Curatelle</label>
+            </value>
+            <value>
+                <fullName>Subvention de l&apos;assurance maladie</fullName>
+                <default>false</default>
+                <label>Subvention de l&apos;assurance maladie</label>
+            </value>
+            <value>
+                <fullName>Contribution d&apos;assistance (AI)</fullName>
+                <default>false</default>
+                <label>Contribution d&apos;assistance (AI)</label>
+            </value>
+            <value>
+                <fullName>Suivi par un service social</fullName>
+                <default>false</default>
+                <label>Suivi par un service social</label>
+            </value>
+            <value>
+                <fullName>API - en cours, degr</fullName>
+                <default>false</default>
+                <label>API - en cours, degr</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>6</visibleLines>
+</CustomField>

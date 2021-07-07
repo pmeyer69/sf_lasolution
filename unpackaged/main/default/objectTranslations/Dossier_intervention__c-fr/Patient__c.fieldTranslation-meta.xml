@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label><!-- Patient --></label>
+        <lookupFilter>
+            <errorMessage><!-- Veuillez renseigner un patient --></errorMessage>
+        </lookupFilter>
+        <name>Patient__c</name>
+        <relationshipLabel><!-- Dossiers d&apos;intervention --></relationshipLabel>
+    </CustomFieldTranslation>

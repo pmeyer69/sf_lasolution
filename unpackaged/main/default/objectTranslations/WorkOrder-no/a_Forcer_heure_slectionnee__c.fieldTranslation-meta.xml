@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label><!-- Forcer l&apos;heure sélectionnée --></label>
+        <name>a_Forcer_heure_slectionnee__c</name>
+    </CustomFieldTranslation>

@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <article>Definite</article>
+        <plural>false</plural>
+        <value>Servicemålet</value>
+    </caseValues>
+    <caseValues>
+        <article>Indefinite</article>
+        <plural>false</plural>
+        <value>Ett servicemål</value>
+    </caseValues>
+    <caseValues>
+        <article>None</article>
+        <plural>false</plural>
+        <value>Servicemål</value>
+    </caseValues>
+    <caseValues>
+        <article>Definite</article>
+        <plural>true</plural>
+        <value>Servicemålen</value>
+    </caseValues>
+    <caseValues>
+        <article>Indefinite</article>
+        <plural>true</plural>
+        <value>Servicemål</value>
+    </caseValues>
+    <caseValues>
+        <article>None</article>
+        <plural>true</plural>
+        <value>Servicemål</value>
+    </caseValues>
+    
+    
+    
+    
+    
+    
+    
+    <gender>Neuter</gender>
+    <layouts>
+        <layout>ASAP Layout</layout>
+        <sections>
+            <label>Egna länkar</label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label>Fält</label>
+            <section>Fields</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Minimize Overtime</layout>
+        <sections>
+            <label>Egna länkar</label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label>Fält</label>
+            <section>Fields</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Minimize Travel Layout</layout>
+        <sections>
+            <label>Egna länkar</label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Preferred Resource</layout>
+        <sections>
+            <label>Egna länkar</label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label>Fält</label>
+            <section>Fields</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Resource Priority Layout</layout>
+        <sections>
+            <label>Egna länkar</label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label>Fält</label>
+            <section>Fields</section>
+        </sections>
+        <sections>
+            <label>Resursprioritetfält</label>
+            <section>Resource Priority Field</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Skill Level</layout>
+        <sections>
+            <label>Egna länkar</label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label>Fält</label>
+            <section>Fields</section>
+        </sections>
+    </layouts>
+    <nameFieldLabel>Servicemålnamn</nameFieldLabel>
+    <recordTypes>
+        <description><!-- Schedule as soon as possible --></description>
+        <label><!-- ASAP --></label>
+        <name>FSL__Objective_Asap</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Custom Objective --></description>
+        <label><!-- Custom Objective --></label>
+        <name>FSL__Objective_Custom_Logic</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Minimize the use of overtime --></description>
+        <label><!-- Minimize Overtime --></label>
+        <name>FSL__Objective_Minimize_Overtime</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Minimize travel time --></description>
+        <label><!-- Minimize Travel --></label>
+        <name>FSL__Objective_Minimize_Travel</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Prioritize scheduling according to preferred resource --></description>
+        <label><!-- Preferred Resource --></label>
+        <name>FSL__Objective_PreferredEngineer</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Prefer a resource based on a field value on the resource --></description>
+        <label><!-- Resource Priority --></label>
+        <name>FSL__Objective_Resource_Priority</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Prefer the least/most qualified candidate --></description>
+        <label><!-- Skill Level --></label>
+        <name>FSL__Objective_Skill_Level</name>
+    </recordTypes>
+    <validationRules>
+        <errorMessage><!-- Resource Priority Field should not be empty --></errorMessage>
+        <name>FSL__Resource_Priority_Not_Null</name>
+    </validationRules>
+</CustomObjectTranslation>

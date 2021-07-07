@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>a_Type_de_frequence__c</fullName>
+    <externalId>false</externalId>
+    <label>Type de fréquence</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Jours</fullName>
+                <default>false</default>
+                <label>Jours</label>
+            </value>
+            <value>
+                <fullName>Semaines</fullName>
+                <default>false</default>
+                <label>Semaines</label>
+            </value>
+            <value>
+                <fullName>Mois</fullName>
+                <default>false</default>
+                <label>Mois</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

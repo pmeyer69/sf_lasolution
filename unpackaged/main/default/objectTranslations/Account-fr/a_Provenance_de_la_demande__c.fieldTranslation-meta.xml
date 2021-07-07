@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label><!-- Provenance de la demande --></label>
+        <name>a_Provenance_de_la_demande__c</name>
+        <picklistValues>
+            <masterLabel>Autre</masterLabel>
+            <translation><!-- Autre --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CMS</masterLabel>
+            <translation><!-- CMS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Curateur</masterLabel>
+            <translation><!-- Curateur --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>EMS</masterLabel>
+            <translation><!-- EMS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Entourage</masterLabel>
+            <translation><!-- Entourage --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Fondation les Eglantines</masterLabel>
+            <translation><!-- Fondation les Eglantines --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Hôpital/Clinique</masterLabel>
+            <translation><!-- Hôpital/Clinique --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Médecin traitant</masterLabel>
+            <translation><!-- Médecin traitant --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Patient</masterLabel>
+            <translation><!-- Patient --></translation>
+        </picklistValues>
+    </CustomFieldTranslation>

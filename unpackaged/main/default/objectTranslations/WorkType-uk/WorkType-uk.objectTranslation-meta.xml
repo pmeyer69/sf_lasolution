@@ -3,12 +3,20 @@
     <layouts>
         <layout>FSL Work Type Layout</layout>
         <sections>
-            <label>Планування пов&apos;язане</label>
-            <section>Scheduling Related</section>
+            <label><!-- Codes --></label>
+            <section>Codes</section>
+        </sections>
+        <sections>
+            <label><!-- Planification --></label>
+            <section>Planification</section>
         </sections>
         <sections>
             <label>Редактор навичок</label>
             <section>Skills Editor</section>
         </sections>
     </layouts>
+    
+    
+    
+    
 </CustomObjectTranslation>

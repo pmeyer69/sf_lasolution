@@ -165,5 +165,5 @@
         <searchResultsAdditionalFields>ArrivalWindowStartTime</searchResultsAdditionalFields>
         <searchResultsAdditionalFields>ArrivalWindowEndTime</searchResultsAdditionalFields>
     </searchLayouts>
-    <sharingModel>Private</sharingModel>
+    <sharingModel>Read</sharingModel>
 </CustomObject>

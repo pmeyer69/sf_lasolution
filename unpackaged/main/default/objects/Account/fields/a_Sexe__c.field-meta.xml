@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>a_Sexe__c</fullName>
+    <externalId>false</externalId>
+    <label>Sexe</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Femme</fullName>
+                <default>false</default>
+                <label>Femme</label>
+            </value>
+            <value>
+                <fullName>Homme</fullName>
+                <default>false</default>
+                <label>Homme</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>
