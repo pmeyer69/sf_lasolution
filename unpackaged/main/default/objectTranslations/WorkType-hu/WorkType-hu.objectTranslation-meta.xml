@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <layouts>
+        <layout>FSL Work Type Layout</layout>
+        <sections>
+            <label>Kapcsolódó ütemezése</label>
+            <section>Scheduling Related</section>
+        </sections>
+        <sections>
+            <label>Szaktudásszerkesztő</label>
+            <section>Skills Editor</section>
+        </sections>
+    </layouts>
+</CustomObjectTranslation>

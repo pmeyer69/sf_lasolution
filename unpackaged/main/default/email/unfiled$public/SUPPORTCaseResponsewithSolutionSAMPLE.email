@@ -1,0 +1,1 @@
+Chère/Cher {!Contact.FirstName},   {!Case.Solution_Description}   Merci,   {!User.Name}  {!Organization.Name}     Votre commentaire :    {!Case.Description}   {!Case.Solution_Attachments}

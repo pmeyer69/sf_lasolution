@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <layouts>
+        <layout>FSL Service Appointment Layout</layout>
+        <sections>
+            <label>Адрес</label>
+            <section>Address</section>
+        </sections>
+        <sections>
+            <label>Консоль отправителя</label>
+            <section>Dispatcher Console</section>
+        </sections>
+        <sections>
+            <label>Ограничения по времени</label>
+            <section>Time Constraints</section>
+        </sections>
+    </layouts>
+    <quickActions>
+        <label><!-- SendEmail --></label>
+        <name>SendEmail</name>
+    </quickActions>
+</CustomObjectTranslation>

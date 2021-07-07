@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Notification interne au responsable de la requête lorsqu&apos;une requête est attribuée.</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>SUPPORT : Notification d&apos;une nouvelle attribution (EXEMPLE)</name>
+    <style>none</style>
+    <subject>La requête n° {!Case.CaseNumber} : {!Case.Subject} vient de vous être attribuée.</subject>
+    <type>text</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

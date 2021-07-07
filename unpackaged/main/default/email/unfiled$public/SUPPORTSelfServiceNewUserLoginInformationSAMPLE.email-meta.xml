@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Notification du nom de connexion et du mot de passe à un nouvel utilisateur en libre-service</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>SUPPORT : Informations en libre-service de connexion d&apos;un nouvel utilisateur (EX</name>
+    <style>none</style>
+    <subject>Vos nom d&apos;utilisateur et mot de passe libre-service de {!Organization.Name}</subject>
+    <type>text</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Réponse automatique lorsqu&apos;une nouvelle requête est soumise en ligne.</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>SUPPORT : Réponse à un e-mail Web vers requête (EXEMPLE)</name>
+    <style>none</style>
+    <subject>Requête n° {!Case.CaseNumber} {!Organization.Name} :  {!Case.Subject}</subject>
+    <type>text</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

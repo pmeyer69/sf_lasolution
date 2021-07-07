@@ -1,0 +1,1 @@
+*** ALERTE DE HIÉRARCHISATION DE LA REQUÊTE ***  La requête suivante a été hiérarchisée :   Entreprise : {!Account.Name}  Requête : {!Case.CaseNumber} : {!Case.Subject}  Responsable : {!CaseOwner.FullName}    Cliquez sur le lien pour accéder à la requête :  {!Case.Link}

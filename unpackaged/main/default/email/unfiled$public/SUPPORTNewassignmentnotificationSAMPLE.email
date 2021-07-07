@@ -1,0 +1,1 @@
+*** NOTIFICATION D'ATTRIBUTION DE NOUVELLE REQUÊTE ***  La requête suivante vient de vous être attribuée.   Entreprise : {!Account.Name}  Nom du contact : {!Contact.Name}  Requête n° : {!Case.CaseNumber}  Objet : {!Case.Subject}  Description : {!Case.Description}   Cliquez sur le lien pour accéder à la requête :  {!Case.Link}

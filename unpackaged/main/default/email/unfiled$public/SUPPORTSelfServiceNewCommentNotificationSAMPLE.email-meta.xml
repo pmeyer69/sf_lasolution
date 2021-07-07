@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Exemple de modèle d&apos;e-mail pouvant être envoyé à vos clients en libre-service pour leur signaler qu&apos;un commentaire a été ajouté à leur requête.</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>SUPPORT : Notification de nouveau commentaire sur le libre-service (EXEMPLE)</name>
+    <style>none</style>
+    <subject>Votre requête {!Case.CaseNumber} a été mise à jour</subject>
+    <type>text</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

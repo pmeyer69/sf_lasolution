@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Réponse automatique lorsqu&apos;une nouvelle piste est soumise en ligne.</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>Pistes : Réponse à un e-mail Web vers piste (EXEMPLE)</name>
+    <style>none</style>
+    <subject>{!Organization.Name} : merci pour votre demande</subject>
+    <type>text</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

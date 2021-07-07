@@ -1,0 +1,1 @@
+Chère/cher {!Case.SuppliedName},     Merci de nous avoir soumis votre question en ligne. La requête n° {!Case.CaseNumber} : {!Case.Subject} a été créée et un conseiller client {!Organization.Name} va vous répondre très prochainement.     Merci,    L'équipe des conseillers clients {!Organization.Name}

@@ -1,0 +1,1 @@
+Votre requête n° {!Case.CaseNumber} : {!Case.Subject} a été mise à jour. Cliquez sur le lien ci-dessous pour l'afficher sur le portail libre-service. <insérez ici le lien vers la page de connexion à votre portail libre-service>  Support client {!Organization.Name}

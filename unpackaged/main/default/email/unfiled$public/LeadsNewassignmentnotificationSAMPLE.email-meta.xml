@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Notification interne au responsable de la piste lorsqu&apos;une nouvelle piste est attribuée.</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>Pistes : Notification d&apos;une nouvelle attribution (EXEMPLE)</name>
+    <style>none</style>
+    <subject>Nouvelle piste vous étant attribuée :  {!Lead.Name} de {!Lead.Company}</subject>
+    <type>text</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

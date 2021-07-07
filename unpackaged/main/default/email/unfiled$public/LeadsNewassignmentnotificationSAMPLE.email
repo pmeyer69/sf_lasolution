@@ -1,0 +1,1 @@
+*** NOTIFICATION D'ATTRIBUTION DE NOUVELLE PISTE ***  La piste suivante vient de vous être attribuée.   Entreprise : {!Lead.Company}  Nom de la piste : {!Lead.Name}   Cliquez sur le lien pour accéder directement à la piste :  {!Lead.Link}

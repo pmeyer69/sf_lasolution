@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StandardValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sorted>false</sorted>
+    <standardValue>
+        <fullName>Utilisateur professionnel</fullName>
+        <default>false</default>
+        <label>Utilisateur professionnel</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Décideur</fullName>
+        <default>false</default>
+        <label>Décideur</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Acheteur économique</fullName>
+        <default>false</default>
+        <label>Acheteur économique</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Décideur économique</fullName>
+        <default>false</default>
+        <label>Décideur économique</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Évaluateur</fullName>
+        <default>false</default>
+        <label>Évaluateur</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Parrain</fullName>
+        <default>false</default>
+        <label>Parrain</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Prescripteur</fullName>
+        <default>false</default>
+        <label>Prescripteur</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Acheteur technique</fullName>
+        <default>false</default>
+        <label>Acheteur technique</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Autre</fullName>
+        <default>false</default>
+        <label>Autre</label>
+    </standardValue>
+</StandardValueSet>

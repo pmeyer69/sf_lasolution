@@ -1,0 +1,1 @@
+Chère/cher {!Contact.FirstName},    Notre discussion d'aujourd'hui a été un réel plaisir pour moi. Je pense que {!Organization.Name} peut apporter énormément à {!Account.Name} et j'attends avec impatience notre prochaine réunion.    Cordialement,  {!User.FirstName}

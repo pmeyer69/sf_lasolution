@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Notification interne lorsqu&apos;une requête est hiérarchisée.</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>SUPPORT : Notification de hiérarchisation de requête (EXEMPLE)</name>
+    <style>none</style>
+    <subject>La requête n° {!Case.CaseNumber} : {!Case.Subject} a été hiérarchisée.</subject>
+    <type>text</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>
