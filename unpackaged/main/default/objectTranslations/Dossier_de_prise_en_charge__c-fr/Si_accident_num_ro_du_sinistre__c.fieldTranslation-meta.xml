@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label><!-- Si accident, numéro du sinistre --></label>
+        <name>Si_accident_num_ro_du_sinistre__c</name>
+    </CustomFieldTranslation>

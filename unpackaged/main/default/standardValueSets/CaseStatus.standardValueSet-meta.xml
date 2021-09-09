@@ -31,4 +31,88 @@
         <label>Critical</label>
         <closed>false</closed>
     </standardValue>
+    <standardValue>
+        <fullName>Qualification</fullName>
+        <default>false</default>
+        <label>Qualification</label>
+        <closed>false</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>Compléter dossier social / fondation</fullName>
+        <default>false</default>
+        <label>Compléter dossier social / fondation</label>
+        <closed>false</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>Compléter la prestation</fullName>
+        <default>false</default>
+        <label>Compléter la prestation</label>
+        <closed>false</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>Validation OPAS</fullName>
+        <default>false</default>
+        <label>Validation OPAS</label>
+        <closed>false</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>Transmission à la facturation</fullName>
+        <default>false</default>
+        <label>Transmission à la facturation</label>
+        <closed>false</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>Valider la prestation</fullName>
+        <default>false</default>
+        <label>Valider la prestation</label>
+        <closed>false</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>Dossier patient</fullName>
+        <default>false</default>
+        <label>Dossier patient</label>
+        <closed>false</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>Définition des prestations</fullName>
+        <default>false</default>
+        <label>Définition des prestations</label>
+        <closed>false</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>Finalisation</fullName>
+        <default>false</default>
+        <label>Finalisation</label>
+        <closed>false</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>Ferme (prise en charge)</fullName>
+        <default>false</default>
+        <label>Fermé (prise en charge)</label>
+        <closed>true</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>Ferme (renseignements)</fullName>
+        <default>false</default>
+        <label>Fermé (renseignements)</label>
+        <closed>true</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>Ferme (sans renseignements)</fullName>
+        <default>false</default>
+        <label>Fermé (sans renseignements)</label>
+        <closed>true</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>Ferme (abandon de la demande)</fullName>
+        <default>false</default>
+        <label>Ferme (abandon de la demande)</label>
+        <closed>true</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>Fermé (prestation validée)</fullName>
+        <default>false</default>
+        <label>Fermé (prestation validée)</label>
+        <closed>true</closed>
+    </standardValue>
 </StandardValueSet>

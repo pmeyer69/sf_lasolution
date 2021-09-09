@@ -1,0 +1,366 @@
+<!-- sldsValidatorIgnore -->
+<template>
+
+    <!-- CREATE ACTE -->
+    <template if:true={isModalCreateOpen}>
+        <section role="dialog" tabindex="-1" aria-labelledby="modal-heading-01" aria-modal="true" aria-describedby="modal-content-id-1" class="slds-modal slds-fade-in-open">
+            <div class="slds-modal__container">
+                <header class="slds-modal__header"> 
+                    <button class="slds-button slds-button_icon slds-modal__close slds-button_icon-inverse" title="Close">
+                        <lightning-icon variant="inverse" onclick={closeCreateModal} alternative-text="close" icon-name="utility:close" size="small"></lightning-icon>
+                      </button>
+                      <h2 id="modal-heading-01" class="slds-modal__title slds-hyphenate">Ajouter un Acte</h2>
+                </header>
+                <div class="slds-modal__content slds-var-p-around_medium" id="modal-content-id-1" >
+                
+                    <div class="slds-theme--shade slds-m-horizontal_medium slds-section__title">
+                        <h3 class="section-header-title slds-var-p-horizontal_small">
+                            Acte
+                        </h3>
+                    </div> 
+                    <div class="slds-var-m-around_medium">
+                        <lightning-input 
+                            type="search"
+                            onchange={handleKeyChange}
+                            class="slds-var-m-around_medium"
+                            label="Search"
+                        ></lightning-input>
+                        <template if:true={showActesListFlag}>
+                            <div class="slds-var-m-around_medium slds-dropdown slds-dropdown_length-with-icon-7 slds-dropdown_fluid">
+                                <template for:each={searchedCatalogues} for:item="searchedCatalogue" >
+                                    <lightning-menu-item 
+                                    label={searchedCatalogue.menuDisplay}
+                                    key={searchedCatalogue.Id}
+                                    onclick={handleMenuSelect}
+                                    data-id={searchedCatalogue.Id}
+                                    >
+                                    </lightning-menu-item>
+                                </template>
+                            </div>
+                        </template>
+                    </div>
+                    <lightning-card>
+                        <lightning-record-edit-form object-api-name="WorkOrder" 
+                                                    record-type-id="0129E000000FFcrQAG"
+                                                    onsuccess={handleCreateSuccess}>
+                                <!-- INFORMATION -->
+                                <div class="slds-theme--shade slds-m-horizontal_medium slds-section__title">
+                                    <h3 class="section-header-title slds-var-p-horizontal_small">
+                                        Informations
+                                    </h3>
+                                </div>    
+
+                                    <div class="slds-grid slds-wrap slds-var-p-around_large">
+                                        <div class="slds-size_1-of-2  slds-var-p-around_large">
+                                            <lightning-input-field field-name="Code_InterRAI__c" disabled value={selectedCatalogueItem.Code_InterRAI__c}>
+                                            </lightning-input-field>
+                                        </div>
+                                        <div class="slds-size_1-of-2  slds-var-p-around_large">
+                                            <lightning-input-field field-name="WorkTypeId" disabled value={selectedCatalogueItem.WorkTypeId}>
+                                            </lightning-input-field>
+                                        </div>
+                                        <div class="slds-size_2-of-2  slds-var-p-around_large">
+                                            <lightning-input-field field-name="Acte__c" disabled value={selectedCatalogueItem.Subject}>
+                                            </lightning-input-field>
+                                        </div>
+                                        <div class="slds-size_2-of-2  slds-var-p-around_large">
+                                            <lightning-input-field field-name="Groupe_InterRAI__c" disabled value={selectedCatalogueItem.Groupe_InterRAI__c}>
+                                            </lightning-input-field>
+                                        </div>
+                                        <div class="slds-size_1-of-2  slds-var-p-around_large">
+                                            <lightning-input-field field-name="Nb_InterRAI__c" disabled value={selectedCatalogueItem.Nb_InterRAI__c}>
+                                            </lightning-input-field>
+                                        </div>
+                                        <div class="slds-size_1-of-2  slds-var-p-around_large">
+                                            <lightning-input-field field-name="Fr_quence_InterRAI__c" disabled value={selectedCatalogueItem.Fr_quence_InterRAI__c}>
+                                            </lightning-input-field>
+                                        </div>
+                                        <div class="slds-size_2-of-2  slds-var-p-around_large">
+                                            <lightning-input-field field-name="Temps__c" value={selectedCatalogueItem.Temps_InterRAI__c}>
+                                            </lightning-input-field>
+                                        </div>
+                                        <div class="slds-size_1-of-2  slds-var-p-around_large">
+                                            <lightning-input-field field-name="Code_LaMAL__c" disabled value={selectedCatalogueItem.Code_LaMAL__c}>
+                                            </lightning-input-field>
+                                        </div>
+                                        <div class="slds-size_1-of-2  slds-var-p-around_large">
+                                            <lightning-input-field field-name="Code_de_facturation__c" disabled value={selectedCatalogueItem.Code_de_facturation__c}>
+                                            </lightning-input-field>
+                                        </div>
+                                    </div> 
+                                
+                                <!-- Description -->
+                                <div class="slds-theme--shade slds-m-horizontal_medium slds-section__title">
+                                    <h3 class="section-header-title slds-var-p-horizontal_small">
+                                        Remarque
+                                    </h3>
+                                </div>
+                                <div class="slds-grid slds-wrap slds-modal__content slds-var-p-around_large">
+                                    <div class="slds-size_2-of-2  slds-var-p-around_large">
+                                        <lightning-input-field field-name="Remarque_de_l_inf_r_f__c">
+                                        </lightning-input-field>
+                                    </div>
+                                </div>
+
+                                <!-- Associé à -->
+                                <div class="slds-theme--shade slds-m-horizontal_medium slds-section__title">
+                                    <h3 class="section-header-title slds-var-p-horizontal_small">
+                                        Associé à
+                                    </h3>
+                                </div>  
+                                <div class="slds-grid slds-wrap slds-modal__content slds-var-p-around_large">
+                                    <div class="slds-size_2-of-2  slds-var-p-around_large">
+                                        <lightning-input-field field-name="Patient__c" disabled  value={patientId}>
+                                        </lightning-input-field>
+                                    </div>
+                                    <div class="slds-size_2-of-2  slds-var-p-around_large">
+                                        <lightning-input-field field-name="Dossier_de_prise_en_charge__c" disabled value={dossierPriseChargeId} >
+                                        </lightning-input-field>
+                                    </div>
+                                    <div class="slds-size_2-of-2  slds-var-p-around_large">
+                                        <lightning-input-field field-name="a_Prestation__c" disabled value={prestationId}>
+                                        </lightning-input-field>
+                                    </div> 
+                                </div>
+                                <footer class="slds-modal__footer slds-box_x-small">
+                                    <ul class="slds-button-group-row">
+                                        <li class="slds-button-group-item">
+                                            <lightning-button class="slds-var-m-top_small" variant="neutral" name="Cancel" label="Cancel" onclick={closeCreateModal}></lightning-button>
+                                        </li>
+                                        <li class="slds-button-group-item">
+                                            <lightning-button class="slds-var-m-top_small" variant="brand" type="submit" name="Save" label="Save"></lightning-button>
+                                        </li>
+                                    </ul>
+                                </footer>
+                        </lightning-record-edit-form>
+                    </lightning-card>
+                </div>
+            </div>
+        </section>
+        <div class="slds-backdrop slds-backdrop_open"></div>
+    </template>
+
+
+
+
+
+
+    <!-- EDIT ACTE -->
+    <template if:true={isModalEditOpen}>
+        <section role="dialog" tabindex="-1" aria-labelledby="modal-heading-01" aria-modal="true" aria-describedby="modal-content-id-1" class="slds-modal slds-fade-in-open">
+            <div class="slds-modal__container">
+                <header class="slds-modal__header"> 
+                    <button class="slds-button slds-button_icon slds-modal__close slds-button_icon-inverse" title="Close">
+                        <lightning-icon variant="inverse" onclick={closeEditModal} alternative-text="close" icon-name="utility:close" size="small"></lightning-icon>
+                        </button>
+                        <h2 id="modal-heading-02" class="slds-modal__title slds-hyphenate">Actes</h2>
+                </header>
+                <div class="slds-modal__content slds-var-p-around_medium" id="modal-content-id-2" >
+                
+
+
+                    <lightning-card>
+                        <lightning-record-edit-form record-id={recordId}
+                                                    object-api-name="WorkOrder" 
+                                                    record-type-id="0129E000000FFcrQAG"
+                                                    onsuccess={handleEditSuccess}>
+                                <!-- INFORMATION -->
+                                <div class="slds-theme--shade slds-m-horizontal_medium slds-section__title">
+                                    <h3 class="section-header-title slds-var-p-horizontal_small">
+                                        Informations
+                                    </h3>
+                                </div>                        
+                                <div class="slds-grid slds-wrap slds-var-p-around_large">
+                                    <div class="slds-size_1-of-2  slds-var-p-around_large">
+                                        <lightning-input-field field-name="Code_InterRAI__c" disabled >
+                                        </lightning-input-field>
+                                    </div>
+                                    <div class="slds-size_1-of-2  slds-var-p-around_large">
+                                        <lightning-input-field field-name="WorkTypeId" disabled>
+                                        </lightning-input-field>
+                                    </div>
+                                    <div class="slds-size_2-of-2  slds-var-p-around_large">
+                                        <lightning-input-field field-name="Acte__c" disabled>
+                                        </lightning-input-field>
+                                    </div>
+                                    <div class="slds-size_2-of-2  slds-var-p-around_large">
+                                        <lightning-input-field field-name="Groupe_InterRAI__c" disabled >
+                                        </lightning-input-field>
+                                    </div>
+                                    <div class="slds-size_1-of-2  slds-var-p-around_large">
+                                        <lightning-input-field field-name="Nb_InterRAI__c" disabled >
+                                        </lightning-input-field>
+                                    </div>
+                                    <div class="slds-size_1-of-2  slds-var-p-around_large">
+                                        <lightning-input-field field-name="Fr_quence_InterRAI__c" disabled >
+                                        </lightning-input-field>
+                                    </div>
+                                    <div class="slds-size_2-of-2  slds-var-p-around_large">
+                                        <lightning-input-field field-name="Temps__c" >
+                                        </lightning-input-field>
+                                    </div>
+                                    <div class="slds-size_1-of-2  slds-var-p-around_large">
+                                        <lightning-input-field field-name="Code_LaMAL__c" disabled >
+                                        </lightning-input-field>
+                                    </div>
+                                    <div class="slds-size_1-of-2  slds-var-p-around_large">
+                                        <lightning-input-field field-name="Code_de_facturation__c" disabled >
+                                        </lightning-input-field>
+                                    </div>
+                                </div> 
+
+                                <!-- Description -->
+                                <div class="slds-theme--shade slds-m-horizontal_medium slds-section__title">
+                                    <h3 class="section-header-title slds-var-p-horizontal_small">
+                                        Remarque
+                                    </h3>
+                                </div>
+                                <div class="slds-grid slds-wrap slds-modal__content slds-var-p-around_large">
+                                    <div class="slds-size_2-of-2  slds-var-p-around_large">
+                                        <lightning-input-field field-name="Remarque_de_l_inf_r_f__c">
+                                        </lightning-input-field>
+                                    </div>
+                                </div>
+
+                                <!-- Associé à -->
+                                <div class="slds-theme--shade slds-m-horizontal_medium slds-section__title">
+                                    <h3 class="section-header-title slds-var-p-horizontal_small">
+                                        Associé à
+                                    </h3>
+                                </div>  
+                                <div class="slds-grid slds-wrap slds-modal__content slds-var-p-around_large">
+                                    <div class="slds-size_2-of-2  slds-var-p-around_large">
+                                        <lightning-input-field field-name="Patient__c" disabled  >
+                                        </lightning-input-field>
+                                    </div>
+                                    <div class="slds-size_2-of-2  slds-var-p-around_large">
+                                        <lightning-input-field field-name="Dossier_de_prise_en_charge__c" disabled  >
+                                        </lightning-input-field>
+                                    </div>
+                                    <div class="slds-size_2-of-2  slds-var-p-around_large">
+                                        <lightning-input-field field-name="a_Prestation__c" disabled >
+                                        </lightning-input-field>
+                                    </div> 
+                                </div>
+
+                                <footer class="slds-modal__footer slds-box_x-small">
+                                    <ul class="slds-button-group-row">
+                                        <li class="slds-button-group-item">
+                                            <lightning-button class="slds-var-m-top_small" variant="neutral" name="Cancel" label="Cancel" onclick={closeEditModal}></lightning-button>
+                                        </li>
+                                        <li class="slds-button-group-item">
+                                            <lightning-button class="slds-var-m-top_small" variant="brand" type="submit" name="Save" label="Save"></lightning-button>
+                                        </li>
+                                    </ul>
+                                </footer>
+                        </lightning-record-edit-form>
+                    </lightning-card>
+                </div>
+            </div>
+        </section>
+        <div class="slds-backdrop slds-backdrop_open"></div>
+    </template>
+
+    <!-- READ ONLY ACTE -->
+    <template if:true={isModalReadOnlyOpen}>
+        <section role="dialog" tabindex="-1" aria-labelledby="modal-heading-0" aria-modal="true" aria-describedby="modal-content-id-1" class="slds-modal slds-fade-in-open">
+            <div class="slds-modal__container">
+                <header class="slds-modal__header"> 
+                    <button class="slds-button slds-button_icon slds-modal__close slds-button_icon-inverse" title="Close">
+                        <lightning-icon variant="inverse" onclick={closeReadOnlyModal} alternative-text="close" icon-name="utility:close" size="small"></lightning-icon>
+                        </button>
+                        <h2 id="modal-heading-03" class="slds-modal__title slds-hyphenate">Actes</h2>
+                </header>
+                <div class="slds-modal__content slds-var-p-around_medium" id="modal-content-id-3" >
+                    <lightning-card>
+                        <lightning-record-view-form record-id={recordId}
+                                                    object-api-name="WorkOrder" 
+                                                    record-type-id="0129E000000FFcrQAG">
+                                <!-- INFORMATION -->
+                                <div class="slds-theme--shade slds-m-horizontal_medium slds-section__title">
+                                    <h3 class="section-header-title slds-var-p-horizontal_small">
+                                        Informations
+                                    </h3>
+                                </div>                        
+                                <div class="slds-grid slds-wrap slds-var-p-around_large">
+                                    <div class="slds-size_1-of-2  slds-var-p-around_large">
+                                        <lightning-output-field field-name="Code_InterRAI__c" >
+                                        </lightning-output-field>
+                                    </div>
+                                    <div class="slds-size_1-of-2  slds-var-p-around_large">
+                                        <lightning-output-field field-name="WorkTypeId">
+                                        </lightning-output-field>
+                                    </div>
+                                    <div class="slds-size_2-of-2  slds-var-p-around_large">
+                                        <lightning-output-field field-name="Acte__c" >
+                                        </lightning-output-field>
+                                    </div>
+                                    <div class="slds-size_2-of-2  slds-var-p-around_large">
+                                        <lightning-output-field field-name="Groupe_InterRAI__c">
+                                        </lightning-output-field>
+                                    </div>
+                                    <div class="slds-size_1-of-2  slds-var-p-around_large">
+                                        <lightning-output-field field-name="Nb_InterRAI__c">
+                                        </lightning-output-field>
+                                    </div>
+                                    <div class="slds-size_1-of-2  slds-var-p-around_large">
+                                        <lightning-output-field field-name="Fr_quence_InterRAI__c">
+                                        </lightning-output-field>
+                                    </div>
+                                    <div class="slds-size_2-of-2  slds-var-p-around_large">
+                                        <lightning-output-field field-name="Temps__c" >
+                                        </lightning-output-field>
+                                    </div>
+                                    <div class="slds-size_1-of-2  slds-var-p-around_large">
+                                        <lightning-output-field field-name="Code_LaMAL__c">
+                                        </lightning-output-field>
+                                    </div>
+                                    <div class="slds-size_1-of-2  slds-var-p-around_large">
+                                        <lightning-output-field field-name="Code_de_facturation__c" >
+                                        </lightning-output-field>
+                                    </div>
+                                </div> 
+
+                                <!-- Description -->
+                                <div class="slds-theme--shade slds-m-horizontal_medium slds-section__title">
+                                    <h3 class="section-header-title slds-var-p-horizontal_small">
+                                        Remarque
+                                    </h3>
+                                </div>
+                                <div class="slds-grid slds-wrap slds-var-p-around_large">
+                                    <div class="slds-size_2-of-2  slds-var-p-around_large">
+                                        <lightning-output-field field-name="Remarque_de_l_inf_r_f__c">
+                                        </lightning-output-field>
+                                    </div>
+                                </div>
+
+                                <!-- Associé à -->
+                                <div class="slds-theme--shade slds-m-horizontal_medium slds-section__title">
+                                    <h3 class="section-header-title slds-var-p-horizontal_small">
+                                        Associé à
+                                    </h3>
+                                </div>  
+                                <div class="slds-grid slds-wrap slds-var-p-around_large">
+                                    <div class="slds-size_2-of-2  slds-var-p-around_large">
+                                        <lightning-output-field field-name="Patient__c">
+                                        </lightning-output-field>
+                                    </div>
+                                    <div class="slds-size_2-of-2  slds-var-p-around_large">
+                                        <lightning-output-field field-name="Dossier_de_prise_en_charge__c">
+                                        </lightning-output-field>
+                                    </div>
+                                    <div class="slds-size_2-of-2  slds-var-p-around_large">
+                                        <lightning-output-field field-name="a_Prestation__c">
+                                        </lightning-output-field>
+                                    </div> 
+                                </div>
+                        </lightning-record-view-form>
+                    </lightning-card>
+                </div>
+            </div>
+        </section>
+        <div class="slds-backdrop slds-backdrop_open"></div>
+    </template>
+
+
+</template>

@@ -1,0 +1,16 @@
+<template>
+    <lightning-card>
+        <lightning-tabset>
+            <lightning-tab label="Prestations">
+                <lightning-card >
+                    <c-prestation-record-list dossier-prise-charge-id={dossierPriseChargeId}  patient-id={patientId} plan-intervention-id={recordId} is-plan-in-progress={isPlanInProgress}  ondeleteprestation={handleDeletePrestation} ></c-prestation-record-list> 
+                </lightning-card>  
+            </lightning-tab>
+            <lightning-tab label="Actes">
+                <lightning-card>
+                    <c-actes-record-list has-to-be-refresh={refreshActesTab} data-id='actelist' plan-intervention-id={recordId}></c-actes-record-list>
+                </lightning-card>  
+            </lightning-tab>
+        </lightning-tabset>    
+    </lightning-card>  
+</template>

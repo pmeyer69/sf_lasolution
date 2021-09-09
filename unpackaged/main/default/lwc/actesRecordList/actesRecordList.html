@@ -1,0 +1,19 @@
+<!-- sldsValidatorIgnore -->
+<template>
+    <lightning-card>
+        <lightning-datatable if:true={actes}
+            key-field="id"
+            data={actes}
+            columns={columns}
+            hide-checkbox-column
+            onrowaction={handleRowAction}
+            onsort={updateColumnSorting}
+            sorted-by={sortBy}
+            sorted-direction={sortDirection}
+            >
+        </lightning-datatable>
+    </lightning-card>
+    <div>
+        <c-acte-record-modal record-id={selectedRecordId}></c-acte-record-modal>
+    </div>
+</template>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StandardValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sorted>false</sorted>
+    <standardValue>
+        <fullName>Brouillon</fullName>
+        <default>true</default>
+        <label>Brouillon</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Soumis</fullName>
+        <default>false</default>
+        <label>Soumis</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Approuvé</fullName>
+        <default>false</default>
+        <label>Approuvé</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Annulé</fullName>
+        <default>false</default>
+        <label>Annulé</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Fermé</fullName>
+        <default>false</default>
+        <label>Fermé</label>
+    </standardValue>
+</StandardValueSet>

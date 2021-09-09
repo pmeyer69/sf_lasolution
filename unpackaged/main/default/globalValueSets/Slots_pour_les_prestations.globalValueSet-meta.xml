@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>07h00-08h00</fullName>
+        <default>false</default>
+        <label>07h00-08h00</label>
+    </customValue>
+    <customValue>
+        <fullName>08h00-10h00</fullName>
+        <default>false</default>
+        <label>08h00-10h00</label>
+    </customValue>
+    <customValue>
+        <fullName>10h00-12h00</fullName>
+        <default>false</default>
+        <label>10h00-12h00</label>
+    </customValue>
+    <customValue>
+        <fullName>11h30-13h30</fullName>
+        <default>false</default>
+        <label>11h30-13h30</label>
+    </customValue>
+    <customValue>
+        <fullName>13h00-15h00</fullName>
+        <default>false</default>
+        <label>13h00-15h00</label>
+    </customValue>
+    <customValue>
+        <fullName>15h00-17h00</fullName>
+        <default>false</default>
+        <label>15h00-17h00</label>
+    </customValue>
+    <customValue>
+        <fullName>17h00-19h00</fullName>
+        <default>false</default>
+        <label>17h00-19h00</label>
+    </customValue>
+    <customValue>
+        <fullName>19h00-21h00</fullName>
+        <default>false</default>
+        <label>19h00-21h00</label>
+    </customValue>
+    <masterLabel>Slots pour les prestations</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

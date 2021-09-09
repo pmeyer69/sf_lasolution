@@ -1,0 +1,76 @@
+<!-- sldsValidatorIgnore -->
+<template>
+    <lightning-card icon-name="custom:custom58" title="Liste de médicaments" >
+        <div slot="actions">
+            <lightning-button label="Dossier de Soins" icon-name="utility:open_folder" onclick={navigateToDossierSoin} ></lightning-button>
+        </div>
+        <lightning-card>
+            <lightning-record-view-form record-id={recordId} object-api-name="Dossier_de_soins__c">
+                <div class="slds-box">
+                    <div class="slds-grid">
+                        <div class="slds-col">
+                            <lightning-output-field field-name='Patient__c'>
+                            </lightning-output-field>
+                        </div>
+                        <div class="slds-col">
+                            <lightning-output-field field-name='Name'>
+                            </lightning-output-field>
+                        </div>
+                    </div>
+                </div>
+            </lightning-record-view-form>
+        </lightning-card>
+        <lightning-tabset>
+            <lightning-tab label="Per Os">
+
+
+                <lightning-card>
+                    <div slot="actions">
+                        <lightning-button label="Ajouter Per Os Médicament" icon-name="utility:add" onclick={addPerOs}></lightning-button>
+                    </div>
+                    <template if:true={perOsMedicaments}>
+                        <template for:each={perOsMedicaments} for:item="perOsMedicament" >
+                            <c-medicament-item  key={perOsMedicament.Id} medicament={perOsMedicament} ondeletemedicament={deleteMedicament} oneditmedicament={editMedicament} onsetdatefin={setDateFin}></c-medicament-item>
+                        </template>
+                    </template>
+                </lightning-card>
+            </lightning-tab>
+            <lightning-tab label="Parentérals">
+                <lightning-card>
+                    <div slot="actions">
+                        <lightning-button label="Ajouter Parentéral Médicament" icon-name="utility:add" onclick={addParenteral}></lightning-button>
+                    </div>
+                    <template if:true={parenteralMedicaments}>
+                        <template for:each={parenteralMedicaments} for:item="parenteralMedicament" >
+                            <c-medicament-item  key={parenteralMedicament.Id} medicament={parenteralMedicament} ondeletemedicament={deleteMedicament} oneditmedicament={editMedicament} onsetdatefin={setDateFin}></c-medicament-item>
+                        </template>
+                    </template>
+                </lightning-card>
+            </lightning-tab>
+            <lightning-tab label="Autres">
+                <lightning-card>
+                    <div slot="actions">
+                        <lightning-button label="Ajouter Autre Médicament" icon-name="utility:add" onclick={addAutre}></lightning-button>
+                    </div>
+                    <template if:true={autreMedicaments}>
+                        <template for:each={autreMedicaments} for:item="autreMedicament" >
+                            <c-medicament-item  key={autreMedicament.Id} medicament={autreMedicament} ondeletemedicament={deleteMedicament} oneditmedicament={editMedicament} onsetdatefin={setDateFin}></c-medicament-item>
+                        </template>
+                    </template>
+                </lightning-card>
+            </lightning-tab>
+            <lightning-tab label="Historique">
+                <lightning-card>
+                    <template if:true={historiqueMedicaments}>
+                        <template for:each={historiqueMedicaments} for:item="historiqueMedicament" >
+                            <c-medicament-item  key={historiqueMedicament.Id} medicament={historiqueMedicament} ondeletemedicament={deleteMedicament} oneditmedicament={editMedicament} onsetdatefin={setDateFin}></c-medicament-item>
+                        </template>
+                    </template>
+                </lightning-card>               
+            </lightning-tab>
+        </lightning-tabset>
+        <div >
+            <c-medicament-record-modal record-id={selectedRecordId} dossier-de-soin-id={recordId} oncreatemedicament={handleCreateSuccess} oneditmedicament={handleEditSuccess}></c-medicament-record-modal>
+        </div>
+    </lightning-card>
+</template>

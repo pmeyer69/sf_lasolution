@@ -1,14 +1,153 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
     <layouts>
-        <layout>FSL Work Order Layout</layout>
+        <layout>Acte layout</layout>
         <sections>
-            <label>Indirizzo</label>
+            <label><!-- Address --></label>
+            <section>Address</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Catalogue layout</layout>
+        <sections>
+            <label><!-- Address --></label>
+            <section>Address</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Prestation layout</layout>
+        <sections>
+            <label><!-- Address --></label>
+            <section>Address</section>
+        </sections>
+        <sections>
+            <label><!-- Planification avec l&apos;heure exacte --></label>
+            <section>Planification avec l&apos;heure exacte</section>
+        </sections>
+        <sections>
+            <label><!-- Planification avec slots --></label>
+            <section>Planification avec slots</section>
+        </sections>
+        <sections>
+            <label><!-- Récurrence avec fréquence --></label>
+            <section>Récurrence avec fréquence</section>
+        </sections>
+        <sections>
+            <label><!-- Récurrence avec jours de la semaine --></label>
+            <section>Récurrence avec jours de la semaine</section>
+        </sections>
+        <sections>
+            <label><!-- Récurrences --></label>
+            <section>Récurrences</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Soignant intervention layout</layout>
+        <sections>
+            <label><!-- Address --></label>
             <section>Address</section>
         </sections>
     </layouts>
     <quickActions>
+        <label><!-- Demo --></label>
+        <name>Demo</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Nouvelle mesure --></label>
+        <name>Nouvelle_mesure</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Nouvelle transmission --></label>
+        <name>Nouvelle_transmission</name>
+    </quickActions>
+    <quickActions>
         <label><!-- SendEmail --></label>
         <name>SendEmail</name>
     </quickActions>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <recordTypes>
+        <label><!-- Acte --></label>
+        <name>Acte</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Catalogue des prestations --></label>
+        <name>Catalogue_des_prestations</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Intervention --></label>
+        <name>Intervention</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Prestation --></label>
+        <name>Prestation</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Prestation LAMal --></label>
+        <name>Prestation_LAMal</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Prestation privée --></label>
+        <name>Prestation_privee</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Prestation sociale --></label>
+        <name>Prestation_sociale</name>
+    </recordTypes>
+    <validationRules>
+        <errorMessage><!-- Renseigner soit la &apos;Première prestation le&apos; ou &apos;Jour et l&apos;heure de la première prestation&apos;. --></errorMessage>
+        <name>Validate_Prestation_planning_start</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Veuillez renseigner la fin de validité de la récurrence. --></errorMessage>
+        <name>Validate_Prestation_start_end_dates</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Pour le Type de récurrence, vous devez renseigner la Fréquence et le Type de fréquence. --></errorMessage>
+        <name>Validate_Recurrence_Setting_Freq</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Pour le Type de récurrence Jours de la semaine, veuillez renseigner au moins un jour de la semaine. --></errorMessage>
+        <name>Validate_Recurrence_Setting_WeekDays</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Veuillez renseigner le territoire. --></errorMessage>
+        <name>Validate_Territory</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Veuillez renseigner un Type de récurrence. --></errorMessage>
+        <name>Validate_recurrence_type</name>
+    </validationRules>
+    <webLinks>
+        <label><!-- Planification_ad_hoc --></label>
+        <name>Planification_ad_hoc</name>
+    </webLinks>
 </CustomObjectTranslation>

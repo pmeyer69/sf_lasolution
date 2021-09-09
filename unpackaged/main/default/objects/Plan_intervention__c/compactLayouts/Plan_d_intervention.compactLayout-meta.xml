@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CompactLayout xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Plan_d_intervention</fullName>
+    <fields>Name</fields>
+    <fields>Dossier_de_prise_en_charge__c</fields>
+    <fields>Statut__c</fields>
+    <fields>Valide_du__c</fields>
+    <fields>Valide_au__c</fields>
+    <label>Plan d&apos;intervention</label>
+</CompactLayout>

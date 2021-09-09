@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>prise_journaliere__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF( Matin__c == 0, &apos;&apos;, &apos;MATIN: &apos;&amp; TEXT(Matin__c) &amp;&apos; &apos;&amp; TEXT(Unit__c)  &amp; &apos; sous forme: &apos; &amp; TEXT(Forme_gal_nique__c )&amp; BR() )
+
+&amp;IF( Midi__c == 0, &apos;&apos;, &apos;MIDI: &apos;&amp; TEXT(Midi__c) &amp;&apos; &apos;&amp; TEXT(Unit__c)  &amp; &apos; sous forme: &apos; &amp; TEXT(Forme_gal_nique__c )&amp; BR() )
+
+&amp;IF( Soir__c == 0, &apos;&apos;, &apos;SOIR: &apos;&amp; TEXT(Soir__c) &amp;&apos; &apos;&amp; TEXT(Unit__c)  &amp; &apos; sous forme: &apos; &amp; TEXT(Forme_gal_nique__c )&amp; BR() )
+
+&amp;IF( Nuit__c == 0, &apos;&apos;, &apos;NUIT: &apos;&amp; TEXT(Nuit__c) &amp;&apos; &apos;&amp; TEXT(Unit__c)  &amp; &apos; sous forme: &apos; &amp; TEXT(Forme_gal_nique__c )&amp; BR() )</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Prise journalière</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

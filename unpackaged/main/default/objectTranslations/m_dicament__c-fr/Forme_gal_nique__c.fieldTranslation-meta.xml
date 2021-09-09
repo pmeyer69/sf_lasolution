@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label><!-- Forme galénique --></label>
+        <name>Forme_gal_nique__c</name>
+        <picklistValues>
+            <masterLabel>Autre</masterLabel>
+            <translation><!-- Autre --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Capsule</masterLabel>
+            <translation><!-- Capsule --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Collyre</masterLabel>
+            <translation><!-- Collyre --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Comp. effervescent</masterLabel>
+            <translation><!-- Comp. effervescent --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Comprimé</masterLabel>
+            <translation><!-- Comprimé --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Crème</masterLabel>
+            <translation><!-- Crème --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Goutte</masterLabel>
+            <translation><!-- Goutte --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Gélule</masterLabel>
+            <translation><!-- Gélule --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>IM</masterLabel>
+            <translation><!-- IM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>IV</masterLabel>
+            <translation><!-- IV --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Patch</masterLabel>
+            <translation><!-- Patch --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Poudre</masterLabel>
+            <translation><!-- Poudre --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>S/C</masterLabel>
+            <translation><!-- S/C --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sachet</masterLabel>
+            <translation><!-- Sachet --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sol. buvable</masterLabel>
+            <translation><!-- Sol. buvable --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Suppositoire</masterLabel>
+            <translation><!-- Suppositoire --></translation>
+        </picklistValues>
+    </CustomFieldTranslation>

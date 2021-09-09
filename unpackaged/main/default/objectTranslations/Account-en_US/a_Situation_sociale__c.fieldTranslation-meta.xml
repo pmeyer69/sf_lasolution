@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label><!-- Situation sociale --></label>
+        <name>a_Situation_sociale__c</name>
+        <picklistValues>
+            <masterLabel>AI</masterLabel>
+            <translation><!-- AI --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>API - degré Grave</masterLabel>
+            <translation><!-- API - degré Grave --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>API - degré faible</masterLabel>
+            <translation><!-- API - degré faible --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>API - degré moyen</masterLabel>
+            <translation><!-- API - degré moyen --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>API - en cours</masterLabel>
+            <translation><!-- API - en cours --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>API - en cours, degr</masterLabel>
+            <translation><!-- API - en cours, degr --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>AVS</masterLabel>
+            <translation><!-- AVS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Contribution d&apos;assistance (AI)</masterLabel>
+            <translation><!-- Contribution d&apos;assistance (AI) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Curatelle</masterLabel>
+            <translation><!-- Curatelle --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PC</masterLabel>
+            <translation><!-- PC --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Subvention de l&apos;assurance maladie</masterLabel>
+            <translation><!-- Subvention de l&apos;assurance maladie --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Suivi par un service social</masterLabel>
+            <translation><!-- Suivi par un service social --></translation>
+        </picklistValues>
+    </CustomFieldTranslation>

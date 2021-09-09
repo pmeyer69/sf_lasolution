@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CompactLayout xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>TP_INR</fullName>
+    <fields>Dossier_de_soins__c</fields>
+    <fields>Date_de_la_mesure__c</fields>
+    <fields>TP__c</fields>
+    <fields>INR__c</fields>
+    <label>TP INR</label>
+</CompactLayout>

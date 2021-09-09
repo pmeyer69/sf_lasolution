@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>ServiceAppointment$Name</field>
+    </columns>
+    <columns>
+        <field>ServiceAppointment$FSL__Related_Service__c</field>
+    </columns>
+    <columns>
+        <field>ServiceAppointment$a_Patient__c</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>ServiceAppointment$DurationInMinutes</field>
+    </columns>
+    <columns>
+        <field>ServiceAppointment$Status</field>
+    </columns>
+    <columns>
+        <field>ServiceAppointment$ArrivalWindowStartTime</field>
+    </columns>
+    <columns>
+        <field>ServiceAppointment$WorkType</field>
+    </columns>
+    <format>Tabular</format>
+    <name>Demo Rendez-vous de travail</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Rendez_vous_de_service_Service_appointments__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>ServiceAppointment$DueDate</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

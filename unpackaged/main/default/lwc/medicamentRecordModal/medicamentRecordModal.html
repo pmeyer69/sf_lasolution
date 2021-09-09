@@ -1,0 +1,164 @@
+<!-- sldsValidatorIgnore -->
+<template>
+    <template if:true={isModalEditOpen}>
+        <section role="dialog" tabindex="-1" aria-labelledby="modal-heading-01" aria-modal="true" aria-describedby="modal-content-id-1" class="slds-modal slds-fade-in-open">
+            <div class="slds-modal__container">
+                <header class="slds-modal__header"> 
+                    <button class="slds-button slds-button_icon slds-modal__close slds-button_icon-inverse" title="Close">
+                        <lightning-icon variant="inverse" onclick={closeEditModal} alternative-text="close" icon-name="utility:close" size="small"></lightning-icon>
+                      </button>
+                      <h2 id="modal-heading-01" class="slds-modal__title slds-hyphenate">Modification médicament</h2>
+                </header>
+                <div class="slds-modal__content slds-var-p-around_medium" id="modal-content-id-1" >
+                    <lightning-card >
+                        <lightning-record-edit-form  record-id={recordId}
+                                                    object-api-name="m_dicament__c"
+                                                    onsuccess={handleEditSuccess}>
+                            <lightning-input-field field-name="M_dicament__c">
+                            </lightning-input-field>
+                            <lightning-input-field field-name="Date_de_d_but__c">
+                            </lightning-input-field>
+                            <lightning-input-field field-name="Date_de_fin__c">
+                            </lightning-input-field>
+                            <lightning-input-field field-name="Forme_gal_nique__c">
+                            </lightning-input-field>
+                            <lightning-input-field field-name="Unit__c">
+                            </lightning-input-field>                       
+                            <lightning-input-field field-name="Jours__c">
+                            </lightning-input-field>
+                            <lightning-input-field field-name="Matin__c">
+                            </lightning-input-field>
+                            <lightning-input-field field-name="Midi__c">
+                            </lightning-input-field>
+                            <lightning-input-field field-name="Soir__c">
+                            </lightning-input-field>
+                            <lightning-input-field field-name="Nuit__c">
+                            </lightning-input-field>
+                            <lightning-input-field field-name="Remarque__c">
+                            </lightning-input-field>
+                            <lightning-input-field field-name="R_serve__c">
+                            </lightning-input-field>
+                            <lightning-input-field field-name="G_r_par__c">
+                            </lightning-input-field>
+                            <lightning-input-field field-name="M_decin__c">
+                            </lightning-input-field>
+                            <lightning-input-field field-name="Type_d_ordre__c">
+                            </lightning-input-field>
+                            <lightning-input-field field-name="Cat_gories__c">
+                            </lightning-input-field>
+                            <footer class="slds-modal__footer slds-box_x-small">
+                                <ul class="slds-button-group-row">
+                                    <li class="slds-button-group-item">
+                                        <lightning-button class="slds-var-m-top_small" variant="neutral" name="Cancel" label="Cancel" onclick={closeEditModal}></lightning-button>
+                                    </li>
+                                    <li class="slds-button-group-item">
+                                        <lightning-button class="slds-var-m-top_small" variant="brand" type="submit" name="Save" label="Save"></lightning-button>
+                                    </li>
+                                </ul>
+                            </footer>
+                        </lightning-record-edit-form>
+                    </lightning-card>
+                </div>
+            </div>
+        </section>
+        <div class="slds-backdrop slds-backdrop_open"></div>
+    </template>
+    <template if:true={isModalCreateOpen} >
+        <section class="slds-modal slds-fade-in-open ">         
+            <div class="slds-modal__container">
+                <header class="slds-modal__header"> 
+                    <button class="slds-button slds-button_icon slds-modal__close slds-button_icon-inverse" title="Close">
+                        <lightning-icon variant="inverse" onclick={closeCreateModal} alternative-text="close" icon-name="utility:close" size="small"></lightning-icon>
+                    </button>
+                      <h2 id="modal-heading-02" class="slds-modal__title slds-hyphenate">Ajouter médicament</h2>
+                </header>
+                <div class="slds-modal__content slds-p-around_medium" id="modal-content-id-2" >
+                    <lightning-card >
+                        <lightning-record-edit-form object-api-name="m_dicament__c" 
+                                                onsuccess={handleCreateSuccess} 
+                                                oncancel={closeCreateModal}>
+                            <lightning-input-field field-name="M_dicament__c">
+                            </lightning-input-field>
+                            <lightning-input-field field-name="Date_de_d_but__c">
+                            </lightning-input-field>
+                            <lightning-input-field field-name="Date_de_fin__c">
+                            </lightning-input-field>
+                            <lightning-input-field field-name="Forme_gal_nique__c">
+                            </lightning-input-field>
+                            <lightning-input-field field-name="Unit__c">
+                            </lightning-input-field>                       
+                            <lightning-input-field field-name="Jours__c">
+                            </lightning-input-field>
+                            <lightning-input-field field-name="Matin__c">
+                            </lightning-input-field>
+                            <lightning-input-field field-name="Midi__c">
+                            </lightning-input-field>
+                            <lightning-input-field field-name="Soir__c">
+                            </lightning-input-field>
+                            <lightning-input-field field-name="Nuit__c">
+                            </lightning-input-field>
+                            <lightning-input-field field-name="Remarque__c">
+                            </lightning-input-field>
+                            <lightning-input-field field-name="R_serve__c">
+                            </lightning-input-field>
+                            <lightning-input-field field-name="G_r_par__c">
+                            </lightning-input-field>
+                            <lightning-input-field field-name="M_decin__c">
+                            </lightning-input-field>
+                            <lightning-input-field field-name="Type_d_ordre__c">
+                            </lightning-input-field>
+                            <lightning-input-field field-name="Cat_gories__c" value={categorieMedicament}>
+                            </lightning-input-field>
+                            <lightning-input-field field-name="Dossier_de_soins__c" value={dossierDeSoinId}>
+                            </lightning-input-field>
+                            <footer class="slds-modal__footer">
+                                <ul class="slds-button-group-row">
+                                    <li class="slds-button-group-item">
+                                        <lightning-button class="slds-var-m-top_small" variant="neutral" name="Cancel" label="Cancel" onclick={closeCreateModal}></lightning-button>
+                                    </li>
+                                    <li class="slds-button-group-item">
+                                        <lightning-button class="slds-var-m-top_small" variant="brand" type="submit" name="Save" label="Save"></lightning-button>
+                                    </li>
+                                </ul>
+                            </footer>
+                        </lightning-record-edit-form>
+                    </lightning-card>
+                </div>
+            </div>
+        </section>
+        <div class="slds-backdrop slds-backdrop_open"></div>
+    </template>
+    <template if:true={isSetDateFinOpen}>
+        <section role="dialog" tabindex="-1" aria-labelledby="modal-heading-01" aria-modal="true" aria-describedby="modal-content-id-1" class="slds-modal slds-fade-in-open">
+            <div class="slds-modal__container">
+                <header class="slds-modal__header"> 
+                    <button class="slds-button slds-button_icon slds-modal__close slds-button_icon-inverse" title="Close">
+                        <lightning-icon variant="inverse" onclick={closeSetDateFinModal} alternative-text="close" icon-name="utility:close" size="small"></lightning-icon>
+                      </button>
+                      <h2 id="modal-heading-03" class="slds-modal__title slds-hyphenate">Set Date de Fin</h2>
+                </header>
+                <div class="slds-modal__content slds-var-p-around_medium" id="modal-content-id-3" >
+                    <lightning-card >
+                        <lightning-record-edit-form  record-id={recordId}
+                                                    object-api-name="m_dicament__c"
+                                                    onsuccess={handleEditSuccess}>
+                            <lightning-input-field field-name="Date_de_fin__c">
+                            </lightning-input-field>
+                            <footer class="slds-modal__footer slds-box_x-small">
+                                <ul class="slds-button-group-row">
+                                    <li class="slds-button-group-item">
+                                        <lightning-button class="slds-var-m-top_small" variant="neutral" name="Cancel" label="Cancel" onclick={closeEditModal}></lightning-button>
+                                    </li>
+                                    <li class="slds-button-group-item">
+                                        <lightning-button class="slds-var-m-top_small" variant="brand" type="submit" name="Save" label="Save"></lightning-button>
+                                    </li>
+                                </ul>
+                            </footer>
+                        </lightning-record-edit-form>
+                    </lightning-card>
+                </div>
+            </div>
+        </section>
+        <div class="slds-backdrop slds-backdrop_open"></div>
+    </template>
+</template>

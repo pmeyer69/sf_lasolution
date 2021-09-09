@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label><!-- Jour et l&apos;heure de la première prest. --></label>
+        <name>a_Jour_heure_premiere_prest__c</name>
+    </CustomFieldTranslation>

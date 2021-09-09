@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CompactLayout xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Signes_vitaaux</fullName>
+    <fields>Dossier_de_soins__c</fields>
+    <fields>Date_de_la_mesure__c</fields>
+    <fields>LastModifiedById</fields>
+    <label>Signes vitaaux</label>
+</CompactLayout>

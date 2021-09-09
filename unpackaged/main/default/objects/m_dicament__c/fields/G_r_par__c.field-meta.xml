@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>G_r_par__c</fullName>
+    <externalId>false</externalId>
+    <label>Géré par</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Patient</fullName>
+                <default>false</default>
+                <label>Patient</label>
+            </value>
+            <value>
+                <fullName>Famille</fullName>
+                <default>false</default>
+                <label>Famille</label>
+            </value>
+            <value>
+                <fullName>La Solution.ch</fullName>
+                <default>false</default>
+                <label>La Solution.ch</label>
+            </value>
+            <value>
+                <fullName>Pharmacie</fullName>
+                <default>false</default>
+                <label>Pharmacie</label>
+            </value>
+            <value>
+                <fullName>Autre</fullName>
+                <default>false</default>
+                <label>Autre</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

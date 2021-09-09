@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label><!-- Jours --></label>
+        <name>Jours__c</name>
+        <picklistValues>
+            <masterLabel>Dimanche</masterLabel>
+            <translation><!-- Dimanche --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Jeudi</masterLabel>
+            <translation><!-- Jeudi --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Lundi</masterLabel>
+            <translation><!-- Lundi --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Mardi</masterLabel>
+            <translation><!-- Mardi --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Mercredi</masterLabel>
+            <translation><!-- Mercredi --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Samedi</masterLabel>
+            <translation><!-- Samedi --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Vendredi</masterLabel>
+            <translation><!-- Vendredi --></translation>
+        </picklistValues>
+    </CustomFieldTranslation>

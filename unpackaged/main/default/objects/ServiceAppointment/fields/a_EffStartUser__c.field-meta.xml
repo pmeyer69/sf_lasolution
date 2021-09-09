@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>a_EffStartUser__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <externalId>false</externalId>
+    <inlineHelpText>Utilisateur qui a quittancé le début de l&apos;intervention par l&apos;application Mobile.</inlineHelpText>
+    <label>Eff début User</label>
+    <referenceTo>User</referenceTo>
+    <relationshipName>Service_Appointments_Start</relationshipName>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Lookup</type>
+</CustomField>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label><!-- Cible --></label>
+        <name>Cible__c</name>
+        <picklistValues>
+            <masterLabel>cardio-respiratoire</masterLabel>
+            <translation><!-- cardio-respiratoire --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>cutanéo-muqueux</masterLabel>
+            <translation><!-- cutanéo-muqueux --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>digestif</masterLabel>
+            <translation><!-- digestif --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>douleur</masterLabel>
+            <translation><!-- douleur --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>escarre</masterLabel>
+            <translation><!-- escarre --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>famille</masterLabel>
+            <translation><!-- famille --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>génital</masterLabel>
+            <translation><!-- génital --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>intervenants</masterLabel>
+            <translation><!-- intervenants --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>locomoteur</masterLabel>
+            <translation><!-- locomoteur --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>neurologique</masterLabel>
+            <translation><!-- neurologique --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>psychologique</masterLabel>
+            <translation><!-- psychologique --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>urinaire</masterLabel>
+            <translation><!-- urinaire --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>état général</masterLabel>
+            <translation><!-- état général --></translation>
+        </picklistValues>
+    </CustomFieldTranslation>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label><!-- Etat civil --></label>
+        <name>a_Etat_civil__c</name>
+        <picklistValues>
+            <masterLabel>Célibataire</masterLabel>
+            <translation><!-- Célibataire --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Divorcé(e)</masterLabel>
+            <translation><!-- Divorcé(e) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Marié(e)</masterLabel>
+            <translation><!-- Marié(e) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Partenariat enregistré</masterLabel>
+            <translation><!-- Partenariat enregistré --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Partenariat enregistré dissous</masterLabel>
+            <translation><!-- Partenariat enregistré dissous --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Veuve/Veuf</masterLabel>
+            <translation><!-- Veuve/Veuf --></translation>
+        </picklistValues>
+    </CustomFieldTranslation>

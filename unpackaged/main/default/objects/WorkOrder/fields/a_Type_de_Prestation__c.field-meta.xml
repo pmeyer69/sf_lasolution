@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>a_Type_de_Prestation__c</fullName>
+    <externalId>false</externalId>
+    <label>Type de Prestation</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>LAMal</fullName>
+                <default>false</default>
+                <label>LAMal</label>
+            </value>
+            <value>
+                <fullName>Privé</fullName>
+                <default>false</default>
+                <label>Privé</label>
+            </value>
+            <value>
+                <fullName>Fondation</fullName>
+                <default>false</default>
+                <label>Fondation</label>
+            </value>
+            <value>
+                <fullName>LAA (accident)</fullName>
+                <default>false</default>
+                <label>LAA (accident)</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

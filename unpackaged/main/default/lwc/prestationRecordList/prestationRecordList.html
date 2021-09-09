@@ -1,0 +1,23 @@
+<!-- sldsValidatorIgnore -->
+<template>
+    <lightning-card>
+        <lightning-button-icon  alternative-text="Add Prestation" onclick={addPrestation} title="Add Prestation" slot="actions" disabled={isNotInProgress} icon-name="utility:add"></lightning-button-icon>
+        <lightning-datatable if:true={prestations}
+            key-field="id"
+            data={prestations}
+            columns={columns}
+            hide-checkbox-column
+            onrowaction={handleRowAction}
+            onsort={updateColumnSorting}
+            sorted-by={sortBy}
+            sorted-direction={sortDirection}
+            >
+        </lightning-datatable>
+        <div >
+            <c-prestation-record-modal record-id={selectedRecordId} plan-intervention-id={planInterventionId} patient-id={patientId} dossier-prise-charge-id={dossierPriseChargeId} oncreateprestation={handleCreatePrestationSuccess}   oneditprestation={handleEditSuccess} ></c-prestation-record-modal>
+        </div>
+        <div>
+            <c-acte-record-modal prestation-id={selectedRecordId} patient-id={patientId} dossier-prise-charge-id={dossierPriseChargeId} ></c-acte-record-modal>
+        </div>
+    </lightning-card>    
+</template>

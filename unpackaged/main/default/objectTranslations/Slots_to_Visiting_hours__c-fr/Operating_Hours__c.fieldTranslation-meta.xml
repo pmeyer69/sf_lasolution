@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label><!-- Operating Hours --></label>
+        <name>Operating_Hours__c</name>
+        <relationshipLabel><!-- Slots to Visiting hours --></relationshipLabel>
+    </CustomFieldTranslation>

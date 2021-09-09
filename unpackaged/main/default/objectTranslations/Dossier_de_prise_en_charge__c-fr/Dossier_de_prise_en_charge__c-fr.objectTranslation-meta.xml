@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Dossier de prise en charge</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Dossiers de prise en charge</value>
+    </caseValues>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <gender>Masculine</gender>
+    <layouts>
+        <layout>Dossier d&apos;intervention Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Fondation / Social --></label>
+            <section>Fondation / Social</section>
+        </sections>
+        <sections>
+            <label><!-- LAMal --></label>
+            <section>LAMal</section>
+        </sections>
+        <sections>
+            <label><!-- Privé --></label>
+            <section>Privé</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Dossier de prise en charge Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Types de prise en charge --></label>
+            <section>Types de prise en charge</section>
+        </sections>
+    </layouts>
+    <quickActions>
+        <label><!-- Update Dossier --></label>
+        <name>Update_Dossier</name>
+    </quickActions>
+    <startsWith>Consonant</startsWith>
+    <webLinks>
+        <label><!-- Nouvelle_prestation --></label>
+        <name>Nouvelle_prestation</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Nouvelle_prestation2 --></label>
+        <name>Nouvelle_prestation2</name>
+    </webLinks>
+</CustomObjectTranslation>

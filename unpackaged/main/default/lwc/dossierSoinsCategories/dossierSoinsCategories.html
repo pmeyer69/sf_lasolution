@@ -1,0 +1,197 @@
+<template>
+    <lightning-card title="Catégories" icon-name="utility:topic">
+        <div>
+            <lightning-layout multiple-rows>
+                <lightning-layout-item padding="around-small" size="12" small-device-size="6" medium-device-size="4" large-device-size="3">
+                    <lightning-button
+                        class="slds-size_full"
+                        icon-name="utility:announcement"
+                        label="Transmissions"
+                        alternative-text="Liste de transmissions"
+                        variant="base"
+                        onclick={navigateToRelatedTransmissionList}>
+                    </lightning-button>
+                </lightning-layout-item>
+                <lightning-layout-item padding="around-small" size="12" small-device-size="6" medium-device-size="4" large-device-size="3">
+                    <lightning-button
+                        class="slds-size_full"
+                        icon-name="custom:custom1"
+                        label="Signes vitaux"
+                        alternative-text="Liste de signes vitaux"
+                        variant="base"
+                        onclick={navigateToRelatedSignesVitauxList}>
+                    </lightning-button>
+                </lightning-layout-item>
+                <lightning-layout-item padding="around-small" size="12" small-device-size="6" medium-device-size="4" large-device-size="3">
+                    <lightning-button
+                        class="slds-size_full"
+                        icon-name="standard:immunization"
+                        label="Suivi HGT/Insuline"
+                        alternative-text="Liste des suivis HGT/Insuline"
+                        variant="base"
+                        onclick={navigateToRelatedHgtInsulineList}>
+                    </lightning-button>
+                </lightning-layout-item>
+                <lightning-layout-item padding="around-small" size="12" small-device-size="6" medium-device-size="4" large-device-size="3">
+                    <lightning-button
+                        class="slds-size_full"
+                        icon-name="standard:recipe"
+                        label="Suivi TP/INR"
+                        alternative-text="Liste des suivis TP/INR"
+                        variant="base"
+                        onclick={navigateToRelatedTpInrList}>
+                    </lightning-button>
+                </lightning-layout-item>
+
+                <!-- 
+                <lightning-layout-item padding="around-small" size="12" small-device-size="6" medium-device-size="4" large-device-size="3">
+                    <lightning-button
+                        class="slds-size_full"
+                        icon-name="custom:custom94"
+                        label="Mesures"
+                        alternative-text="Liste de Mesures"
+                        variant="base"
+                        onclick={navigateToRelatedMesureList}>
+                    </lightning-button>
+                </lightning-layout-item>
+                -->
+
+                <!-- MESURES -->
+                <!--
+                <lightning-layout-item padding="around-small" size="12" small-device-size="6" medium-device-size="4" large-device-size="3">
+                    <lightning-button
+                        class="slds-size_full"
+                        icon-name="custom:custom90"
+                        label="Mesures Poids"
+                        alternative-text="Liste de Mesures Poids"
+                        variant="base"
+                        onclick={navigateToRelatedMesurePoidsList}>
+                    </lightning-button>
+                </lightning-layout-item>
+                <lightning-layout-item padding="around-small" size="12" small-device-size="6" medium-device-size="4" large-device-size="3">
+                    <lightning-button
+                        class="slds-size_full"
+                        icon-name="custom:custom109"
+                        label="Mesures Taille"
+                        alternative-text="Liste de Mesures de Taille"
+                        variant="base"
+                        onclick={navigateToRelatedMesureTailleList}>
+                    </lightning-button>
+                </lightning-layout-item>
+                <lightning-layout-item padding="around-small" size="12" small-device-size="6" medium-device-size="4" large-device-size="3">
+                    <lightning-button
+                        class="slds-size_full"
+                        icon-name="custom:custom97"
+                        label="Mesures Température"
+                        alternative-text="Liste de Mesures Température"
+                        variant="base"
+                        onclick={navigateToRelatedMesureTemperatureList}>
+                    </lightning-button>
+                </lightning-layout-item>
+                <lightning-layout-item padding="around-small" size="12" small-device-size="6" medium-device-size="4" large-device-size="3">
+                    <lightning-button
+                        class="slds-size_full"
+                        icon-name="custom:custom74"
+                        label="Mesures en Oxygène"
+                        alternative-text="Liste de Mesures Saturation en Oxygène"
+                        variant="base"
+                        onclick={navigateToRelatedMesureOxygeneList}>
+                    </lightning-button>
+                </lightning-layout-item>
+                <lightning-layout-item padding="around-small" size="12" small-device-size="6" medium-device-size="4" large-device-size="3">
+                    <lightning-button
+                        class="slds-size_full"
+                        icon-name="utility:activity"
+                        label="Mesures abdominal"
+                        alternative-text="Liste de Mesures Périmètre abdominal"
+                        variant="base"
+                        onclick={navigateToRelatedMesureAbdominalList}>
+                    </lightning-button>
+                </lightning-layout-item>    
+                -->                                                         
+                <!-- END / MESURES -->
+
+                <lightning-layout-item padding="around-small" size="12" small-device-size="6" medium-device-size="4" large-device-size="3">
+                    <lightning-button
+                        icon-name="custom:custom58"
+                        label="Liste de médicaments"
+                        alternative-text="Liste de médicaments"
+                        variant="base"
+                        onclick={navigateToRelatedMedicaments}>
+                    </lightning-button>
+                </lightning-layout-item>
+
+
+                <lightning-layout-item padding="around-small" size="12" small-device-size="6" medium-device-size="4" large-device-size="3">
+                    <lightning-button
+                    class="slds-size_full"
+                        icon-name="utility:trail"
+                        label="Relevés des chutes"
+                        alternative-text="Liste de relevés des chutes"
+                        variant="base"
+                        onclick={navigateToRelatedChutesList}>
+                    </lightning-button>
+                </lightning-layout-item>
+                <lightning-layout-item padding="around-small" size="12" small-device-size="6" medium-device-size="4" large-device-size="3">
+                    <lightning-button
+                    class="slds-size_full"
+                        icon-name="custom:custom109"
+                        label="Evaluations de la douleur"
+                        alternative-text="Liste des évaluations de la douleur"
+                        variant="base"
+                        onclick={navigateToRelatedDouleurList}>
+                    </lightning-button>
+                </lightning-layout-item>
+                <lightning-layout-item padding="around-small" size="12" small-device-size="6" medium-device-size="4" large-device-size="3">
+                    <lightning-button
+                    class="slds-size_full"
+                        icon-name="custom:custom94"
+                        label="Evaluations des plaies"
+                        alternative-text="Liste des évaluations des plaies"
+                        variant="base"
+                        onclick={navigateToRelatedPlaiesList}>
+                    </lightning-button>
+                </lightning-layout-item>
+                <lightning-layout-item padding="around-small" size="12" small-device-size="6" medium-device-size="4" large-device-size="3">
+                    <lightning-button
+                    class="slds-size_full"
+                        icon-name="standard:procedure"
+                        label="Escarres"
+                        alternative-text="Escarres"
+                        variant="base"
+                        onclick={navigateToRelatedEscarreList}>
+                    </lightning-button>
+                </lightning-layout-item>
+                <lightning-layout-item padding="around-small" size="12" small-device-size="6" medium-device-size="4" large-device-size="3">
+                    <lightning-button
+                    class="slds-size_full"
+                        icon-name="standard:user"
+                        label="Histoires de vie"
+                        alternative-text="Liste des histoires de vie"
+                        variant="base"
+                        onclick={navigateToRelatedVieList}>
+                    </lightning-button>
+                </lightning-layout-item>
+                <lightning-layout-item padding="around-small" size="12" small-device-size="6" medium-device-size="4" large-device-size="3">
+                    <lightning-button
+                        icon-name="standard:goals"
+                        label="Projets de vie"
+                        alternative-text="Liste des projets de vie"
+                        variant="base"
+                        onclick={navigateToRelatedProjetVieList}>
+                    </lightning-button>
+                </lightning-layout-item>
+
+                <lightning-layout-item padding="around-small" size="12" small-device-size="6" medium-device-size="4" large-device-size="3">
+                    <lightning-button
+                        variant="base"
+                        icon-name="standard:form"
+                        label="Directives anticipée"
+                        alternative-text="Liste des directives anticipées"
+                        onclick={navigateToRelatedDirectiveList}>
+                    </lightning-button>
+                </lightning-layout-item>
+            </lightning-layout>
+        </div>
+    </lightning-card>
+</template>

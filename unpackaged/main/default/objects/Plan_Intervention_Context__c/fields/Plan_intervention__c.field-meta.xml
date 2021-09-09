@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Plan_intervention__c</fullName>
+    <externalId>false</externalId>
+    <label>Plan intervention</label>
+    <referenceTo>Plan_intervention__c</referenceTo>
+    <relationshipLabel>Plan Intervention Contexts</relationshipLabel>
+    <relationshipName>Plan_Intervention_Contexts</relationshipName>
+    <relationshipOrder>0</relationshipOrder>
+    <reparentableMasterDetail>false</reparentableMasterDetail>
+    <trackTrending>false</trackTrending>
+    <type>MasterDetail</type>
+    <writeRequiresMasterRead>false</writeRequiresMasterRead>
+</CustomField>

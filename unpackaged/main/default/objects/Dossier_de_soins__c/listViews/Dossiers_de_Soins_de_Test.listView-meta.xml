@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Dossiers_de_Soins_de_Test</fullName>
+    <columns>Patient__c</columns>
+    <columns>Statut__c</columns>
+    <columns>NAME</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Patient__c</field>
+        <operation>contains</operation>
+        <value>test</value>
+    </filters>
+    <label>Dossiers de Soins de Test</label>
+</ListView>

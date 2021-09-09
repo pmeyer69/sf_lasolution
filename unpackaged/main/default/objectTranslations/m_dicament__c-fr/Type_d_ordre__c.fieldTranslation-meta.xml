@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label><!-- Type d’ordre --></label>
+        <name>Type_d_ordre__c</name>
+        <picklistValues>
+            <masterLabel>oral / en attente d’ordonnance</masterLabel>
+            <translation><!-- oral / en attente d’ordonnance --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ordonnance reçue</masterLabel>
+            <translation><!-- ordonnance reçue --></translation>
+        </picklistValues>
+    </CustomFieldTranslation>

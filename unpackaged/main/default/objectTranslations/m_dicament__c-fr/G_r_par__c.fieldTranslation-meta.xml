@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label><!-- Géré par --></label>
+        <name>G_r_par__c</name>
+        <picklistValues>
+            <masterLabel>Autre</masterLabel>
+            <translation><!-- Autre --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Famille</masterLabel>
+            <translation><!-- Famille --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>La Solution.ch</masterLabel>
+            <translation><!-- La Solution.ch --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Patient</masterLabel>
+            <translation><!-- Patient --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pharmacie</masterLabel>
+            <translation><!-- Pharmacie --></translation>
+        </picklistValues>
+    </CustomFieldTranslation>

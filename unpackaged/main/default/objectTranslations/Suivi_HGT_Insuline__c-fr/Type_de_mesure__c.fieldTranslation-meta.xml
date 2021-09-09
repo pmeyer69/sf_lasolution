@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label><!-- Type de mesure --></label>
+        <name>Type_de_mesure__c</name>
+        <picklistValues>
+            <masterLabel>Post prandial</masterLabel>
+            <translation><!-- Post prandial --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Préprandial</masterLabel>
+            <translation><!-- Préprandial --></translation>
+        </picklistValues>
+    </CustomFieldTranslation>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StandardValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sorted>false</sorted>
+    <standardValue>
+        <fullName>Réparer</fullName>
+        <default>true</default>
+        <label>Réparer</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Abandonner</fullName>
+        <default>false</default>
+        <label>Abandonner</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Préserver</fullName>
+        <default>false</default>
+        <label>Préserver</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Restocker</fullName>
+        <default>false</default>
+        <label>Restocker</label>
+    </standardValue>
+</StandardValueSet>

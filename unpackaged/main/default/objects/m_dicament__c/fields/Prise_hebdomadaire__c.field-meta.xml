@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Prise_hebdomadaire__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF( INCLUDES ( Jours__c , &apos;Lundi&apos; ), &apos;Lundi&apos;, &apos;&apos;) &amp; &apos;  &apos; &amp;
+IF( INCLUDES ( Jours__c , &apos;Mardi&apos; ), &apos;Mardi&apos;, &apos;&apos;) &amp; &apos;  &apos; &amp;
+IF( INCLUDES ( Jours__c , &apos;Mercredi&apos; ), &apos;Mercredi&apos;, &apos;&apos;)  &amp; &apos;  &apos; &amp;
+IF( INCLUDES ( Jours__c , &apos;Jeudi&apos; ), &apos;Jeudi&apos;, &apos;&apos;)  &amp; &apos;  &apos; &amp;
+IF( INCLUDES ( Jours__c , &apos;Vendredi&apos; ), &apos;Vendredi&apos;, &apos;&apos;)  &amp; &apos;  &apos; &amp;
+IF( INCLUDES ( Jours__c , &apos;Samedi&apos; ), &apos;Samedi&apos;, &apos;&apos;)  &amp; &apos;  &apos; &amp;
+IF( INCLUDES ( Jours__c , &apos;Dimanche&apos; ), &apos;Dimanche&apos;, &apos;&apos;)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Prise hebdomadaire</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

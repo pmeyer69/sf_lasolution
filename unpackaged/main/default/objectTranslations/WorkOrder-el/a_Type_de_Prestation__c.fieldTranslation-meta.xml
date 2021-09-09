@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label><!-- Type de Prestation --></label>
+        <name>a_Type_de_Prestation__c</name>
+        <picklistValues>
+            <masterLabel>Fondation</masterLabel>
+            <translation><!-- Fondation --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>LAA (accident)</masterLabel>
+            <translation><!-- LAA (accident) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>LAMal</masterLabel>
+            <translation><!-- LAMal --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Privé</masterLabel>
+            <translation><!-- Privé --></translation>
+        </picklistValues>
+    </CustomFieldTranslation>

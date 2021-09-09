@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <quickActions>
+        <label><!-- AssurPharma --></label>
+        <name>AssurPharma</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Child Account --></label>
+        <name>Child_Account</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Nouvelle prestation --></label>
+        <name>Nouvelle_prestation</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Visualiser Détail Logement --></label>
+        <name>Visualiser_D_tail_Logement</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Visualiser détail Soignants --></label>
+        <name>Visualiser_d_tail_Soignants</name>
+    </quickActions>
+    <recordTypes>
+        <label><!-- Société --></label>
+        <name>Business_account</name>
+    </recordTypes>
+    <webLinks>
+        <label><!-- GoogleMaps --></label>
+        <name>GoogleMaps</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- GoogleNews --></label>
+        <name>GoogleNews</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- GoogleSearch --></label>
+        <name>GoogleSearch</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Nouvelle_prestation --></label>
+        <name>Nouvelle_prestation</name>
+    </webLinks>
+</CustomObjectTranslation>

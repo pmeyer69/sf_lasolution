@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Validate_Prestation_planning_start</fullName>
+    <active>true</active>
+    <errorConditionFormula>and( TEXT(Status) = &apos;In Progress&apos;, OR( AND(isnull(a_Jour_heure_premiere_prest__c), isnull(a_Premiere_prestation_le__c)), AND(not(isnull(a_Jour_heure_premiere_prest__c)), not(isnull(a_Premiere_prestation_le__c)))))</errorConditionFormula>
+    <errorDisplayField>a_Premiere_prestation_le__c</errorDisplayField>
+    <errorMessage>Renseigner soit la &apos;Première prestation le&apos; ou &apos;Jour et l&apos;heure de la première prestation&apos;.</errorMessage>
+</ValidationRule>

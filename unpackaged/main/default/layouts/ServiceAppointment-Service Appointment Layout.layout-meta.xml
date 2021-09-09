@@ -38,6 +38,10 @@
                 <behavior>Edit</behavior>
                 <field>WorkTypeId</field>
             </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>a_Patient__c</field>
+            </layoutItems>
         </layoutColumns>
         <layoutColumns>
             <layoutItems>

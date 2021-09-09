@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label><!-- Catégories --></label>
+        <name>Cat_gories__c</name>
+        <picklistValues>
+            <masterLabel>Autre</masterLabel>
+            <translation><!-- Autre --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Parentéral</masterLabel>
+            <translation><!-- Parentéral --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Per os</masterLabel>
+            <translation><!-- Per os --></translation>
+        </picklistValues>
+    </CustomFieldTranslation>

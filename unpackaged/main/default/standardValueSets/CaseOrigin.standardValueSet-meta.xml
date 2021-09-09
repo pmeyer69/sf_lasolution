@@ -26,4 +26,49 @@
         <default>false</default>
         <label>Twitter</label>
     </standardValue>
+    <standardValue>
+        <fullName>Patient</fullName>
+        <default>false</default>
+        <label>Patient</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Entourage</fullName>
+        <default>false</default>
+        <label>Entourage</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Médecin traitant</fullName>
+        <default>false</default>
+        <label>Médecin traitant</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Hôpital/Clinique</fullName>
+        <default>false</default>
+        <label>Hôpital/Clinique</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Fondation les Eglantines</fullName>
+        <default>false</default>
+        <label>Fondation les Eglantines</label>
+    </standardValue>
+    <standardValue>
+        <fullName>EMS</fullName>
+        <default>false</default>
+        <label>EMS</label>
+    </standardValue>
+    <standardValue>
+        <fullName>CMS</fullName>
+        <default>false</default>
+        <label>CMS</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Curateur</fullName>
+        <default>false</default>
+        <label>Curateur</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Autre</fullName>
+        <default>false</default>
+        <label>Autre</label>
+    </standardValue>
 </StandardValueSet>

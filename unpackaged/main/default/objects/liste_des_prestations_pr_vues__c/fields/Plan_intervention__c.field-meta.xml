@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Plan_intervention__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <externalId>false</externalId>
+    <label>Plan intervention</label>
+    <referenceTo>Plan_intervention__c</referenceTo>
+    <relationshipLabel>listes des prestations prévues</relationshipLabel>
+    <relationshipName>listes_des_prestations_pr_vues</relationshipName>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

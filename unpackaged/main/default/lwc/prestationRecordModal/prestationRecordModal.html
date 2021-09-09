@@ -1,0 +1,598 @@
+<!-- sldsValidatorIgnore -->
+<template>
+
+        <!-- EDIT PRESTATION-->
+    <template if:true={isModalEditOpen}>
+        <section role="dialog" tabindex="-1" aria-labelledby="modal-heading-01" aria-modal="true" aria-describedby="modal-content-id-1" class="slds-modal slds-fade-in-open slds-modal_medium">
+            <div class="slds-modal__container">
+                <header class="slds-modal__header"> 
+                    <button class="slds-button slds-button_icon slds-modal__close slds-button_icon-inverse" title="Close">
+                        <lightning-icon variant="inverse" onclick={closeEditModal} alternative-text="close" icon-name="utility:close" size="small"></lightning-icon>
+                      </button>
+                      <h2 id="modal-heading-01" class="slds-modal__title slds-hyphenate">Modification de la Prestation</h2>
+                </header>
+                <div class="slds-modal__content slds-var-p-around_medium" id="modal-content-id-1" >
+                    <lightning-card>
+                        <lightning-record-edit-form record-id={recordId}
+                                                    object-api-name="WorkOrder" 
+                                                    record-type-id="0129E000000G7eDQAS"
+                                                    onsuccess={handleEditSuccess}>
+
+                            <!-- INFORMATION -->
+                            <div class="slds-theme--shade slds-m-horizontal_medium slds-section__title">
+                                <h3 class="section-header-title slds-var-p-horizontal_small">
+                                    Information
+                                </h3>
+                            </div>
+
+                            <div class="slds-grid slds-wrap slds-var-p-around_large">
+                                <div class="slds-size_1-of-2  slds-var-p-around_large">
+                                    <lightning-input-field field-name="AccountId" disabled>
+                                    </lightning-input-field>
+                                </div>
+                                <div class="slds-size_1-of-2  slds-var-p-around_large">
+                                    <lightning-input-field field-name="Dossier_de_prise_en_charge__c" disabled>
+                                    </lightning-input-field>
+                                </div>
+                                <div class="slds-size_1-of-2  slds-var-p-around_large">
+                                    <lightning-input-field field-name="CaseId" disabled>
+                                    </lightning-input-field>
+                                </div>
+                                <div class="slds-size_1-of-2  slds-var-p-around_large">
+                                </div>
+                                <div class="slds-size_1-of-2  slds-var-p-around_large">
+                                    <lightning-input-field field-name="a_Type_de_Prestation__c">
+                                    </lightning-input-field>
+                                </div>
+                                <div class="slds-size_1-of-2  slds-var-p-around_large">
+                                    <lightning-input-field field-name="WorkTypeId">
+                                    </lightning-input-field>
+                                </div>
+                                <div class="slds-size_1-of-2  slds-var-p-around_large">
+                                    <lightning-input-field field-name="Duration">
+                                    </lightning-input-field>
+                                </div>
+                                <div class="slds-size_1-of-2  slds-var-p-around_large">
+                                    <lightning-input-field field-name="DurationType">
+                                    </lightning-input-field>
+                                </div>
+                            </div>  
+                            
+                            <!-- DESCRIPTION -->
+                            <div class="slds-theme--shade slds-m-horizontal_medium slds-section__title">
+                                <h3 class="section-header-title slds-p-horizontal_small">
+                                    Description
+                                </h3>
+                            </div>
+                            <div class="slds-grid slds-wrap slds-var-p-around_large">
+                                <div class="slds-size_2-of-2  slds-var-p-around_large">
+                                    <lightning-input-field field-name="Subject">
+                                    </lightning-input-field>
+                                    <lightning-input-field field-name="Description">
+                                    </lightning-input-field>
+                                </div>
+                            </div>
+    
+                            <!-- Planification avec slots -->
+                            <div class="slds-theme--shade slds-m-horizontal_medium slds-section__title">
+                                <h3 class="section-header-title slds-p-horizontal_small">
+                                    Planification avec slots
+                                </h3>
+                            </div>
+                            <div class="slds-grid slds-wrap slds-var-p-around_large">
+                                <div class="slds-size_1-of-2  slds-var-p-around_large">
+                                    <lightning-input-field field-name="a_Premiere_prestation_le__c">
+                                    </lightning-input-field>
+                                </div>
+                                <div class="slds-size_1-of-2  slds-var-p-around_large">
+                                    <lightning-input-field field-name="a_Slot__c">
+                                    </lightning-input-field>
+                                </div>
+                            </div>
+
+                            <!--Planification avec l'heure exacte-->
+                            <div class="slds-theme--shade slds-m-horizontal_medium slds-section__title">
+                                <h3 class="section-header-title slds-p-horizontal_small">
+                                    Planification avec l'heure exacte
+                                </h3>
+                            </div>
+                            <div class="slds-grid slds-wrap slds-var-p-around_large">
+                                <div class="slds-size_2-of-2  slds-var-p-around_large">
+                                    <lightning-input-field field-name="a_Jour_heure_premiere_prest__c">
+                                    </lightning-input-field>
+                                </div>
+                            </div>
+
+                            <!-- Récurrences -->
+                            <div class="slds-theme--shade slds-m-horizontal_medium slds-section__title">
+                                <h3 class="section-header-title slds-p-horizontal_small">
+                                    Récurrences
+                                </h3>
+                            </div>
+                            <div class="slds-grid slds-wrap slds-var-p-around_large">
+                                <div class="slds-size_1-of-2  slds-var-p-around_large">
+                                    <lightning-input-field field-name="a_Type_de_recurrence__c">
+                                    </lightning-input-field>
+                                </div>
+                                <div class="slds-size_1-of-2  slds-var-p-around_large">
+                                    <lightning-input-field field-name="a_Recurrence_valide_au__c" disabled>
+                                    </lightning-input-field>
+                                </div>
+                            </div>
+
+                            <!-- Récurrence avec fréquence -->
+                            <div class="slds-theme--shade slds-m-horizontal_medium slds-section__title">
+                                <h3 class="section-header-title slds-p-horizontal_small">
+                                    Récurrence avec fréquence
+                                </h3>
+                            </div>
+                            <div class="slds-grid slds-wrap slds-var-p-around_large">
+                                <div class="slds-size_1-of-2  slds-var-p-around_large">
+                                    <lightning-input-field field-name="a_Frequence__c">
+                                    </lightning-input-field>
+                                </div>
+                                <div class="slds-size_1-of-2  slds-var-p-around_large">
+                                    <lightning-input-field field-name="a_Type_de_frequence__c">
+                                    </lightning-input-field>
+                                </div>
+                            </div>
+
+                            <!-- Récurrence avec jours de la semaine   -->
+                            <div class="slds-theme--shade slds-m-horizontal_medium slds-section__title">
+                                <h3 class="section-header-title slds-p-horizontal_small">
+                                    Récurrence avec jours de la semaine
+                                </h3>
+                            </div>
+                            <div class="slds-grid slds-wrap slds-var-p-around_large">
+                                <div class="slds-size_2-of-2  slds-var-p-around_large">
+                                    <lightning-input-field field-name="a_Jours_de_semaine__c">
+                                    </lightning-input-field>
+                                </div>
+                            </div>
+
+                            <!-- Address -->
+                            <div class="slds-theme--shade slds-m-horizontal_medium slds-section__title">
+                                <h3 class="section-header-title slds-p-horizontal_small">
+                                    Adresse
+                                </h3>
+                            </div>
+                            <div class="slds-grid slds-wrap  slds-var-p-around_large">
+                                <div class="slds-size_2-of-2  slds-var-p-around_large">
+                                    <lightning-input-field field-name="Address">
+                                    </lightning-input-field>
+                                </div>
+                            </div>
+                            
+                            <!-- System Information -->
+                            <div class="slds-theme--shade slds-m-horizontal_medium slds-section__title">
+                                <h3 class="section-header-title slds-p-horizontal_small">
+                                    System Information
+                                </h3>
+                            </div>
+                            <div class="slds-grid slds-wrap slds-var-p-around_large">
+                                <div class="slds-size_1-of-2  slds-var-p-around_large">
+
+                                    <lightning-input-field field-name="OwnerId">
+                                    </lightning-input-field>
+                                </div>
+                                <div class="slds-size_1-of-2  slds-var-p-around_large">
+                                    <lightning-input-field field-name="ServiceTerritoryId">
+                                    </lightning-input-field>
+                                </div>
+                            </div>
+                            <footer class="slds-modal__footer slds-box_x-small">
+                                <ul class="slds-button-group-row">
+                                    <li class="slds-button-group-item">
+                                        <lightning-button class="slds-var-m-top_small" variant="neutral" name="Cancel" label="Cancel" onclick={closeEditModal}></lightning-button>
+                                    </li>
+                                    <li class="slds-button-group-item">
+                                        <lightning-button class="slds-var-m-top_small" variant="brand" type="submit" name="Save" label="Save"></lightning-button>
+                                    </li>
+                                </ul>
+                            </footer>
+                        </lightning-record-edit-form>
+                    </lightning-card>
+                </div>
+            </div>
+        </section>
+        <div class="slds-backdrop slds-backdrop_open"></div>
+    </template>
+
+
+    <!-- CREATE PRESTATION-->
+    <template if:true={isModalCreateOpen}>
+        <section role="dialog" tabindex="-1" aria-labelledby="modal-heading-02" aria-modal="true" aria-describedby="modal-content-id-1" class="slds-modal slds-fade-in-open slds-modal_medium">
+            <div class="slds-modal__container">
+                <header class="slds-modal__header"> 
+                    <button class="slds-button slds-button_icon slds-modal__close slds-button_icon-inverse" title="Close">
+                        <lightning-icon variant="inverse" onclick={closeCreateModal} alternative-text="close" icon-name="utility:close" size="small"></lightning-icon>
+                      </button>
+                      <h2 id="modal-heading-02" class="slds-modal__title slds-hyphenate">Création de la Prestation</h2>
+                </header>
+                <div class="slds-modal__content" id="modal-content-id-2" >
+                    <lightning-card>
+                        <lightning-record-edit-form object-api-name="WorkOrder" 
+                                                    record-type-id="0129E000000G7eDQAS"
+                                                    onsuccess={handleCreateSuccess} >
+
+                            <!-- INFORMATION -->
+                            <div class="slds-theme--shade slds-m-horizontal_medium slds-section__title">
+                                <h3 class="section-header-title slds-var-p-horizontal_small">
+                                    Information
+                                </h3>
+                            </div>
+
+                            <div class="slds-grid slds-wrap slds-var-p-around_large">
+                                <div class="slds-size_1-of-2  slds-var-p-around_large">
+                                    <lightning-input-field field-name="AccountId" value={patientId} disabled>
+                                    </lightning-input-field>
+                                </div>
+                                <div class="slds-size_1-of-2  slds-var-p-around_large">
+                                    <lightning-input-field  field-name="Dossier_de_prise_en_charge__c" value={dossierPriseChargeId} disabled>
+                                    </lightning-input-field>
+                                </div>
+                                <div class="slds-size_1-of-2  slds-var-p-around_large">
+                                    <lightning-input-field field-name="CaseId" disabled>
+                                    </lightning-input-field>
+                                </div>
+                                <div class="slds-size_1-of-2  slds-var-p-around_large">
+                                </div>
+                                <div class="slds-size_1-of-2  slds-var-p-around_large">
+                                    <lightning-input-field field-name="a_Type_de_Prestation__c">
+                                    </lightning-input-field>
+                                </div>
+                                <div class="slds-size_1-of-2  slds-var-p-around_large">
+                                    <lightning-input-field field-name="WorkTypeId">
+                                    </lightning-input-field>
+                                </div>
+                                <div class="slds-size_1-of-2  slds-var-p-around_large">
+                                    <lightning-input-field field-name="Duration">
+                                    </lightning-input-field>
+                                </div>
+                                <div class="slds-size_1-of-2  slds-var-p-around_large">
+                                    <lightning-input-field field-name="DurationType" value="Minutes">
+                                    </lightning-input-field>
+                                </div>
+                            </div> 
+
+
+                            <!-- DESCRIPTION -->
+                            <div class="slds-theme--shade slds-m-horizontal_medium slds-section__title">
+                                <h3 class="section-header-title slds-p-horizontal_small">
+                                    Description
+                                </h3>
+                            </div>
+                            <div class="slds-grid slds-wrap slds-var-p-around_large">
+                                <div class="slds-size_2-of-2  slds-var-p-around_large">
+                                    <lightning-input-field field-name="Subject">
+                                    </lightning-input-field>
+                                    <lightning-input-field field-name="Description">
+                                    </lightning-input-field>
+                                </div>
+                            </div>
+    
+                            <!-- Planification avec slots -->
+                            <div class="slds-theme--shade slds-m-horizontal_medium slds-section__title">
+                                <h3 class="section-header-title slds-p-horizontal_small">
+                                    Planification avec slots
+                                </h3>
+                            </div>
+                            <div class="slds-grid slds-wrap  slds-var-p-around_large">
+                                <div class="slds-size_1-of-2  slds-var-p-around_large">
+                                    <lightning-input-field field-name="a_Premiere_prestation_le__c">
+                                    </lightning-input-field>
+                                </div>
+                                <div class="slds-size_1-of-2  slds-var-p-around_large">
+                                    <lightning-input-field field-name="a_Slot__c">
+                                    </lightning-input-field>
+                                </div>
+                            </div>
+
+                            <!--Planification avec l'heure exacte-->
+                            <div class="slds-theme--shade slds-m-horizontal_medium slds-section__title">
+                                <h3 class="section-header-title slds-p-horizontal_small">
+                                    Planification avec l'heure exacte
+                                </h3>
+                            </div>
+                            <div class="slds-grid slds-wrap slds-var-p-around_large">
+                                <div class="slds-size_2-of-2  slds-var-p-around_large">
+                                    <lightning-input-field field-name="a_Jour_heure_premiere_prest__c">
+                                    </lightning-input-field>
+                                </div>
+                            </div>
+
+                            <!-- Récurrences -->
+                            <div class="slds-theme--shade slds-m-horizontal_medium slds-section__title">
+                                <h3 class="section-header-title slds-p-horizontal_small">
+                                    Récurrences
+                                </h3>
+                            </div>
+                            <div class="slds-grid slds-wrap slds-var-p-around_large">
+                                <div class="slds-size_1-of-2  slds-var-p-around_large">
+                                    <lightning-input-field field-name="a_Type_de_recurrence__c">
+                                    </lightning-input-field>
+                                </div>
+                                <div class="slds-size_1-of-2  slds-var-p-around_large">
+                                    <lightning-input-field field-name="a_Recurrence_valide_au__c" disabled>
+                                    </lightning-input-field>
+                                </div>
+                            </div>
+
+                            <!-- Récurrence avec fréquence -->
+                            <div class="slds-theme--shade slds-m-horizontal_medium slds-section__title">
+                                <h3 class="section-header-title slds-p-horizontal_small">
+                                    Récurrence avec fréquence
+                                </h3>
+                            </div>
+                            <div class="slds-grid slds-wrap slds-var-p-around_large">
+                                <div class="slds-size_1-of-2  slds-var-p-around_large">
+                                    <lightning-input-field field-name="a_Frequence__c">
+                                    </lightning-input-field>
+                                </div>
+                                <div class="slds-size_1-of-2  slds-var-p-around_large">
+                                    <lightning-input-field field-name="a_Type_de_frequence__c">
+                                    </lightning-input-field>
+                                </div>
+                            </div>
+
+                            <!-- Récurrence avec jours de la semaine   -->
+                            <div class="slds-theme--shade slds-m-horizontal_medium slds-section__title">
+                                <h3 class="section-header-title slds-p-horizontal_small">
+                                    Récurrence avec jours de la semaine
+                                </h3>
+                            </div>
+                            <div class="slds-grid slds-wrap slds-var-p-around_large">
+                                <div class="slds-size_2-of-2  slds-var-p-around_large">
+                                    <lightning-input-field field-name="a_Jours_de_semaine__c">
+                                    </lightning-input-field>
+                                </div>
+                            </div>
+
+                            <!-- Address -->
+                            <div class="slds-theme--shade slds-m-horizontal_medium slds-section__title">
+                                <h3 class="section-header-title slds-p-horizontal_small">
+                                    Adresse
+                                </h3>
+                            </div>
+                            <div class="slds-grid slds-wrap slds-var-p-around_large">
+                                <div class="slds-size_2-of-2  slds-var-p-around_large">
+                                    <lightning-input-field field-name="Street"  value={street}>
+                                    </lightning-input-field>
+                                    <lightning-input-field field-name="City"  value={city}>
+                                    </lightning-input-field>
+                                    <lightning-input-field field-name="PostalCode"  value={postalCode}>
+                                    </lightning-input-field>
+                                    <lightning-input-field field-name="State"  value={state}>
+                                    </lightning-input-field>
+                                    <lightning-input-field field-name="Country"  value={country}>
+                                    </lightning-input-field>
+                                </div>
+                            </div>
+                            
+                            <!-- System Information -->
+                            <div class="slds-theme--shade slds-m-horizontal_medium slds-section__title">
+                                <h3 class="section-header-title slds-p-horizontal_small">
+                                    System Information
+                                </h3>
+                            </div>
+                            <div class="slds-grid slds-wrap slds-var-p-around_large">
+                                <div class="slds-size_1-of-2  slds-var-p-around_large">
+                                    <lightning-input-field field-name="OwnerId">
+                                    </lightning-input-field>
+                                    
+                                </div>
+                                <div class="slds-size_1-of-2  slds-var-p-around_large">
+                                    <lightning-input-field field-name="ServiceTerritoryId">
+                                    </lightning-input-field>
+                                    
+                                </div>
+                            </div>
+                            <footer class="slds-modal__footer slds-box_x-small">
+                                <ul class="slds-button-group-row">
+                                    <li class="slds-button-group-item">
+                                        <lightning-button class="slds-var-m-top_small" variant="neutral" name="Cancel" label="Cancel" onclick={closeCreateModal}></lightning-button>
+                                    </li>
+                                    <li class="slds-button-group-item">
+                                        <lightning-button class="slds-var-m-top_small" variant="brand" type="submit" name="Save" label="Save"></lightning-button>
+                                    </li>
+                                </ul>
+                            </footer>
+                        </lightning-record-edit-form>
+                    </lightning-card>
+                </div>
+            </div>
+        </section>
+        <div class="slds-backdrop slds-backdrop_open"></div>
+    </template>
+
+
+    <!-- READONLY PRESTATION-->
+    <template if:true={isModalReadOnlyOpen}>
+        <section role="dialog" tabindex="-1" aria-labelledby="modal-heading-02" aria-modal="true" aria-describedby="modal-content-id-1" class="slds-modal slds-fade-in-open slds-modal_medium">
+            <div class="slds-modal__container">
+                <header class="slds-modal__header"> 
+                    <button class="slds-button slds-button_icon slds-modal__close slds-button_icon-inverse" title="Close">
+                        <lightning-icon variant="inverse" onclick={closeReadOnlyModal} alternative-text="close" icon-name="utility:close" size="small"></lightning-icon>
+                      </button>
+                      <h2 id="modal-heading-03" class="slds-modal__title slds-hyphenate">Prestation</h2>
+                </header>
+                <div class="slds-modal__content" id="modal-content-id-3" >
+                    <lightning-card>
+                        <lightning-record-view-form record-id={recordId}
+                                                    object-api-name="WorkOrder" 
+                                                    record-type-id="0129E000000G7eDQAS" >
+
+                            <!-- INFORMATION -->
+                            <div class="slds-theme--shade slds-m-horizontal_medium slds-section__title">
+                                <h3 class="section-header-title slds-var-p-horizontal_small">
+                                    Information
+                                </h3>
+                            </div>
+
+
+
+                            <div class="slds-grid slds-wrap slds-var-p-around_large">
+                                <div class="slds-size_1-of-2  slds-var-p-around_large">
+                                    <lightning-output-field field-name="AccountId">
+                                    </lightning-output-field>
+                                </div>
+                                <div class="slds-size_1-of-2  slds-var-p-around_large">
+                                    <lightning-output-field  field-name="Dossier_de_prise_en_charge__c">
+                                    </lightning-output-field>
+                                </div>
+                                <div class="slds-size_2-of-2  slds-var-p-around_large">
+                                    <lightning-output-field field-name="CaseId" >
+                                    </lightning-output-field>
+                                </div>
+                                <div class="slds-size_1-of-2  slds-var-p-around_large">
+                                    <lightning-output-field field-name="a_Type_de_Prestation__c">
+                                    </lightning-output-field>
+                                </div>
+                                <div class="slds-size_1-of-2  slds-var-p-around_large">
+                                    <lightning-output-field field-name="WorkTypeId">
+                                    </lightning-output-field>
+                                </div>
+                                <div class="slds-size_1-of-2  slds-var-p-around_large">
+                                    <lightning-output-field field-name="Duration">
+                                    </lightning-output-field>
+                                </div>
+                                <div class="slds-size_1-of-2  slds-var-p-around_large">
+                                    <lightning-output-field field-name="DurationType" >
+                                    </lightning-output-field>
+                                </div>
+                            </div> 
+
+
+
+                            <!-- DESCRIPTION -->
+                            <div class="slds-theme--shade slds-m-horizontal_medium slds-section__title">
+                                <h3 class="section-header-title slds-p-horizontal_small">
+                                    Description
+                                </h3>
+                            </div>
+                            <div class="slds-grid slds-wrap slds-modal__content slds-var-p-around_large">
+                                <div class="slds-size_2-of-2  slds-var-p-around_large">
+                                    <lightning-output-field field-name="Subject">
+                                    </lightning-output-field>
+                                    <lightning-output-field field-name="Description">
+                                    </lightning-output-field>
+                                </div>
+                            </div>
+    
+                            <!-- Planification avec slots -->
+                            <div class="slds-theme--shade slds-m-horizontal_medium slds-section__title">
+                                <h3 class="section-header-title slds-p-horizontal_small">
+                                    Planification avec slots
+                                </h3>
+                            </div>
+                            <div class="slds-grid slds-wrap slds-modal__content slds-var-p-around_large">
+                                <div class="slds-size_1-of-2  slds-var-p-around_large">
+                                    <lightning-output-field field-name="a_Premiere_prestation_le__c">
+                                    </lightning-output-field>
+                                </div>
+                                <div class="slds-size_1-of-2  slds-var-p-around_large">
+                                    <lightning-output-field field-name="a_Slot__c">
+                                    </lightning-output-field>
+                                </div>
+                            </div>
+
+                            <!--Planification avec l'heure exacte-->
+                            <div class="slds-theme--shade slds-m-horizontal_medium slds-section__title">
+                                <h3 class="section-header-title slds-p-horizontal_small">
+                                    Planification avec l'heure exacte
+                                </h3>
+                            </div>
+                            <div class="slds-grid slds-wrap slds-modal__content slds-var-p-around_large">
+                                <div class="slds-size_2-of-2  slds-var-p-around_large">
+                                    <lightning-output-field field-name="a_Jour_heure_premiere_prest__c">
+                                    </lightning-output-field>
+                                </div>
+                            </div>
+
+                            <!-- Récurrences -->
+                            <div class="slds-theme--shade slds-m-horizontal_medium slds-section__title">
+                                <h3 class="section-header-title slds-p-horizontal_small">
+                                    Récurrences
+                                </h3>
+                            </div>
+                            <div class="slds-grid slds-wrap slds-modal__content slds-var-p-around_large">
+                                <div class="slds-size_1-of-2  slds-var-p-around_large">
+                                    <lightning-output-field field-name="a_Type_de_recurrence__c">
+                                    </lightning-output-field>
+                                </div>
+                                <div class="slds-size_1-of-2  slds-var-p-around_large">
+                                    <lightning-output-field field-name="a_Recurrence_valide_du__c">
+                                    </lightning-output-field>
+                                    <lightning-output-field field-name="a_Recurrence_valide_au__c">
+                                    </lightning-output-field>
+                                </div>
+                            </div>
+
+                            <!-- Récurrence avec fréquence -->
+                            <div class="slds-theme--shade slds-m-horizontal_medium slds-section__title">
+                                <h3 class="section-header-title slds-p-horizontal_small">
+                                    Récurrence avec fréquence
+                                </h3>
+                            </div>
+                            <div class="slds-grid slds-wrap slds-modal__content slds-var-p-around_large">
+                                <div class="slds-size_1-of-2  slds-var-p-around_large">
+                                    <lightning-output-field field-name="a_Frequence__c">
+                                    </lightning-output-field>
+                                </div>
+                                <div class="slds-size_1-of-2  slds-var-p-around_large">
+                                    <lightning-output-field field-name="a_Type_de_frequence__c">
+                                    </lightning-output-field>
+                                </div>
+                            </div>
+
+                            <!-- Récurrence avec jours de la semaine   -->
+                            <div class="slds-theme--shade slds-m-horizontal_medium slds-section__title">
+                                <h3 class="section-header-title slds-p-horizontal_small">
+                                    Récurrence avec jours de la semaine
+                                </h3>
+                            </div>
+                            <div class="slds-grid slds-wrap slds-modal__content slds-var-p-around_large">
+                                <div class="slds-size_2-of-2  slds-var-p-around_large">
+                                    <lightning-output-field field-name="a_Jours_de_semaine__c">
+                                    </lightning-output-field>
+                                </div>
+                            </div>
+
+                            <!-- Address -->
+                            <div class="slds-theme--shade slds-m-horizontal_medium slds-section__title">
+                                <h3 class="section-header-title slds-p-horizontal_small">
+                                    Adresse
+                                </h3>
+                            </div>
+                            <div class="slds-grid slds-wrap slds-modal__content slds-var-p-around_large">
+                                <div class="slds-size_2-of-2  slds-var-p-around_large">
+                                    <lightning-output-field field-name="Address">
+                                    </lightning-output-field>
+                                </div>
+                            </div>
+                            
+                            <!-- System Information -->
+                            <div class="slds-theme--shade slds-m-horizontal_medium slds-section__title">
+                                <h3 class="section-header-title slds-p-horizontal_small">
+                                    System Information
+                                </h3>
+                            </div>
+                            <div class="slds-grid slds-wrap slds-modal__content slds-var-p-around_large">
+                                <div class="slds-size_1-of-2  slds-var-p-around_large">
+                                    <lightning-output-field field-name="OwnerId">
+                                    </lightning-output-field>
+                                </div>
+                                <div class="slds-size_1-of-2  slds-var-p-around_large">
+                                    <lightning-output-field field-name="ServiceTerritoryId">
+                                    </lightning-output-field>
+                                </div>
+                            </div>
+                        </lightning-record-view-form>
+                    </lightning-card>
+                </div>
+            </div>
+        </section>
+        <div class="slds-backdrop slds-backdrop_open"></div>
+    </template>
+
+</template>

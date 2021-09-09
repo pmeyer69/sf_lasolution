@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<BusinessProcess xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Nouvelle prestation sociale</fullName>
+    <isActive>true</isActive>
+    <values>
+        <fullName>Compléter dossier social %2F fondation</fullName>
+        <default>true</default>
+    </values>
+    <values>
+        <fullName>Compléter la prestation</fullName>
+        <default>false</default>
+    </values>
+    <values>
+        <fullName>Fermé %28prestation validée%29</fullName>
+        <default>false</default>
+    </values>
+    <values>
+        <fullName>Transmission à la facturation</fullName>
+        <default>false</default>
+    </values>
+    <values>
+        <fullName>Valider la prestation</fullName>
+        <default>false</default>
+    </values>
+</BusinessProcess>

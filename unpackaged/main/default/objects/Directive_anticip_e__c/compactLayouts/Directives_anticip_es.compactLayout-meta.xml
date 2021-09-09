@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CompactLayout xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Directives_anticip_es</fullName>
+    <fields>Dossier_de_soins__c</fields>
+    <fields>Date_directive_anticip_e__c</fields>
+    <fields>LastModifiedById</fields>
+    <label>Directives anticipées</label>
+</CompactLayout>

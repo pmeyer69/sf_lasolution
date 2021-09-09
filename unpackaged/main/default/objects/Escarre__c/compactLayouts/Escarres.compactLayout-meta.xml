@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CompactLayout xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Escarres</fullName>
+    <fields>Dossier_de_soins__c</fields>
+    <fields>Date__c</fields>
+    <fields>Score__c</fields>
+    <fields>Risque__c</fields>
+    <fields>LastModifiedById</fields>
+    <label>Escarres</label>
+</CompactLayout>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Dossier_de_prise_en_charge__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <externalId>false</externalId>
+    <label>Dossier de prise en charge</label>
+    <referenceTo>Dossier_de_prise_en_charge__c</referenceTo>
+    <relationshipLabel>Prestations</relationshipLabel>
+    <relationshipName>DossierIntervention</relationshipName>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Lookup</type>
+</CustomField>

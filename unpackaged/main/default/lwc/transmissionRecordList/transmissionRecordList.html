@@ -1,0 +1,54 @@
+<!-- sldsValidatorIgnore -->
+<template>
+    <lightning-card icon-name="utility:announcement" title="Transmissions" >
+        <div slot="actions">
+            <lightning-button  label="Ajouter Transmission" icon-name="utility:add" onclick={addTransmission}></lightning-button>
+            <lightning-button  label="Dossier de Soins" icon-name="utility:open_folder" onclick={navigateToDossierSoin} ></lightning-button>
+        </div>
+        <lightning-card>
+            <lightning-record-view-form record-id={recordId} object-api-name="Dossier_de_soins__c">
+                <div class="slds-box">
+                    <div class="slds-grid">
+                        <div class="slds-col">
+                            <lightning-output-field field-name='Patient__c'>
+                            </lightning-output-field>
+                        </div>
+                        <div class="slds-col">
+                            <lightning-output-field field-name='Name'>
+                            </lightning-output-field>
+                        </div>
+                    </div>
+                </div>
+            </lightning-record-view-form>
+        </lightning-card>
+        <template for:each={transmissions.data} for:item="transmission" >
+            <ul class="slds-has-dividers_bottom-space" key={transmission.Id}>
+                <li class="slds-item">
+                    <lightning-card>
+                    <div  slot="actions">
+                        <lightning-button-icon disabled={isButtonDisable} label="delete transmission" size="x-small" class="slds-m-left_x-small" onclick={deleteTransmission} data-target-id={transmission.Id} icon-name="utility:delete"></lightning-button-icon>
+                        <lightning-button-icon disabled={isButtonDisable} label="edit transmission" size="x-small" class="slds-m-left_x-small" onclick={editTransmission} data-target-id={transmission.Id} icon-name="utility:edit"></lightning-button-icon>
+                    </div>
+                    <lightning-record-view-form record-id={transmission.Id} object-api-name="Transmission__c" >
+                        <lightning-output-field field-name='Date_de_la_transmission__c'>
+                        </lightning-output-field>
+                        <lightning-output-field field-name='CreatedById'>
+                        </lightning-output-field>  
+                        <lightning-output-field field-name='Cible__c'>
+                        </lightning-output-field>
+                        <lightning-output-field field-name='Indicateur__c'>
+                        </lightning-output-field>
+                        <lightning-output-field field-name='Transmission__c'>
+                        </lightning-output-field> 
+                        <lightning-output-field field-name='Evaluations__c'>
+                        </lightning-output-field>
+                    </lightning-record-view-form>
+                    </lightning-card>
+                </li>
+            </ul>
+        </template>
+        <div >
+            <c-transmission-record-modal record-id={selectedRecordId} oncreatetransmission={handleCreateSuccess} dossier-de-soin-id={recordId} ></c-transmission-record-modal>
+        </div>
+    </lightning-card>
+</template>

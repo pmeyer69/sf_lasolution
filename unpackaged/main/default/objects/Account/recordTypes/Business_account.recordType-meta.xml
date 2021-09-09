@@ -213,25 +213,56 @@
         </values>
     </picklistValues>
     <picklistValues>
+        <picklist>Segmentation_patient_patologie__c</picklist>
+        <values>
+            <fullName>Démence</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Faiblesse âge</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Oncologie</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Paralysie motrice</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pathologie dégénérative</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Post opératoire</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Psychiatrie</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Soins palliatifs</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Traitement IV</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
         <picklist>Type</picklist>
         <values>
-            <fullName>Analyst</fullName>
+            <fullName>Assurance</fullName>
             <default>false</default>
         </values>
         <values>
-            <fullName>Competitor</fullName>
+            <fullName>Etablissement de soins</fullName>
             <default>false</default>
         </values>
         <values>
-            <fullName>Customer</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>Integrator</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>Investor</fullName>
+            <fullName>Medecin</fullName>
             <default>false</default>
         </values>
         <values>
@@ -239,19 +270,166 @@
             <default>false</default>
         </values>
         <values>
-            <fullName>Partner</fullName>
+            <fullName>Pharmacie</fullName>
             <default>false</default>
         </values>
         <values>
-            <fullName>Press</fullName>
+            <fullName>Service social %2F Curatelle</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>a_Etat_civil__c</picklist>
+        <values>
+            <fullName>Célibataire</fullName>
             <default>false</default>
         </values>
         <values>
-            <fullName>Prospect</fullName>
+            <fullName>Divorcé%28e%29</fullName>
             <default>false</default>
         </values>
         <values>
-            <fullName>Reseller</fullName>
+            <fullName>Marié%28e%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Partenariat enregistré</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Partenariat enregistré dissous</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Veuve%2FVeuf</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>a_Provenance_de_la_demande__c</picklist>
+        <values>
+            <fullName>Autre</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CMS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Curateur</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>EMS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Entourage</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Fondation les Eglantines</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Hôpital%2FClinique</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Médecin traitant</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Patient</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>a_Sexe__c</picklist>
+        <values>
+            <fullName>Femme</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Homme</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>a_Situation_sociale__c</picklist>
+        <values>
+            <fullName>AI</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>API - degré Grave</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>API - degré faible</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>API - degré moyen</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>API - en cours</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>API - en cours%2C degr</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>AVS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Contribution d%27assistance %28AI%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Curatelle</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Subvention de l%27assurance maladie</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Suivi par un service social</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>a_Type_de_logement__c</picklist>
+        <values>
+            <fullName>Appartement</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Appartement adapté</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Autre</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ferme</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Maison</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Studio</fullName>
             <default>false</default>
         </values>
     </picklistValues>

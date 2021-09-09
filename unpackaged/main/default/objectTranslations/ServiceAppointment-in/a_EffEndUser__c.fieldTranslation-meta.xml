@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help><!-- Utilisateur qui a quittancé la fin de l&apos;intervention par l&apos;application Mobile. --></help>
+        <label><!-- Eff fin User --></label>
+        <name>a_EffEndUser__c</name>
+        <relationshipLabel><!-- Service Appointments (Eff fin User) --></relationshipLabel>
+    </CustomFieldTranslation>

@@ -2,10 +2,11 @@
 <CompactLayout xmlns="http://soap.sforce.com/2006/04/metadata">
     <fullName>CustomDefault</fullName>
     <fields>Name</fields>
-    <fields>PersonTitle</fields>
+    <fields>Type</fields>
     <fields>Phone</fields>
     <fields>PersonMobilePhone</fields>
     <fields>PersonEmail</fields>
+    <fields>PersonMailingAddress</fields>
     <fields>OwnerId</fields>
     <label>CustomDefault</label>
 </CompactLayout>

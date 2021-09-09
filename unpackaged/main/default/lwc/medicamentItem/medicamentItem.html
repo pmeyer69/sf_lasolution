@@ -1,0 +1,72 @@
+<!-- sldsValidatorIgnore -->
+<template>
+    <ul class="slds-has-dividers_bottom-space">
+        <li class="slds-item">
+            <lightning-card >
+                <h3 slot="title" >
+                    <lightning-formatted-text value={medicament.M_dicament__c}></lightning-formatted-text>
+                    <lightning-badge if:true={ifReserve} label="réserve" class="slds-theme_warning slds-m-horizontal_xx-small"></lightning-badge>
+                    <lightning-icon  if:true={ifRemarque} class="slds-m-horizontal_xx-small" size="small" alternative-text="remarque" title="remarque" icon-name="utility:chat"></lightning-icon>
+                </h3>                   
+                <div  slot="actions">
+                    <lightning-button-icon if:false={isHistoric} label="set date de fin" size="x-small" class="slds-m-left_x-small" onclick={setDateFin} data-target-id={medicament.Id} icon-name="utility:date_time"></lightning-button-icon>
+                    <lightning-button-icon disabled={isButtonDisable} label="delete transmission" size="x-small" class="slds-m-left_x-small" onclick={deleteMedicament} data-target-id={medicament.Id} icon-name="utility:delete"></lightning-button-icon>
+                    <lightning-button-icon disabled={isButtonDisable} label="edit transmission" size="x-small" class="slds-m-left_x-small" onclick={editMedicament} data-target-id={medicament.Id} icon-name="utility:edit"></lightning-button-icon>
+                </div >
+                <div class="slds-grid slds-wrap">
+                    <div class="slds-box_x-small slds-text-align_left slds-m-around_x-small slds-m-horizontal_medium">
+                        <lightning-formatted-rich-text value={medicament.prise_journaliere__c}></lightning-formatted-rich-text>
+                    </div>
+                </div>
+                <div class="slds-m-horizontal_medium">
+                    <lightning-badge if:true={ifLundi} label="lun." class="slds-theme_success"></lightning-badge>
+                    <lightning-badge if:false={ifLundi} label="lun." class="slds-badge_lightest"></lightning-badge>
+
+                    <lightning-badge if:true={ifMardi} label="mar." class="slds-theme_success"></lightning-badge>
+                    <lightning-badge if:false={ifMardi} label="mar." class="slds-badge_lightest"></lightning-badge>
+
+                    <lightning-badge if:true={ifMercredi} label="mer."  class="slds-theme_success"></lightning-badge>
+                    <lightning-badge if:false={ifMercredi} label="mer." class="slds-badge_lightest"></lightning-badge>
+
+                    <lightning-badge if:true={ifJeudi} label="jeu." class="slds-theme_success"></lightning-badge>
+                    <lightning-badge if:false={ifJeudi} label="jeu." class="slds-badge_lightest"></lightning-badge>
+
+                    <lightning-badge if:true={ifVendredi} label="ven." class="slds-theme_success"></lightning-badge>
+                    <lightning-badge if:false={ifVendredi} label="ven." class="slds-badge_lightest"></lightning-badge>
+
+                    <lightning-badge if:true={ifSamedi} label="sam." class="slds-theme_success"></lightning-badge>
+                    <lightning-badge if:false={ifSamedi} label="sam." class="slds-badge_lightest"></lightning-badge>
+
+                    <lightning-badge if:true={ifDimanche} label="dim." class="slds-theme_success"></lightning-badge>
+                    <lightning-badge if:false={ifDimanche} label="dim." class="slds-badge_lightest"></lightning-badge>
+                </div >
+                <lightning-accordion allow-multiple-sections-open="true">                                       
+                    <lightning-accordion-section  label="Détails">                                           
+                        <lightning-record-view-form record-id={medicament.Id} object-api-name="m_dicament__c" > 
+                            <lightning-output-field field-name='Remarque__c'>
+                            </lightning-output-field>
+                            <lightning-output-field field-name='R_serve__c'>
+                            </lightning-output-field>
+                            <lightning-output-field field-name='Date_de_d_but__c'>
+                            </lightning-output-field>  
+                            <lightning-output-field field-name='Date_de_fin__c'>
+                            </lightning-output-field>  
+                            <lightning-output-field field-name='CreatedById'>
+                            </lightning-output-field> 
+                            <lightning-output-field field-name='G_r_par__c'> 
+                            </lightning-output-field>
+                            <lightning-output-field field-name='M_decin__c'>
+                            </lightning-output-field>
+                            <lightning-output-field field-name='Type_d_ordre__c'>
+                            </lightning-output-field>
+                            <lightning-output-field field-name='Prise_hebdomadaire__c'>
+                            </lightning-output-field> 
+                            <lightning-output-field field-name='Cat_gories__c'>
+                            </lightning-output-field>  
+                        </lightning-record-view-form>
+                    </lightning-accordion-section>
+                </lightning-accordion>
+            </lightning-card>
+        </li>
+    </ul>
+</template>

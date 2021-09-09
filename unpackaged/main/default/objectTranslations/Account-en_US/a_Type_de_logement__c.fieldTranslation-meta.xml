@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label><!-- Type de logement --></label>
+        <name>a_Type_de_logement__c</name>
+        <picklistValues>
+            <masterLabel>Appartement</masterLabel>
+            <translation><!-- Appartement --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Appartement adapté</masterLabel>
+            <translation><!-- Appartement adapté --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Autre</masterLabel>
+            <translation><!-- Autre --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Ferme</masterLabel>
+            <translation><!-- Ferme --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Maison</masterLabel>
+            <translation><!-- Maison --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Studio</masterLabel>
+            <translation><!-- Studio --></translation>
+        </picklistValues>
+    </CustomFieldTranslation>

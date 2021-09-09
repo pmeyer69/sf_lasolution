@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CompactLayout xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Nouvelle_prestation</fullName>
+    <fields>RecordTypeId</fields>
+    <fields>ContactId</fields>
+    <fields>Subject</fields>
+    <fields>Status</fields>
+    <fields>ParentId</fields>
+    <fields>Prestation__c</fields>
+    <label>Nouvelle prestation</label>
+</CompactLayout>

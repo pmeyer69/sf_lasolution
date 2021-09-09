@@ -1,0 +1,28 @@
+<apex:page standardController="Plan_intervention__c"  renderAs="pdf" applyHtmlTag="false" showHeader="false" cache="true" readOnly="true">
+    <html>
+        <head>
+            <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+            <style>
+                @page {
+                size: a4 portrait;
+                }            
+            </style>
+        </head>
+        <body>
+            <h1>Liste des Prestations et des Actes</h1>
+            <apex:pageBlock title="Liste de prestations">
+               
+                <apex:outputText value="{!Plan_intervention__c.Valide_du__c}" />
+                <apex:outputText value="{!Plan_intervention__c.Valide_au__c}"/>
+
+
+                <apex:outputText value="{!Plan_intervention__c.Statut__c}" />
+                <apex:outputText value="{!Plan_intervention__c.Remarque_inf_ref__c  }"/>
+                <apex:outputText value="{!Plan_intervention__c.Problemes_identifies__c}" />
+
+            </apex:pageBlock>
+            
+
+        </body>
+    </html>
+</apex:page>

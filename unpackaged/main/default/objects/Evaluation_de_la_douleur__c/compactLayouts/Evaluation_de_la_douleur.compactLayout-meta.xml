@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CompactLayout xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Evaluation_de_la_douleur</fullName>
+    <fields>Dossier_de_soins__c</fields>
+    <fields>Date_de_l_valuation__c</fields>
+    <fields>Evaluation_de_la_douleur__c</fields>
+    <fields>Localisation_de_la_douleur__c</fields>
+    <fields>LastModifiedById</fields>
+    <label>Evaluation de la douleur</label>
+</CompactLayout>

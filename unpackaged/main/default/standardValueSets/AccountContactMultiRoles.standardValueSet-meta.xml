@@ -2,44 +2,34 @@
 <StandardValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
     <sorted>false</sorted>
     <standardValue>
-        <fullName>Utilisateur professionnel</fullName>
+        <fullName>Enfant</fullName>
         <default>false</default>
-        <label>Utilisateur professionnel</label>
+        <label>Enfant</label>
     </standardValue>
     <standardValue>
-        <fullName>Décideur</fullName>
+        <fullName>Autre membre de famille</fullName>
         <default>false</default>
-        <label>Décideur</label>
+        <label>Autre membre de famille</label>
     </standardValue>
     <standardValue>
-        <fullName>Acheteur économique</fullName>
+        <fullName>Infirmière de liaison</fullName>
         <default>false</default>
-        <label>Acheteur économique</label>
+        <label>Infirmière de liaison</label>
     </standardValue>
     <standardValue>
-        <fullName>Décideur économique</fullName>
+        <fullName>Curatelle/Tuteur/Représentant légal</fullName>
         <default>false</default>
-        <label>Décideur économique</label>
+        <label>Curatelle/Tuteur/Représentant légal</label>
     </standardValue>
     <standardValue>
-        <fullName>Évaluateur</fullName>
+        <fullName>Suivi en simultane</fullName>
         <default>false</default>
-        <label>Évaluateur</label>
+        <label>Suivi en simultané</label>
     </standardValue>
     <standardValue>
-        <fullName>Parrain</fullName>
+        <fullName>Service social</fullName>
         <default>false</default>
-        <label>Parrain</label>
-    </standardValue>
-    <standardValue>
-        <fullName>Prescripteur</fullName>
-        <default>false</default>
-        <label>Prescripteur</label>
-    </standardValue>
-    <standardValue>
-        <fullName>Acheteur technique</fullName>
-        <default>false</default>
-        <label>Acheteur technique</label>
+        <label>Service social</label>
     </standardValue>
     <standardValue>
         <fullName>Autre</fullName>

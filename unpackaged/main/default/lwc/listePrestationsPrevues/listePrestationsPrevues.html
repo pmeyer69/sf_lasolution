@@ -1,0 +1,13 @@
+<!-- sldsValidatorIgnore -->
+<template>
+    <lightning-card>
+        <lightning-button label="Generate PDF" onclick={generatePdf}></lightning-button>
+        <lightning-datatable if:true={actes}
+            key-field="id"
+            data={actes.data}
+            columns={columns}
+            hide-checkbox-column
+            >
+        </lightning-datatable>
+    </lightning-card>
+</template>

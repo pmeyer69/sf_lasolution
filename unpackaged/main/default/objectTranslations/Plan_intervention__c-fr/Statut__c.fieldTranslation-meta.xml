@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label><!-- Statut --></label>
+        <name>Statut__c</name>
+        <picklistValues>
+            <masterLabel>Actif</masterLabel>
+            <translation><!-- Actif --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Clôturé</masterLabel>
+            <translation><!-- Clôturé --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>En préparation</masterLabel>
+            <translation><!-- En préparation --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Validé</masterLabel>
+            <translation><!-- Validé --></translation>
+        </picklistValues>
+    </CustomFieldTranslation>

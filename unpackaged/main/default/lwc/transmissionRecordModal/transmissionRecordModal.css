@@ -1,0 +1,8 @@
+:host {
+    --sds-c-textarea-sizing-min-height: 150px;
+    
+  }
+.slds-modal__container {
+    max-width: 80rem !important;
+    width: 80% !important;
+}

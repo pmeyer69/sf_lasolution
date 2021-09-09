@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Autre_personne</fullName>
+    <active>true</active>
+    <compactLayoutAssignment>CustomDefault</compactLayoutAssignment>
+    <label>Autre personne</label>
+    
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+    </RecordType>

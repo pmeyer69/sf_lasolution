@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Validate_Prestation_start_end_dates</fullName>
+    <active>true</active>
+    <errorConditionFormula>and(TEXT(Status) = &apos;In Progress&apos;, isblank(a_Recurrence_valide_au__c))</errorConditionFormula>
+    <errorDisplayField>a_Recurrence_valide_du__c</errorDisplayField>
+    <errorMessage>Veuillez renseigner la fin de validité de la récurrence.</errorMessage>
+</ValidationRule>
