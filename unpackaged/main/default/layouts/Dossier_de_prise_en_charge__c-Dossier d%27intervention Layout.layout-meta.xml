@@ -230,7 +230,7 @@
         <fields>CASES.CREATED_DATE</fields>
         <fields>CASES.STATUS</fields>
         <fields>CASES.PRIORITY</fields>
-        <relatedList>Case.a_Dossier_intervention__c</relatedList>
+        <relatedList>Case.a_Dossier_prise_en_charge__c</relatedList>
     </relatedLists>
     <relatedLists>
         <relatedList>RelatedFileList</relatedList>

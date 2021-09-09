@@ -50,6 +50,8 @@ public with sharing class PrestationController {
                         Acte__c,
                         Remarque_de_l_inf_r_f__c,
                         Temps__c,
+                        Fr_quence_InterRAI__c,
+                        Nb_InterRAI__c,
                         a_Prestation__r.WorkOrderNumber
                     FROM WorkOrder 
                     WHERE RecordType.Name = 'Acte'

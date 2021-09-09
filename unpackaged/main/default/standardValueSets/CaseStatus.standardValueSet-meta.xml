@@ -2,6 +2,30 @@
 <StandardValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
     <sorted>false</sorted>
     <standardValue>
+        <fullName>Pré-évaluation nouvelle demande</fullName>
+        <default>false</default>
+        <label>Pré-évaluation nouvelle demande</label>
+        <closed>false</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>Compléter la fiche client</fullName>
+        <default>false</default>
+        <label>Compléter la fiche client</label>
+        <closed>false</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>Acceptation de la demande</fullName>
+        <default>false</default>
+        <label>Acceptation de la demande</label>
+        <closed>false</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>definir_les_prestations</fullName>
+        <default>false</default>
+        <label>Définir les prestations</label>
+        <closed>false</closed>
+    </standardValue>
+    <standardValue>
         <fullName>New</fullName>
         <default>true</default>
         <label>Nouveau</label>
@@ -44,12 +68,6 @@
         <closed>false</closed>
     </standardValue>
     <standardValue>
-        <fullName>Compléter la prestation</fullName>
-        <default>false</default>
-        <label>Compléter la prestation</label>
-        <closed>false</closed>
-    </standardValue>
-    <standardValue>
         <fullName>Validation OPAS</fullName>
         <default>false</default>
         <label>Validation OPAS</label>
@@ -86,6 +104,24 @@
         <closed>false</closed>
     </standardValue>
     <standardValue>
+        <fullName>EVAL Inter-RAI</fullName>
+        <default>false</default>
+        <label>EVAL Inter-RAI</label>
+        <closed>false</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>Mise à jour du Plan d&apos;intervention</fullName>
+        <default>false</default>
+        <label>Mise à jour du Plan d&apos;intervention</label>
+        <closed>false</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>Initier Carte de soins</fullName>
+        <default>false</default>
+        <label>Initier Carte de soins</label>
+        <closed>false</closed>
+    </standardValue>
+    <standardValue>
         <fullName>Ferme (prise en charge)</fullName>
         <default>false</default>
         <label>Fermé (prise en charge)</label>
@@ -113,6 +149,12 @@
         <fullName>Fermé (prestation validée)</fullName>
         <default>false</default>
         <label>Fermé (prestation validée)</label>
+        <closed>true</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>Fermé (pas d&apos;ordonnance médicale)</fullName>
+        <default>false</default>
+        <label>Fermé (pas d&apos;ordonnance médicale)</label>
         <closed>true</closed>
     </standardValue>
 </StandardValueSet>

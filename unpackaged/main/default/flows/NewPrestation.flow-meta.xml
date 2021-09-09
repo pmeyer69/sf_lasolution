@@ -10,7 +10,7 @@
             <assignToReference>RecordId</assignToReference>
             <operator>Assign</operator>
             <value>
-                <elementReference>GetCase.a_Dossier_intervention__c</elementReference>
+                <elementReference>GetCase.a_Dossier_prise_en_charge__c</elementReference>
             </value>
         </assignmentItems>
         <connector>
@@ -108,7 +108,7 @@
             </value>
         </assignmentItems>
         <assignmentItems>
-            <assignToReference>NewCase.a_Dossier_intervention__c</assignToReference>
+            <assignToReference>NewCase.a_Dossier_prise_en_charge__c</assignToReference>
             <operator>Assign</operator>
             <value>
                 <elementReference>RecordId</elementReference>
@@ -670,7 +670,7 @@
         </connector>
         <filterLogic>and</filterLogic>
         <filters>
-            <field>a_Dossier_intervention__c</field>
+            <field>a_Dossier_prise_en_charge__c</field>
             <operator>EqualTo</operator>
             <value>
                 <elementReference>RecordId</elementReference>

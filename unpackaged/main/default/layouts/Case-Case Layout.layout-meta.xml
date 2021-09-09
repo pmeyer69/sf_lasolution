@@ -26,7 +26,11 @@
             </layoutItems>
             <layoutItems>
                 <behavior>Readonly</behavior>
-                <field>a_Dossier_intervention__c</field>
+                <field>a_Dossier_prise_en_charge__c</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>Ordonnance_m_dicale_obtenue_apr_s__c</field>
             </layoutItems>
         </layoutColumns>
         <layoutColumns>

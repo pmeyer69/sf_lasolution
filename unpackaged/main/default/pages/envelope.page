@@ -1,4 +1,4 @@
-<apex:page standardController="Plan_intervention__c"  renderAs="pdf" applyHtmlTag="false" showHeader="false" cache="true" readOnly="true">
+<apex:page standardController="Plan_intervention__c"  renderAs="pdf"  extensions="MyControllerExtension"  showHeader="false" cache="true" readOnly="true">
     <html>
         <head>
             <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
@@ -10,19 +10,32 @@
         </head>
         <body>
             <h1>Liste des Prestations et des Actes</h1>
-            <apex:pageBlock title="Liste de prestations">
-               
-                <apex:outputText value="{!Plan_intervention__c.Valide_du__c}" />
-                <apex:outputText value="{!Plan_intervention__c.Valide_au__c}"/>
 
-
-                <apex:outputText value="{!Plan_intervention__c.Statut__c}" />
-                <apex:outputText value="{!Plan_intervention__c.Remarque_inf_ref__c  }"/>
-                <apex:outputText value="{!Plan_intervention__c.Problemes_identifies__c}" />
-
+            <apex:pageBlock title="Plan d'intervention détails">
+                <apex:pageBlockSection columns="1">
+                    <apex:outputText label="Patient" value="{!Plan_intervention__c.Dossier_de_prise_en_charge__r.Patient__r.name}" />
+                    <apex:outputText value="{!Plan_intervention__c.Dossier_de_prise_en_charge__r.Patient__r.AVS_number__c}" />
+                    <apex:outputText value="{!Plan_intervention__c.Valide_du__c}" />
+                    <apex:outputText value="{!Plan_intervention__c.Valide_au__c}"/>
+                    <apex:outputText value="{!Plan_intervention__c.Statut__c}" />
+                    <apex:outputText value="{!Plan_intervention__c.Remarque_inf_ref__c  }"/>
+                    <apex:outputText value="{!Plan_intervention__c.Problemes_identifies__c}" />
+                </apex:pageBlockSection>
             </apex:pageBlock>
-            
 
+
+            <apex:pageBlock title="Liste des prestations prévues">
+                <apex:pageBlockSection columns="1">
+                    <apex:pageBlockTable value="{!Actes}" var="acte">
+                        <apex:column value="{!acte.Code_InterRAI__c}" />
+                        <apex:column value="{!acte.Acte__c}" />
+                        <apex:column value="{!acte.Nb_InterRAI__c}" />
+                        <apex:column value="{!acte.Fr_quence_InterRAI__c}" />
+                        <apex:column value="{!acte.Temps__c}" />
+                        <apex:column value="{!acte.Code_LaMAL__c}"/>
+                    </apex:pageBlockTable>
+                </apex:pageBlockSection>
+            </apex:pageBlock>
         </body>
     </html>
 </apex:page>

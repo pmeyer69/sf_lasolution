@@ -83,7 +83,7 @@
             </value>
         </assignmentItems>
         <assignmentItems>
-            <assignToReference>GetCase.a_Dossier_intervention__c</assignToReference>
+            <assignToReference>GetCase.a_Dossier_prise_en_charge__c</assignToReference>
             <operator>Assign</operator>
             <value>
                 <elementReference>myDossierIntervention</elementReference>

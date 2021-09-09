@@ -4,15 +4,27 @@
     <description>Demande de Prise en charge</description>
     <isActive>true</isActive>
     <values>
-        <fullName>Dossier patient</fullName>
-        <default>true</default>
+        <fullName>Acceptation de la demande</fullName>
+        <default>false</default>
     </values>
     <values>
-        <fullName>Définition des prestations</fullName>
+        <fullName>Compléter la fiche client</fullName>
+        <default>false</default>
+    </values>
+    <values>
+        <fullName>Définir les prestations</fullName>
+        <default>false</default>
+    </values>
+    <values>
+        <fullName>EVAL Inter-RAI</fullName>
         <default>false</default>
     </values>
     <values>
         <fullName>Ferme %28abandon de la demande%29</fullName>
+        <default>false</default>
+    </values>
+    <values>
+        <fullName>Fermé %28pas d%27ordonnance médicale%29</fullName>
         <default>false</default>
     </values>
     <values>
@@ -22,5 +34,17 @@
     <values>
         <fullName>Finalisation</fullName>
         <default>false</default>
+    </values>
+    <values>
+        <fullName>Initier Carte de soins</fullName>
+        <default>false</default>
+    </values>
+    <values>
+        <fullName>Mise à jour du Plan d%27intervention</fullName>
+        <default>false</default>
+    </values>
+    <values>
+        <fullName>Pré-évaluation nouvelle demande</fullName>
+        <default>true</default>
     </values>
 </BusinessProcess>

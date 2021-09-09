@@ -4,5 +4,28 @@
     <entityName>Case</entityName>
     <fieldName>Status</fieldName>
     <masterLabel>Demande de prise en charge</masterLabel>
+    <pathAssistantSteps>
+        <info>&lt;p&gt;Obtenir l&amp;#39;acceptation de la demande par l&amp;#39;Expérience Client ou par les Services Sociaux.&lt;/p&gt;</info>
+        <picklistValueName>Acceptation de la demande</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <info>&lt;p&gt;Compléter la fiche client.&lt;/p&gt;&lt;p&gt;Prévalider le dossier avec le Front, la Planification et l&amp;#39;ICR.&lt;/p&gt;</info>
+        <picklistValueName>Compléter la fiche client</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <fieldNames>EVAL_Inter_RAI_requise__c</fieldNames>
+        <info>&lt;p&gt;Si nécessaire, passer la demande pour EVAL Inter-RAI par l&amp;#39;infirmière référente et/ou une finalisation du Plan d&amp;#39;intervention par &lt;span style=&quot;font-size: 13px;&quot;&gt;la direction des soins.&lt;/span&gt;&lt;/p&gt;</info>
+        <picklistValueName>Finalisation</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <fieldNames>Ordonnance_m_dicale_d_j_existante__c</fieldNames>
+        <fieldNames>Ordonnance_m_dicale_obtenue_apr_s__c</fieldNames>
+        <info>&lt;p&gt;Phase de pré-évaluation par téléphone ou lors une visite. Si le patient n&amp;#39;a pas encore une ordonnance médicale, il faut l&amp;#39;obtenir après cette phase de pré-évaluation. Si aucune ordonnance médicale n&amp;#39;a été établie, fermez la demande comme &amp;quot;sans ordonnance médicale&amp;quot;.&lt;/p&gt;</info>
+        <picklistValueName>Pré-évaluation nouvelle demande</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <info>&lt;p&gt;Définir les prestations par le biais du Plan d&amp;#39;intervention.&lt;/p&gt;</info>
+        <picklistValueName>definir_les_prestations</picklistValueName>
+    </pathAssistantSteps>
     <recordTypeName>Prise_charge</recordTypeName>
 </PathAssistant>

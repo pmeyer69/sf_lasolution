@@ -3,7 +3,7 @@
     <fullName>Nouvelle prestation LAMal</fullName>
     <isActive>true</isActive>
     <values>
-        <fullName>Compléter la prestation</fullName>
+        <fullName>Définir les prestations</fullName>
         <default>true</default>
     </values>
     <values>

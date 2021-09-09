@@ -10,7 +10,7 @@
                             <value>Edit</value>
                         </valueListItems>
                         <valueListItems>
-                            <value>CustomButton.Case.Nouvelle_prestation</value>
+                            <value>CustomButton.Case.Initier_OPAS</value>
                         </valueListItems>
                     </valueList>
                 </componentInstanceProperties>
@@ -200,7 +200,7 @@
             <componentInstance>
                 <componentInstanceProperties>
                     <name>lookupFieldName</name>
-                    <value>Case.a_Dossier_intervention__c</value>
+                    <value>Case.a_Dossier_prise_en_charge__c</value>
                 </componentInstanceProperties>
                 <componentInstanceProperties>
                     <name>updateQuickActionName</name>
@@ -213,7 +213,7 @@
             <componentInstance>
                 <componentInstanceProperties>
                     <name>parentFieldApiName</name>
-                    <value>Case.a_Dossier_intervention__c</value>
+                    <value>Case.a_Dossier_prise_en_charge__c</value>
                 </componentInstanceProperties>
                 <componentInstanceProperties>
                     <name>relatedListApiName</name>
