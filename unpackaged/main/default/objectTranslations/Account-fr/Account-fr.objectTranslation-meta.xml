@@ -40,4 +40,65 @@
         <label><!-- Nouvelle_prestation --></label>
         <name>Nouvelle_prestation</name>
     </webLinks>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <fieldSets>
+        <label><!-- Emergency Account Fields --></label>
+        <name>FSL__Emergency_Account_Fields</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Gantt Lightbox --></label>
+        <name>FSL__Gantt_Lightbox</name>
+    </fieldSets>
+    <layouts>
+        <layout>Patient</layout>
+        <layoutType>PersonAccount</layoutType>
+        <sections>
+            <label><!-- Adresse et logement --></label>
+            <section>Adresse et logement</section>
+        </sections>
+        <sections>
+            <label><!-- Autres informations --></label>
+            <section>Autres informations</section>
+        </sections>
+        <sections>
+            <label><!-- Situation sociale --></label>
+            <section>Situation sociale</section>
+        </sections>
+    </layouts>
 </CustomObjectTranslation>

@@ -5,6 +5,7 @@
     <columns>Code_InterRAI__c</columns>
     <columns>Groupe_InterRAI__c</columns>
     <columns>Subject</columns>
+    <columns>Nb_InterRAI__c</columns>
     <columns>Fr_quence_InterRAI__c</columns>
     <columns>Temps_InterRAI__c</columns>
     <columns>Temps__c</columns>

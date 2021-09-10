@@ -15,6 +15,13 @@
         </sections>
     </layouts>
     <layouts>
+        <layout>FSL Work Order Layout</layout>
+        <sections>
+            <label>Cím</label>
+            <section>Address</section>
+        </sections>
+    </layouts>
+    <layouts>
         <layout>Prestation layout</layout>
         <sections>
             <label><!-- Address --></label>
@@ -64,36 +71,6 @@
         <label><!-- SendEmail --></label>
         <name>SendEmail</name>
     </quickActions>
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
     <recordTypes>
         <label><!-- Acte --></label>
         <name>Acte</name>
@@ -150,4 +127,50 @@
         <label><!-- Planification_ad_hoc --></label>
         <name>Planification_ad_hoc</name>
     </webLinks>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <fieldSets>
+        <label><!-- Crew Managment Lightbox --></label>
+        <name>FSL__CrewManagment_Lightbox</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Deprecated --></label>
+        <name>FSL__Emergency_Current_WorkORder_Fields</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Gantt Lightbox --></label>
+        <name>FSL__Gantt_Lightbox</name>
+    </fieldSets>
 </CustomObjectTranslation>

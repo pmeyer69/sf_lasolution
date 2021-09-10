@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>เป้าหมายการบริการ</value>
+    </caseValues>
+    
+    
+    
+    
+    
+    
+    
+    <layouts>
+        <layout>ASAP Layout</layout>
+        <sections>
+            <label>ลิงก์แบบกำหนดเอง</label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label>ฟิลด์</label>
+            <section>Fields</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Minimize Overtime</layout>
+        <sections>
+            <label>ลิงก์แบบกำหนดเอง</label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label>ฟิลด์</label>
+            <section>Fields</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Minimize Travel Layout</layout>
+        <sections>
+            <label>ลิงก์แบบกำหนดเอง</label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Preferred Resource</layout>
+        <sections>
+            <label>ลิงก์แบบกำหนดเอง</label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label>ฟิลด์</label>
+            <section>Fields</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Resource Priority Layout</layout>
+        <sections>
+            <label>ลิงก์แบบกำหนดเอง</label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label>ฟิลด์</label>
+            <section>Fields</section>
+        </sections>
+        <sections>
+            <label>ฟิลด์ความสำคัญของทรัพยากร</label>
+            <section>Resource Priority Field</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Skill Level</layout>
+        <sections>
+            <label>ลิงก์แบบกำหนดเอง</label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label>ฟิลด์</label>
+            <section>Fields</section>
+        </sections>
+    </layouts>
+    <nameFieldLabel>ชื่อเป้าหมายบริการ</nameFieldLabel>
+    <recordTypes>
+        <description><!-- Schedule as soon as possible --></description>
+        <label><!-- ASAP --></label>
+        <name>FSL__Objective_Asap</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Custom Objective --></description>
+        <label><!-- Custom Objective --></label>
+        <name>FSL__Objective_Custom_Logic</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Minimize the use of overtime --></description>
+        <label><!-- Minimize Overtime --></label>
+        <name>FSL__Objective_Minimize_Overtime</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Minimize travel time --></description>
+        <label><!-- Minimize Travel --></label>
+        <name>FSL__Objective_Minimize_Travel</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Prioritize scheduling according to preferred resource --></description>
+        <label><!-- Preferred Resource --></label>
+        <name>FSL__Objective_PreferredEngineer</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Prefer a resource based on a field value on the resource --></description>
+        <label><!-- Resource Priority --></label>
+        <name>FSL__Objective_Resource_Priority</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Prefer the least/most qualified candidate --></description>
+        <label><!-- Skill Level --></label>
+        <name>FSL__Objective_Skill_Level</name>
+    </recordTypes>
+    <validationRules>
+        <errorMessage><!-- Resource Priority Field should not be empty --></errorMessage>
+        <name>FSL__Resource_Priority_Not_Null</name>
+    </validationRules>
+</CustomObjectTranslation>

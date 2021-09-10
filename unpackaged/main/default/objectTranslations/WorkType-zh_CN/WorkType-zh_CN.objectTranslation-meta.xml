@@ -2,4 +2,21 @@
 <CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
     
     
+    
+    
+    <layouts>
+        <layout>FSL Work Type Layout</layout>
+        <sections>
+            <label><!-- Codes --></label>
+            <section>Codes</section>
+        </sections>
+        <sections>
+            <label><!-- Planification --></label>
+            <section>Planification</section>
+        </sections>
+        <sections>
+            <label>技能编辑器</label>
+            <section>Skills Editor</section>
+        </sections>
+    </layouts>
 </CustomObjectTranslation>

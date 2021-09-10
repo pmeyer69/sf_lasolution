@@ -1,6 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Profile xmlns="http://soap.sforce.com/2006/04/metadata">
     <applicationVisibilities>
+        <application>FSL__FieldService</application>
+        <default>false</default>
+        <visible>false</visible>
+    </applicationVisibilities>
+    <applicationVisibilities>
+        <application>FSL__FieldService_Admin</application>
+        <default>false</default>
+        <visible>false</visible>
+    </applicationVisibilities>
+    <applicationVisibilities>
         <application>La_Solutionch</application>
         <default>false</default>
         <visible>false</visible>
@@ -12,6 +22,81 @@
     </applicationVisibilities>
     <applicationVisibilities>
         <application>Sales</application>
+        <default>false</default>
+        <visible>false</visible>
+    </applicationVisibilities>
+    <applicationVisibilities>
+        <application>standard__AllTabSet</application>
+        <default>false</default>
+        <visible>false</visible>
+    </applicationVisibilities>
+    <applicationVisibilities>
+        <application>standard__AppLauncher</application>
+        <default>false</default>
+        <visible>false</visible>
+    </applicationVisibilities>
+    <applicationVisibilities>
+        <application>standard__Chatter</application>
+        <default>false</default>
+        <visible>false</visible>
+    </applicationVisibilities>
+    <applicationVisibilities>
+        <application>standard__Community</application>
+        <default>false</default>
+        <visible>false</visible>
+    </applicationVisibilities>
+    <applicationVisibilities>
+        <application>standard__LightningBolt</application>
+        <default>false</default>
+        <visible>false</visible>
+    </applicationVisibilities>
+    <applicationVisibilities>
+        <application>standard__LightningSales</application>
+        <default>false</default>
+        <visible>false</visible>
+    </applicationVisibilities>
+    <applicationVisibilities>
+        <application>standard__LightningSalesConsole</application>
+        <default>false</default>
+        <visible>false</visible>
+    </applicationVisibilities>
+    <applicationVisibilities>
+        <application>standard__LightningService</application>
+        <default>false</default>
+        <visible>false</visible>
+    </applicationVisibilities>
+    <applicationVisibilities>
+        <application>standard__Marketing</application>
+        <default>false</default>
+        <visible>false</visible>
+    </applicationVisibilities>
+    <applicationVisibilities>
+        <application>standard__OnlineSales</application>
+        <default>false</default>
+        <visible>false</visible>
+    </applicationVisibilities>
+    <applicationVisibilities>
+        <application>standard__Platform</application>
+        <default>true</default>
+        <visible>true</visible>
+    </applicationVisibilities>
+    <applicationVisibilities>
+        <application>standard__Sales</application>
+        <default>false</default>
+        <visible>false</visible>
+    </applicationVisibilities>
+    <applicationVisibilities>
+        <application>standard__SalesforceCMS</application>
+        <default>false</default>
+        <visible>false</visible>
+    </applicationVisibilities>
+    <applicationVisibilities>
+        <application>standard__Service</application>
+        <default>false</default>
+        <visible>false</visible>
+    </applicationVisibilities>
+    <applicationVisibilities>
+        <application>standard__ServiceConsole</application>
         <default>false</default>
         <visible>false</visible>
     </applicationVisibilities>
@@ -3632,6 +3717,9 @@
         <layout>BusinessBrand-Présentation Marque commerciale</layout>
     </layoutAssignments>
     <layoutAssignments>
+        <layout>CMTD__EnhancedRelatedList__mdt-CMTD__Enhanced Related List Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
         <layout>Campaign-Campaign Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
@@ -3749,6 +3837,172 @@
     </layoutAssignments>
     <layoutAssignments>
         <layout>ExpenseReportEntry-Expense Report Entry Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>FSL__Crew_Management_User_Settings_Territory__c-FSL__Crew Management User Settings Territory Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>FSL__Crew_Management_User_Settings__c-FSL__Crew Management User Settings Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>FSL__Criteria__c-FSL__Criteria Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>FSL__FSL_Operation__c-FSL__FSL Operation Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>FSL__GanttPalette__c-FSL__Gantt Palette Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>FSL__Gantt_Filter__c-FSL__Gantt Filter Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>FSL__Geocode_Pulling_Settings__mdt-FSL__Geocode Pulling Settings Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>FSL__O2_Authorization_Info__mdt-FSL__O2 Authorization Info Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>FSL__O2_Settings__mdt-FSL__O2 Settings Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>FSL__O2_Toggle_Settings__mdt-FSL__O2 Settings Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>FSL__Optimization_Data__c-FSL__Optimization Data Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>FSL__Optimization_Request_Queue__c-FSL__Optimization Request Queue Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>FSL__Optimization_Request__c-FSL__Optimization Request Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>FSL__Polygon__c-FSL__Polygon Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>FSL__SLR_Cache__c-FSL__SLR Cache Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>FSL__SchedulingRecipe__c-FSL__Scheduling Recipe Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>FSL__Scheduling_Policy_Goal__c-FSL__Scheduling Policy Objective Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>FSL__Scheduling_Policy_Work_Rule__c-FSL__Scheduling Policy Work Rule Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>FSL__Scheduling_Policy__c-FSL__Scheduling Policy Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>FSL__Service_Goal__c-FSL__ASAP Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>FSL__Service_Goal__c-FSL__ASAP Layout</layout>
+        <recordType>FSL__Service_Goal__c.FSL__Objective_Asap</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>FSL__Service_Goal__c-FSL__ASAP Layout</layout>
+        <recordType>FSL__Service_Goal__c.FSL__Objective_Custom_Logic</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>FSL__Service_Goal__c-FSL__Minimize Overtime</layout>
+        <recordType>FSL__Service_Goal__c.FSL__Objective_Minimize_Overtime</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>FSL__Service_Goal__c-FSL__Minimize Travel Layout</layout>
+        <recordType>FSL__Service_Goal__c.FSL__Objective_Minimize_Travel</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>FSL__Service_Goal__c-FSL__Preferred Resource</layout>
+        <recordType>FSL__Service_Goal__c.FSL__Objective_PreferredEngineer</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>FSL__Service_Goal__c-FSL__Resource Priority Layout</layout>
+        <recordType>FSL__Service_Goal__c.FSL__Objective_Resource_Priority</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>FSL__Service_Goal__c-FSL__Skill Level</layout>
+        <recordType>FSL__Service_Goal__c.FSL__Objective_Skill_Level</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>FSL__Territory_Optimization_Request__c-FSL__Territory Optimization Request Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>FSL__Time_Dependency__c-FSL__Time Dependency Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>FSL__UserSetting__c-FSL__User Setting Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>FSL__User_Setting_Territory__c-FSL__User Setting Territory Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>FSL__User_Territory__c-FSL__User Territory Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>FSL__Work_Rule__c-FSL__Match Boolean %28Service%29 Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>FSL__Work_Rule__c-FSL__CountRule</layout>
+        <recordType>FSL__Work_Rule__c.FSL__Count_Rule</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>FSL__Work_Rule__c-FSL__Extended Match</layout>
+        <recordType>FSL__Work_Rule__c.FSL__Enhanced_Match_Service</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>FSL__Work_Rule__c-FSL__Work Rules %28Service%29 Layout</layout>
+        <recordType>FSL__Work_Rule__c.FSL__Excluded_Resources_Service</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>FSL__Work_Rule__c-FSL__Working Territories</layout>
+        <recordType>FSL__Work_Rule__c.FSL__Field_Working_Locations</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>FSL__Work_Rule__c-FSL__Resource Availability Layout</layout>
+        <recordType>FSL__Work_Rule__c.FSL__Gap_Rule_Service</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>FSL__Work_Rule__c-FSL__Match Boolean %28Service%29 Layout</layout>
+        <recordType>FSL__Work_Rule__c.FSL__Match_Boolean_Service</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>FSL__Work_Rule__c-FSL__Match Boolean %28Service%29 Layout</layout>
+        <recordType>FSL__Work_Rule__c.FSL__Match_Crew_Size_Service</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>FSL__Work_Rule__c-FSL__Match Fields %28Service%29 Layout</layout>
+        <recordType>FSL__Work_Rule__c.FSL__Match_Fields_Service</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>FSL__Work_Rule__c-FSL__Work Rules %28Service%29 Layout</layout>
+        <recordType>FSL__Work_Rule__c.FSL__Match_Location_Service</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>FSL__Work_Rule__c-FSL__Match Skills</layout>
+        <recordType>FSL__Work_Rule__c.FSL__Match_Skills_Service</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>FSL__Work_Rule__c-FSL__Maximum Travel From Homebase Layout</layout>
+        <recordType>FSL__Work_Rule__c.FSL__Max_Travel_From_Home_To_Service</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>FSL__Work_Rule__c-FSL__Work Rules %28Service%29 Layout</layout>
+        <recordType>FSL__Work_Rule__c.FSL__Required_Resources_Service</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>FSL__Work_Rule__c-FSL__Work Rules %28Service%29 Layout</layout>
+        <recordType>FSL__Work_Rule__c.FSL__Service_Visiting_Hours</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>FSL__Work_Rule__c-FSL__Match Boolean %28Service%29 Layout</layout>
+        <recordType>FSL__Work_Rule__c.FSL__TimeSlot_Designated_Work</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>FSL__Work_Rule__c-FSL__Time Rule Layout</layout>
+        <recordType>FSL__Work_Rule__c.FSL__Time_Rule_Service</recordType>
     </layoutAssignments>
     <layoutAssignments>
         <layout>FeedItem-Feed Item Layout</layout>
@@ -3917,6 +4171,14 @@
     </layoutAssignments>
     <layoutAssignments>
         <layout>ResourceAbsence-Resource Absence Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>ResourceAbsence-FSL__FSL Resource Absence Layout</layout>
+        <recordType>ResourceAbsence.FSL__Break</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>ResourceAbsence-FSL__FSL Resource Absence Layout</layout>
+        <recordType>ResourceAbsence.FSL__Non_Availability</recordType>
     </layoutAssignments>
     <layoutAssignments>
         <layout>ResourcePreference-Resource Preference Layout</layout>
@@ -4146,6 +4408,116 @@
     </recordTypeVisibilities>
     <recordTypeVisibilities>
         <default>false</default>
+        <recordType>FSL__Service_Goal__c.FSL__Objective_Asap</recordType>
+        <visible>false</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>false</default>
+        <recordType>FSL__Service_Goal__c.FSL__Objective_Custom_Logic</recordType>
+        <visible>false</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>false</default>
+        <recordType>FSL__Service_Goal__c.FSL__Objective_Minimize_Overtime</recordType>
+        <visible>false</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>false</default>
+        <recordType>FSL__Service_Goal__c.FSL__Objective_Minimize_Travel</recordType>
+        <visible>false</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>false</default>
+        <recordType>FSL__Service_Goal__c.FSL__Objective_PreferredEngineer</recordType>
+        <visible>false</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>false</default>
+        <recordType>FSL__Service_Goal__c.FSL__Objective_Resource_Priority</recordType>
+        <visible>false</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>false</default>
+        <recordType>FSL__Service_Goal__c.FSL__Objective_Skill_Level</recordType>
+        <visible>false</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>false</default>
+        <recordType>FSL__Work_Rule__c.FSL__Count_Rule</recordType>
+        <visible>false</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>false</default>
+        <recordType>FSL__Work_Rule__c.FSL__Enhanced_Match_Service</recordType>
+        <visible>false</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>false</default>
+        <recordType>FSL__Work_Rule__c.FSL__Excluded_Resources_Service</recordType>
+        <visible>false</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>false</default>
+        <recordType>FSL__Work_Rule__c.FSL__Field_Working_Locations</recordType>
+        <visible>false</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>false</default>
+        <recordType>FSL__Work_Rule__c.FSL__Gap_Rule_Service</recordType>
+        <visible>false</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>false</default>
+        <recordType>FSL__Work_Rule__c.FSL__Match_Boolean_Service</recordType>
+        <visible>false</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>false</default>
+        <recordType>FSL__Work_Rule__c.FSL__Match_Crew_Size_Service</recordType>
+        <visible>false</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>false</default>
+        <recordType>FSL__Work_Rule__c.FSL__Match_Fields_Service</recordType>
+        <visible>false</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>false</default>
+        <recordType>FSL__Work_Rule__c.FSL__Match_Location_Service</recordType>
+        <visible>false</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>false</default>
+        <recordType>FSL__Work_Rule__c.FSL__Match_Skills_Service</recordType>
+        <visible>false</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>false</default>
+        <recordType>FSL__Work_Rule__c.FSL__Max_Travel_From_Home_To_Service</recordType>
+        <visible>false</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>false</default>
+        <recordType>FSL__Work_Rule__c.FSL__Required_Resources_Service</recordType>
+        <visible>false</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>false</default>
+        <recordType>FSL__Work_Rule__c.FSL__Service_Visiting_Hours</recordType>
+        <visible>false</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>false</default>
+        <recordType>FSL__Work_Rule__c.FSL__TimeSlot_Designated_Work</recordType>
+        <visible>false</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>false</default>
+        <recordType>FSL__Work_Rule__c.FSL__Time_Rule_Service</recordType>
+        <visible>false</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>false</default>
         <recordType>Idea.InternalIdeasIdeaRecordType</recordType>
         <visible>false</visible>
     </recordTypeVisibilities>
@@ -4167,6 +4539,16 @@
     <recordTypeVisibilities>
         <default>false</default>
         <recordType>PersonAccount.PersonAccount</recordType>
+        <visible>false</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>false</default>
+        <recordType>ResourceAbsence.FSL__Break</recordType>
+        <visible>false</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>false</default>
+        <recordType>ResourceAbsence.FSL__Non_Availability</recordType>
         <visible>false</visible>
     </recordTypeVisibilities>
     <recordTypeVisibilities>
@@ -4210,6 +4592,30 @@
     </tabVisibilities>
     <tabVisibilities>
         <tab>Dossier_de_soins__c</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>FSL__FieldService</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>FSL__Master_Settings</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>FSL__Scheduling_Policy__c</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>FSL__Service_Goal__c</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>FSL__User_Territory__c</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>FSL__Work_Rule__c</tab>
         <visibility>Hidden</visibility>
     </tabVisibilities>
     <tabVisibilities>
